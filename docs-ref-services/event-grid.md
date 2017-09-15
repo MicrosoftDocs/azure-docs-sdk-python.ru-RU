@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: 81c4e74b00ac59c789c5a0b83eaa10652ec6d8ac
-ms.sourcegitcommit: db4608e494cb4340649bce98ba9fb4504d3686bb
+ms.openlocfilehash: a50a203a0733f25f2a88d6f4a43c6bddc388d3e7
+ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/14/2017
 ---
-# <a name="service-bus-libraries-for-python"></a>Библиотеки служебной шины для Python
+# <a name="event-grid-libraries-for-python"></a>Библиотеки службы "Сетка событий Azure" для Python
 
 ## <a name="overview"></a>Обзор
 "Сетка событий Azure" — это полностью управляемая интеллектуальная служба маршрутизации событий, которая обеспечивает равномерное потребление событий с помощью модели "публикация — подписка".
