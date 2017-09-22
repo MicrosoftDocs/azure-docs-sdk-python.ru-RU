@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
-ms.openlocfilehash: e2f2ad4e42bd847c9286333bacd583c3cd3f1b8c
-ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
+ms.openlocfilehash: c4128dae1c1fd47d2ac34b178b7e1031aa14c948
+ms.sourcegitcommit: 1229121faaae8536a7d8cc89cddd24abf1e30cb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="azure-virtual-machine-libraries"></a>Библиотеки виртуальных машин Azure
 
@@ -77,16 +77,18 @@ def create_vm()
 
 * [Управление виртуальными машинами][1]
 * [Аутентификация на основе удостоверения управляемой службы][2]
-* [Управление подсистемой балансировки нагрузки][3]
-* [Создание и настройка управляемых дисков][4]
-* [Вывод списка образов][5] 
-* [Мониторинг виртуальных машин][6]
+* [Создание виртуальной машины с помощью расширения управляемого удостоверения службы][3]
+* [Управление подсистемой балансировки нагрузки][4]
+* [Создание и настройка управляемых дисков][5]
+* [Вывод списка образов][6] 
+* [Мониторинг виртуальных машин][7]
 
 Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=python&term=virtual-machines) примеров для виртуальных машин.
 
 [1]: https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/
 [2]: https://github.com/Azure-Samples/resource-manager-python-manage-resources-with-msi
-[3]: https://azure.microsoft.com/resources/samples/network-python-manage-loadbalancer
-[4]: ../docs-ref-conceptual/python-sdk-azure-samples-managed-disks.md
-[5]: ../docs-ref-conceptual/python-sdk-azure-samples-list-images.md
-[6]: ../docs-ref-conceptual/python-sdk-azure-samples-monitor-vms.md
+[3]: https://github.com/Azure-Samples/compute-python-msi-vm
+[4]: https://azure.microsoft.com/resources/samples/network-python-manage-loadbalancer
+[5]: ../docs-ref-conceptual/python-sdk-azure-samples-managed-disks.md
+[6]: ../docs-ref-conceptual/python-sdk-azure-samples-list-images.md
+[7]: ../docs-ref-conceptual/python-sdk-azure-samples-monitor-vms.md
