@@ -8,7 +8,7 @@
       "build_output_subfolder": "azure-python-sdk",
       "locale": "ru-RU",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -18,7 +18,17 @@
         "APIConnector": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "customized_template_paths": [
+         "_dependentPackages/uref/content"
+      ],
+       "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
+        ]
+      },
+      "version": 0
     }
   ],
   "notification_subscribers": [],
@@ -28,6 +38,7 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -45,7 +56,6 @@
       }
     }
   ],
-  "need_generate_pdf_url_template": false,
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
@@ -71,14 +81,13 @@
       "ConceptualTOCUrl": "/python/azure/toc.json",
       "OutputFolder": "docs-ref-autogen/overview/azure",
       "ContainerPageMetadata": {
-        "langs": [
-          "python"
-        ]
+        "langs": ["python"]
       },
       "ContainerPageYamlMime": "YamlMime:PythonReference"
     }
   ],
   "DiffFolder": [
     "docs-ref-autogen/overview/azure"
-  ]
+  ],
+  "need_generate_pdf_url_template": false
 }
