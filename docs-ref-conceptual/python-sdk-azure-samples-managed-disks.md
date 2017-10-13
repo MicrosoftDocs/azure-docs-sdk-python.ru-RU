@@ -10,11 +10,11 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 776e13ed91482c34e5d637d5eedf2640cd4ca9f4
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: ca1af18ae37549238ffaafbd2d5f8223974e0d11
+ms.sourcegitcommit: 12ea38af93cc4f1ba6aac333035829a69f6aed0c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="managed-disks"></a>Управляемые диски
 
@@ -114,7 +114,7 @@ managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
 vm.storage_profile.data_disks.append({
     'lun': 12, # You choose the value, depending of what is available for you
     'name': managed_disk.name,
-    'create_option': DiskCreateOption.attach,
+    'create_option': DiskCreateOptionTypes.attach,
     'managed_disk': {
         'id': managed_disk.id
     }
@@ -129,7 +129,7 @@ async_update.wait()
 
 ## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Масштабируемые наборы виртуальных машин с управляемыми дисками.
 
-До выпуска службы "Управляемые диски" вам нужно было вручную создавать учетную запись хранения для всех необходимых виртуальных машин в масштабируемом наборе, а затем в REST API этого набора указывать параметр списка ``vhd_containers``, чтобы предоставить всем виртуальным машинам имя учетной записи хранения. Официальное руководство по переходу доступно по этой ссылке: `article <https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
+До выпуска службы "Управляемые диски" вам нужно было вручную создавать учетную запись хранения для всех необходимых виртуальных машин в масштабируемом наборе, а затем в REST API этого набора указывать параметр списка ``vhd_containers``, чтобы предоставить всем виртуальным машинам имя учетной записи хранения. Официальное руководство по переходу доступно в этой статье: `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`__.
 
 Теперь благодаря управляемым дискам вы больше не будете иметь дела с учетными записями хранения. Если вы часто используете пакет SDK для масштабируемого набора виртуальных машин для Python, можно использовать такое же значение параметра ``storage_profile``, как и при создании виртуальной машины.
 
