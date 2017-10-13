@@ -31,16 +31,10 @@ items:
 
     '
   syntax:
-    content: AppServiceCertificateOrder(location, name=None, kind=None, type=None,
-      tags=None, certificates=None, distinguished_name=None, validity_in_years=1,
-      key_size=2048, product_type=None, auto_renew=True, csr=None)
+    content: AppServiceCertificateOrder(location, kind=None, tags=None, certificates=None,
+      distinguished_name=None, validity_in_years=1, key_size=2048, product_type=None,
+      auto_renew=True, csr=None)
     parameters:
-    - description: 'Resource Name.
-
-        '
-      id: name
-      type:
-      - str
     - description: 'Kind of resource.
 
         '
@@ -51,12 +45,6 @@ items:
 
         '
       id: location
-      type:
-      - str
-    - description: 'Resource type.
-
-        '
-      id: type
       type:
       - str
     - description: 'Resource tags.
@@ -98,9 +86,8 @@ items:
         '
       id: product_type
       type:
-      - 'str or @azure.mgmt.web.models.CertificateProductType
-
-        '
+      - str
+      - azure.mgmt.web.models.CertificateProductType
     - description: '<code>true</code> if the certificate should be
 
         automatically renewed when it expires; otherwise, <code>false</code>.
@@ -122,6 +109,18 @@ items:
 
         '
       id: id
+      type:
+      - str
+    - description: 'Resource Name.
+
+        '
+      id: name
+      type:
+      - str
+    - description: 'Resource type.
+
+        '
+      id: type
       type:
       - str
     - description: 'Domain verification token.

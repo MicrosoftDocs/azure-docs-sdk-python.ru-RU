@@ -47,6 +47,8 @@ items:
 
         '
       id: api_version
+      type:
+      - null
   type: class
   uid: azure.mgmt.redis.operations.Operations
 - class: azure.mgmt.redis.operations.Operations
@@ -96,6 +98,9 @@ items:
         '
       id: operation_config
     return:
+      description: 'An iterator like instance of @azure.mgmt.redis.models.Operation
+
+        '
       type:
       - azure.mgmt.redis.models.OperationPaged
   type: method

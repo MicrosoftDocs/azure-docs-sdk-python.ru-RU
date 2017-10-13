@@ -18,10 +18,10 @@ items:
   name: HDInsightSparkActivity
   source:
     id: HDInsightSparkActivity
-    path: azure_mgmt_datafactory-0.2.0-py3.5.egg\azure\mgmt\datafactory\models\hd_insight_spark_activity.py
+    path: azure_mgmt_datafactory-0.2.1-py3.5.egg\azure\mgmt\datafactory\models\hd_insight_spark_activity.py
     remote:
       branch: master
-      path: azure_mgmt_datafactory-0.2.0-py3.5.egg\azure\mgmt\datafactory\models\hd_insight_spark_activity.py
+      path: azure_mgmt_datafactory-0.2.1-py3.5.egg\azure\mgmt\datafactory\models\hd_insight_spark_activity.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
     startLine: 15
   summary: 'HDInsight Spark activity.
@@ -98,9 +98,8 @@ items:
         '
       id: get_debug_info
       type:
-      - 'str or @azure.mgmt.datafactory.models.HDInsightActivityDebugInfoOption
-
-        '
+      - str
+      - azure.mgmt.datafactory.models.HDInsightActivityDebugInfoOption
     - description: 'The storage linked service for uploading
 
         the entry file and dependencies, and for receiving logs.

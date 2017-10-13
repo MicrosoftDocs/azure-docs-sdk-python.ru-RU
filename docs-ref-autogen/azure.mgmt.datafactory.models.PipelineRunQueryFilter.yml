@@ -14,10 +14,10 @@ items:
   name: PipelineRunQueryFilter
   source:
     id: PipelineRunQueryFilter
-    path: azure_mgmt_datafactory-0.2.0-py3.5.egg\azure\mgmt\datafactory\models\pipeline_run_query_filter.py
+    path: azure_mgmt_datafactory-0.2.1-py3.5.egg\azure\mgmt\datafactory\models\pipeline_run_query_filter.py
     remote:
       branch: master
-      path: azure_mgmt_datafactory-0.2.0-py3.5.egg\azure\mgmt\datafactory\models\pipeline_run_query_filter.py
+      path: azure_mgmt_datafactory-0.2.1-py3.5.egg\azure\mgmt\datafactory\models\pipeline_run_query_filter.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
     startLine: 15
   summary: 'Query filter option for listing pipeline runs.
@@ -33,9 +33,8 @@ items:
         '
       id: operand
       type:
-      - 'str or @azure.mgmt.datafactory.models.PipelineRunQueryFilterOperand
-
-        '
+      - str
+      - azure.mgmt.datafactory.models.PipelineRunQueryFilterOperand
     - description: 'Operator to be used for filter. Possible values include:
 
         ''Equals'', ''NotEquals'', ''In'', ''NotIn''
@@ -43,9 +42,8 @@ items:
         '
       id: operator
       type:
-      - 'str or @azure.mgmt.datafactory.models.PipelineRunQueryFilterOperator
-
-        '
+      - str
+      - azure.mgmt.datafactory.models.PipelineRunQueryFilterOperator
     - description: 'List of filter values.
 
         '

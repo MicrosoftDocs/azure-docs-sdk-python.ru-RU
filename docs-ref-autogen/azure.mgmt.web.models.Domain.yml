@@ -31,16 +31,10 @@ items:
 
     '
   syntax:
-    content: Domain(location, name=None, kind=None, type=None, tags=None, contact_admin=None,
-      contact_billing=None, contact_registrant=None, contact_tech=None, privacy=None,
-      auto_renew=True, consent=None, dns_type=None, dns_zone_id=None, target_dns_type=None)
+    content: Domain(location, kind=None, tags=None, contact_admin=None, contact_billing=None,
+      contact_registrant=None, contact_tech=None, privacy=None, auto_renew=True, consent=None,
+      dns_type=None, dns_zone_id=None, target_dns_type=None)
     parameters:
-    - description: 'Resource Name.
-
-        '
-      id: name
-      type:
-      - str
     - description: 'Kind of resource.
 
         '
@@ -51,12 +45,6 @@ items:
 
         '
       id: location
-      type:
-      - str
-    - description: 'Resource type.
-
-        '
-      id: type
       type:
       - str
     - description: 'Resource tags.
@@ -118,9 +106,8 @@ items:
         '
       id: dns_type
       type:
-      - 'str or @azure.mgmt.web.models.DnsType
-
-        '
+      - str
+      - azure.mgmt.web.models.DnsType
     - description: 'Azure DNS Zone to use
 
         '
@@ -134,14 +121,25 @@ items:
         '
       id: target_dns_type
       type:
-      - 'str or @azure.mgmt.web.models.DnsType
-
-        '
+      - str
+      - azure.mgmt.web.models.DnsType
     variables:
     - description: 'Resource Id.
 
         '
       id: id
+      type:
+      - str
+    - description: 'Resource Name.
+
+        '
+      id: name
+      type:
+      - str
+    - description: 'Resource type.
+
+        '
+      id: type
       type:
       - str
     - description: 'Domain registration status. Possible values

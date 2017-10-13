@@ -9,7 +9,7 @@ items:
     - inheritance:
       - type: builtins.object
       type: msrest.serialization.Model
-    type: azure.mgmt.web.models.resource.Resource
+    type: azure.mgmt.web.models.proxy_only_resource.ProxyOnlyResource
   langs:
   - python
   module: azure.mgmt.web.models
@@ -31,41 +31,16 @@ items:
 
     '
   syntax:
-    content: HostNameBinding(location, name=None, kind=None, type=None, tags=None,
-      host_name_binding_name=None, site_name=None, domain_id=None, azure_resource_name=None,
-      azure_resource_type=None, custom_host_name_dns_record_type=None, host_name_type=None,
-      ssl_state=None, thumbprint=None, virtual_ip=None)
+    content: HostNameBinding(kind=None, host_name_binding_name=None, site_name=None,
+      domain_id=None, azure_resource_name=None, azure_resource_type=None, custom_host_name_dns_record_type=None,
+      host_name_type=None, ssl_state=None, thumbprint=None)
     parameters:
-    - description: 'Resource Name.
-
-        '
-      id: name
-      type:
-      - str
     - description: 'Kind of resource.
 
         '
       id: kind
       type:
       - str
-    - description: 'Resource Location.
-
-        '
-      id: location
-      type:
-      - str
-    - description: 'Resource type.
-
-        '
-      id: type
-      type:
-      - str
-    - description: 'Resource tags.
-
-        '
-      id: tags
-      type:
-      - dict
     - description: 'Hostname.
 
         '
@@ -97,9 +72,8 @@ items:
         '
       id: azure_resource_type
       type:
-      - 'str or @azure.mgmt.web.models.AzureResourceType
-
-        '
+      - str
+      - azure.mgmt.web.models.AzureResourceType
     - description: 'Custom DNS record type. Possible
 
         values include: ''CName'', ''A''
@@ -119,9 +93,8 @@ items:
         '
       id: host_name_type
       type:
-      - 'str or @azure.mgmt.web.models.HostNameType
-
-        '
+      - str
+      - azure.mgmt.web.models.HostNameType
     - description: 'SSL type. Possible values include: ''Disabled'',
 
         ''SniEnabled'', ''IpBasedEnabled''
@@ -129,13 +102,31 @@ items:
         '
       id: ssl_state
       type:
-      - 'str or @azure.mgmt.web.models.SslState
-
-        '
+      - str
+      - azure.mgmt.web.models.SslState
     - description: 'SSL certificate thumbprint
 
         '
       id: thumbprint
+      type:
+      - str
+    variables:
+    - description: 'Resource Id.
+
+        '
+      id: id
+      type:
+      - str
+    - description: 'Resource Name.
+
+        '
+      id: name
+      type:
+      - str
+    - description: 'Resource type.
+
+        '
+      id: type
       type:
       - str
     - description: 'Virtual IP address assigned to the hostname if IP based
@@ -144,13 +135,6 @@ items:
 
         '
       id: virtual_ip
-      type:
-      - str
-    variables:
-    - description: 'Resource Id.
-
-        '
-      id: id
       type:
       - str
   type: class
