@@ -100,7 +100,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 308
+    startLine: 296
   summary: 'Create or update a certificate purchase order.
 
 
@@ -150,19 +150,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.web.models.AppServiceCertificateOrder or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        AppServiceCertificateOrder or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.AppServiceCertificateOrder]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.create_or_update
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -180,7 +176,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 615
+    startLine: 590
   summary: 'Creates or updates a certificate and associates with key vault secret.
 
 
@@ -234,20 +230,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.web.models.AppServiceCertificateResource
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        AppServiceCertificateResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.AppServiceCertificateResource]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.create_or_update_certificate
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -265,7 +256,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 410
+    startLine: 393
   summary: 'Delete an existing certificate order.
 
 
@@ -313,17 +304,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.delete
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -341,7 +327,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 718
+    startLine: 689
   summary: 'Delete the certificate associated with a certificate order.
 
 
@@ -395,17 +381,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.delete_certificate
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -423,7 +404,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 240
+    startLine: 232
   summary: 'Get a certificate order.
 
 
@@ -471,17 +452,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.AppServiceCertificateOrder or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'AppServiceCertificateOrder or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.AppServiceCertificateOrder or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.AppServiceCertificateOrder
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.get
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -499,7 +475,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 544
+    startLine: 522
   summary: 'Get the certificate associated with a certificate order.
 
 
@@ -553,17 +529,14 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.AppServiceCertificateResource or
-
-        @msrest.pipeline.ClientRawResponse if
+      description: 'AppServiceCertificateResource or ClientRawResponse if
 
         raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.AppServiceCertificateResource or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.AppServiceCertificateResource
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.get_certificate
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -614,13 +587,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of
-
-        @azure.mgmt.web.models.AppServiceCertificateOrder
+      description: 'An iterator like instance of AppServiceCertificateOrder
 
         '
       type:
-      - azure.mgmt.web.models.AppServiceCertificateOrderPaged
+      - azure.mgmt.web.models.AppServiceCertificateOrderPaged[~azure.mgmt.web.models.AppServiceCertificateOrder]
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.list
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -638,7 +609,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 168
+    startLine: 162
   summary: 'Get certificate orders in a resource group.
 
 
@@ -680,13 +651,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of
-
-        @azure.mgmt.web.models.AppServiceCertificateOrder
+      description: 'An iterator like instance of AppServiceCertificateOrder
 
         '
       type:
-      - azure.mgmt.web.models.AppServiceCertificateOrderPaged
+      - azure.mgmt.web.models.AppServiceCertificateOrderPaged[~azure.mgmt.web.models.AppServiceCertificateOrder]
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.list_by_resource_group
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -704,7 +673,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 469
+    startLine: 449
   summary: 'List all certificates associated with a certificate order.
 
 
@@ -752,13 +721,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of
-
-        @azure.mgmt.web.models.AppServiceCertificateResource
+      description: 'An iterator like instance of AppServiceCertificateResource
 
         '
       type:
-      - azure.mgmt.web.models.AppServiceCertificateResourcePaged
+      - azure.mgmt.web.models.AppServiceCertificateResourcePaged[~azure.mgmt.web.models.AppServiceCertificateResource]
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.list_certificates
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -776,7 +743,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 780
+    startLine: 748
   summary: 'Reissue an existing certificate order.
 
 
@@ -830,17 +797,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.reissue
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -858,7 +820,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 847
+    startLine: 811
   summary: 'Renew an existing certificate order.
 
 
@@ -912,17 +874,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.renew
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -940,7 +897,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 914
+    startLine: 874
   summary: 'Resend certificate email.
 
 
@@ -988,17 +945,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.resend_email
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -1016,7 +968,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 973
+    startLine: 930
   summary: 'Verify domain ownership for this certificate order.
 
 
@@ -1071,17 +1023,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.resend_request_emails
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -1099,7 +1046,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1175
+    startLine: 1124
   summary: 'Retrieve the list of certificate actions.
 
 
@@ -1147,17 +1094,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.CertificateOrderAction or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.CertificateOrderAction or
-
-        @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.CertificateOrderAction]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.retrieve_certificate_actions
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -1175,7 +1117,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1243
+    startLine: 1188
   summary: 'Retrieve email history.
 
 
@@ -1223,17 +1165,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.CertificateEmail or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.CertificateEmail or
-
-        @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.CertificateEmail]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.retrieve_certificate_email_history
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -1251,7 +1188,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1040
+    startLine: 994
   summary: 'Verify domain ownership for this certificate order.
 
 
@@ -1313,17 +1250,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.SiteSeal or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'SiteSeal or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.SiteSeal or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.SiteSeal
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.retrieve_site_seal
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -1341,7 +1273,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 107
+    startLine: 105
   summary: 'Validate information for a certificate order.
 
 
@@ -1383,17 +1315,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.validate_purchase_information
 - class: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations
@@ -1411,7 +1338,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_certificate_orders_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1116
+    startLine: 1068
   summary: 'Verify domain ownership for this certificate order.
 
 
@@ -1459,17 +1386,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceCertificateOrdersOperations.verify_domain_ownership
 references:

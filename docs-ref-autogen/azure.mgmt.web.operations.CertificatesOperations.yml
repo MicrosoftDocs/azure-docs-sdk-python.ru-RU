@@ -76,7 +76,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\certificates_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 242
+    startLine: 238
   summary: 'Create or update a certificate.
 
 
@@ -132,17 +132,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.Certificate or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'Certificate or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.Certificate or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.Certificate
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.CertificatesOperations.create_or_update
 - class: azure.mgmt.web.operations.CertificatesOperations
@@ -160,7 +155,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\certificates_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 316
+    startLine: 309
   summary: 'Delete a certificate.
 
 
@@ -207,17 +202,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.CertificatesOperations.delete
 - class: azure.mgmt.web.operations.CertificatesOperations
@@ -235,7 +225,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\certificates_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 176
+    startLine: 174
   summary: 'Get a certificate.
 
 
@@ -282,17 +272,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.Certificate or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'Certificate or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.Certificate or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.Certificate
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.CertificatesOperations.get
 - class: azure.mgmt.web.operations.CertificatesOperations
@@ -343,11 +328,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Certificate
+      description: 'An iterator like instance of Certificate
 
         '
       type:
-      - azure.mgmt.web.models.CertificatePaged
+      - azure.mgmt.web.models.CertificatePaged[~azure.mgmt.web.models.Certificate]
   type: method
   uid: azure.mgmt.web.operations.CertificatesOperations.list
 - class: azure.mgmt.web.operations.CertificatesOperations
@@ -365,7 +350,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\certificates_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 105
+    startLine: 104
   summary: 'Get all certificates in a resource group.
 
 
@@ -407,11 +392,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Certificate
+      description: 'An iterator like instance of Certificate
 
         '
       type:
-      - azure.mgmt.web.models.CertificatePaged
+      - azure.mgmt.web.models.CertificatePaged[~azure.mgmt.web.models.Certificate]
   type: method
   uid: azure.mgmt.web.operations.CertificatesOperations.list_by_resource_group
 - class: azure.mgmt.web.operations.CertificatesOperations
@@ -429,7 +414,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\certificates_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 375
+    startLine: 365
   summary: 'Create or update a certificate.
 
 
@@ -485,17 +470,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.Certificate or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'Certificate or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.Certificate or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.Certificate
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.CertificatesOperations.update
 references:

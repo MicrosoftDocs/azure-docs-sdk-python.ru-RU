@@ -53,7 +53,7 @@ items:
         '
       id: tags
       type:
-      - dict
+      - dict[str, str]
     - description: 'The SKU.
 
         '
@@ -81,27 +81,20 @@ items:
         '
       id: service_provider_provisioning_state
       type:
-      - 'str or
-
-        @azure.mgmt.network.v2015_06_15.models.ServiceProviderProvisioningState
-
-        '
+      - str
+      - azure.mgmt.network.v2015_06_15.models.ServiceProviderProvisioningState
     - description: 'The list of authorizations.
 
         '
       id: authorizations
       type:
-      - 'list of @azure.mgmt.network.v2015_06_15.models.ExpressRouteCircuitAuthorization
-
-        '
+      - list[~azure.mgmt.network.v2015_06_15.models.ExpressRouteCircuitAuthorization]
     - description: 'The list of peerings.
 
         '
       id: peerings
       type:
-      - 'list of @azure.mgmt.network.v2015_06_15.models.ExpressRouteCircuitPeering
-
-        '
+      - list[~azure.mgmt.network.v2015_06_15.models.ExpressRouteCircuitPeering]
     - description: 'The ServiceKey.
 
         '

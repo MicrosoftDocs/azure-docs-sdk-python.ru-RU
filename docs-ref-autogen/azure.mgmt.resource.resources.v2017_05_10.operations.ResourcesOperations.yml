@@ -88,7 +88,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 390
+    startLine: 380
   summary: 'Checks whether a resource exists.
 
     '
@@ -161,17 +161,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'bool or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'bool or ClientRawResponse if raw=true
 
         '
       type:
-      - 'bool or
-
-        @msrest.pipeline.ClientRawResponse'
+      - bool
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.check_existence
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -189,7 +184,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 743
+    startLine: 719
   summary: 'Checks by ID whether a resource exists.
 
     '
@@ -236,17 +231,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'bool or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'bool or ClientRawResponse if raw=true
 
         '
       type:
-      - 'bool or
-
-        @msrest.pipeline.ClientRawResponse'
+      - bool
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.check_existence_by_id
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -264,7 +254,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 555
+    startLine: 538
   summary: 'Creates a resource.
 
     '
@@ -336,20 +326,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        GenericResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.resource.resources.v2017_05_10.models.GenericResource]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.create_or_update
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -367,7 +352,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 881
+    startLine: 850
   summary: 'Create a resource by ID.
 
     '
@@ -414,20 +399,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        GenericResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.resource.resources.v2017_05_10.models.GenericResource]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.create_or_update_by_id
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -445,7 +425,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 462
+    startLine: 449
   summary: 'Deletes a resource.
 
     '
@@ -510,19 +490,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.delete
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -540,7 +515,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 801
+    startLine: 774
   summary: 'Deletes a resource by ID.
 
     '
@@ -581,19 +556,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.delete_by_id
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -611,7 +581,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 665
+    startLine: 644
   summary: 'Gets a resource.
 
     '
@@ -682,18 +652,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'GenericResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.resources.v2017_05_10.models.GenericResource or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.get
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -711,7 +675,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 978
+    startLine: 943
   summary: 'Gets a resource by ID.
 
     '
@@ -757,18 +721,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'GenericResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.resources.v2017_05_10.models.GenericResource or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.get_by_id
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -786,7 +744,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 312
+    startLine: 303
   summary: 'Get all the resources in a subscription.
 
     '
@@ -840,11 +798,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
+      description: 'An iterator like instance of GenericResource
 
         '
       type:
-      - azure.mgmt.resource.resources.v2017_05_10.models.GenericResourcePaged
+      - azure.mgmt.resource.resources.v2017_05_10.models.GenericResourcePaged[~azure.mgmt.resource.resources.v2017_05_10.models.GenericResource]
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.list
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -924,11 +882,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.resource.resources.v2017_05_10.models.GenericResource
+      description: 'An iterator like instance of GenericResource
 
         '
       type:
-      - azure.mgmt.resource.resources.v2017_05_10.models.GenericResourcePaged
+      - azure.mgmt.resource.resources.v2017_05_10.models.GenericResourcePaged[~azure.mgmt.resource.resources.v2017_05_10.models.GenericResource]
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.list_by_resource_group
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -946,7 +904,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 121
+    startLine: 120
   summary: 'Moves resources from one resource group to another resource group.
 
 
@@ -979,7 +937,7 @@ items:
         '
       id: resources
       type:
-      - list of str
+      - list[str]
     - defaultValue: None
       description: 'The target resource group.
 
@@ -1004,19 +962,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.move_resources
 - class: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations
@@ -1034,7 +987,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\resources\v2017_05_10\operations\resources_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 215
+    startLine: 210
   summary: 'Validates whether resources can be moved from one resource group to
 
     another resource group.
@@ -1073,7 +1026,7 @@ items:
         '
       id: resources
       type:
-      - list of str
+      - list[str]
     - defaultValue: None
       description: 'The target resource group.
 
@@ -1098,19 +1051,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.resources.v2017_05_10.operations.ResourcesOperations.validate_move_resources
 references:

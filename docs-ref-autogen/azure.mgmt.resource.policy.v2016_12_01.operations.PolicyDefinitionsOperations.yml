@@ -129,18 +129,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'PolicyDefinition or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.create_or_update
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -158,7 +152,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 287
+    startLine: 275
   summary: 'Creates or updates a policy definition at management group level.
 
     '
@@ -209,18 +203,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'PolicyDefinition or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.create_or_update_at_management_group
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -238,7 +226,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 108
+    startLine: 105
   summary: 'Deletes a policy definition.
 
     '
@@ -276,17 +264,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.delete
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -304,7 +287,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 359
+    startLine: 344
   summary: 'Deletes a policy definition at management group level.
 
     '
@@ -349,17 +332,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.delete_at_management_group
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -377,7 +355,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 162
+    startLine: 156
   summary: 'Gets the policy definition.
 
     '
@@ -415,18 +393,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'PolicyDefinition or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.get
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -444,7 +416,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 415
+    startLine: 397
   summary: 'Gets the policy definition at management group level.
 
     '
@@ -489,18 +461,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'PolicyDefinition or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.get_at_management_group
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -518,7 +484,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 225
+    startLine: 216
   summary: 'Gets the built in policy definition.
 
     '
@@ -557,18 +523,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'PolicyDefinition or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.get_built_in
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -586,7 +546,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 480
+    startLine: 459
   summary: 'Gets all the policy definitions for a subscription.
 
     '
@@ -616,11 +576,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      description: 'An iterator like instance of PolicyDefinition
 
         '
       type:
-      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinitionPaged
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinitionPaged[~azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition]
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.list
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -638,7 +598,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 545
+    startLine: 523
   summary: 'Gets all the built in policy definitions.
 
     '
@@ -668,11 +628,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      description: 'An iterator like instance of PolicyDefinition
 
         '
       type:
-      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinitionPaged
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinitionPaged[~azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition]
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.list_built_in
 - class: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations
@@ -690,7 +650,7 @@ items:
       branch: master
       path: azure-mgmt-resource\azure\mgmt\resource\policy\v2016_12_01\operations\policy_definitions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 606
+    startLine: 583
   summary: 'Gets all the policy definitions for a subscription at management group
 
     level.
@@ -729,11 +689,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition
+      description: 'An iterator like instance of PolicyDefinition
 
         '
       type:
-      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinitionPaged
+      - azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinitionPaged[~azure.mgmt.resource.policy.v2016_12_01.models.PolicyDefinition]
   type: method
   uid: azure.mgmt.resource.policy.v2016_12_01.operations.PolicyDefinitionsOperations.list_by_management_group
 references:

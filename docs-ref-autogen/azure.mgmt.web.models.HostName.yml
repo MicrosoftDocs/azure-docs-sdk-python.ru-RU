@@ -42,7 +42,7 @@ items:
         '
       id: site_names
       type:
-      - list of str
+      - list[str]
     - description: 'Name of the Azure resource the hostname is
 
         assigned to. If it is assigned to a Traffic Manager then it will be the
@@ -69,11 +69,8 @@ items:
         '
       id: custom_host_name_dns_record_type
       type:
-      - 'str or
-
-        @azure.mgmt.web.models.CustomHostNameDnsRecordType
-
-        '
+      - str
+      - azure.mgmt.web.models.CustomHostNameDnsRecordType
     - description: 'Type of the hostname. Possible values include:
 
         ''Verified'', ''Managed''

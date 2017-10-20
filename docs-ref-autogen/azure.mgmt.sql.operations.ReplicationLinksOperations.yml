@@ -135,17 +135,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.ReplicationLinksOperations.delete
 - class: azure.mgmt.sql.operations.ReplicationLinksOperations
@@ -163,7 +158,7 @@ items:
       branch: master
       path: azure-mgmt-sql\azure\mgmt\sql\operations\replication_links_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 177
+    startLine: 170
   summary: 'Sets which replica database is primary by failing over from the current
 
     primary replica database.
@@ -220,19 +215,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.ReplicationLinksOperations.failover
 - class: azure.mgmt.sql.operations.ReplicationLinksOperations
@@ -250,7 +240,7 @@ items:
       branch: master
       path: azure-mgmt-sql\azure\mgmt\sql\operations\replication_links_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 267
+    startLine: 256
   summary: 'Sets which replica database is primary by failing over from the current
 
     primary replica database. This operation might result in data loss.
@@ -307,19 +297,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.ReplicationLinksOperations.failover_allow_data_loss
 - class: azure.mgmt.sql.operations.ReplicationLinksOperations
@@ -337,7 +322,7 @@ items:
       branch: master
       path: azure-mgmt-sql\azure\mgmt\sql\operations\replication_links_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 104
+    startLine: 101
   summary: 'Gets a database replication link.
 
     '
@@ -396,17 +381,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.sql.models.ReplicationLink or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'ReplicationLink or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.sql.models.ReplicationLink or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.sql.models.ReplicationLink
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.ReplicationLinksOperations.get
 - class: azure.mgmt.sql.operations.ReplicationLinksOperations
@@ -424,7 +404,7 @@ items:
       branch: master
       path: azure-mgmt-sql\azure\mgmt\sql\operations\replication_links_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 357
+    startLine: 342
   summary: 'Lists a database''s replication links.
 
     '
@@ -477,11 +457,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.sql.models.ReplicationLink
+      description: 'An iterator like instance of ReplicationLink
 
         '
       type:
-      - azure.mgmt.sql.models.ReplicationLinkPaged
+      - azure.mgmt.sql.models.ReplicationLinkPaged[~azure.mgmt.sql.models.ReplicationLink]
   type: method
   uid: azure.mgmt.sql.operations.ReplicationLinksOperations.list_by_database
 references:

@@ -34,7 +34,7 @@ items:
         '
       id: advertised_public_prefixes
       type:
-      - list of str
+      - list[str]
     - description: 'AdvertisedPublicPrefixState of
 
         the Peering resource. Possible values are ''NotConfigured'', ''Configuring'',
@@ -46,11 +46,8 @@ items:
         '
       id: advertised_public_prefixes_state
       type:
-      - 'str or
-
-        @azure.mgmt.network.v2016_09_01.models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState
-
-        '
+      - str
+      - azure.mgmt.network.v2016_09_01.models.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState
     - description: 'The CustomerASN of the peering.
 
         '

@@ -150,17 +150,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.sql.models.DataMaskingPolicy or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'DataMaskingPolicy or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.sql.models.DataMaskingPolicy or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.sql.models.DataMaskingPolicy
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.DataMaskingPoliciesOperations.create_or_update
 - class: azure.mgmt.sql.operations.DataMaskingPoliciesOperations
@@ -178,7 +173,7 @@ items:
       branch: master
       path: azure-mgmt-sql\azure\mgmt\sql\operations\data_masking_policies_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 126
+    startLine: 122
   summary: 'Gets a database data masking policy.
 
     '
@@ -231,17 +226,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.sql.models.DataMaskingPolicy or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'DataMaskingPolicy or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.sql.models.DataMaskingPolicy or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.sql.models.DataMaskingPolicy
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.DataMaskingPoliciesOperations.get
 references:

@@ -136,7 +136,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 245
+    startLine: 240
   summary: 'Create or update an App Service Environment.
 
 
@@ -186,20 +186,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.web.models.AppServiceEnvironmentResource
-        or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        AppServiceEnvironmentResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.AppServiceEnvironmentResource]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.create_or_update
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -217,7 +212,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1016
+    startLine: 980
   summary: 'Create or update a multi-role pool.
 
 
@@ -265,19 +260,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.web.models.WorkerPoolResource or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        WorkerPoolResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.WorkerPoolResource]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.create_or_update_multi_role_pool
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -295,7 +286,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2250
+    startLine: 2225
   summary: 'Create or update a worker pool.
 
 
@@ -349,19 +340,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.web.models.WorkerPoolResource or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        WorkerPoolResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.WorkerPoolResource]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.create_or_update_worker_pool
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -379,7 +366,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 347
+    startLine: 337
   summary: 'Delete an App Service Environment.
 
 
@@ -432,19 +419,14 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns None or
 
-        instance that returns None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
-
-        or @msrest.pipeline.ClientRawResponse'
+      - msrestazure.azure_operation.AzureOperationPoller[None]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.delete
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -462,7 +444,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 177
+    startLine: 175
   summary: 'Get the properties of an App Service Environment.
 
 
@@ -509,17 +491,14 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.AppServiceEnvironmentResource or
-
-        @msrest.pipeline.ClientRawResponse if
+      description: 'AppServiceEnvironmentResource or ClientRawResponse if
 
         raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.AppServiceEnvironmentResource or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.AppServiceEnvironmentResource
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.get
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -537,7 +516,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 648
+    startLine: 625
   summary: 'Get a diagnostics item for an App Service Environment.
 
 
@@ -591,17 +570,14 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.HostingEnvironmentDiagnostics or
-
-        @msrest.pipeline.ClientRawResponse if
+      description: 'HostingEnvironmentDiagnostics or ClientRawResponse if
 
         raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.HostingEnvironmentDiagnostics or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.HostingEnvironmentDiagnostics
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.get_diagnostics_item
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -619,7 +595,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 948
+    startLine: 916
   summary: 'Get properties of a multi-role pool.
 
 
@@ -667,17 +643,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.WorkerPoolResource or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'WorkerPoolResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.WorkerPoolResource or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.WorkerPoolResource
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.get_multi_role_pool
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -695,7 +666,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2179
+    startLine: 2158
   summary: 'Get properties of a worker pool.
 
 
@@ -749,17 +720,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.WorkerPoolResource or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'WorkerPoolResource or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.WorkerPoolResource or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.WorkerPoolResource
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.get_worker_pool
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -810,11 +776,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.AppServiceEnvironment
+      description: 'An iterator like instance of AppServiceEnvironment
 
         '
       type:
-      - azure.mgmt.web.models.AppServiceEnvironmentPaged
+      - azure.mgmt.web.models.AppServiceEnvironmentPaged[~azure.mgmt.web.models.AppServiceEnvironment]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -832,7 +798,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1798
+    startLine: 1765
   summary: 'Get all App Service plans in an App Service Environment.
 
 
@@ -880,11 +846,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.AppServicePlan
+      description: 'An iterator like instance of AppServicePlan
 
         '
       type:
-      - azure.mgmt.web.models.AppServicePlanPaged
+      - azure.mgmt.web.models.AppServicePlanPaged[~azure.mgmt.web.models.AppServicePlan]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_app_service_plans
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -902,7 +868,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 106
+    startLine: 105
   summary: 'Get all App Service Environments in a resource group.
 
 
@@ -944,11 +910,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.AppServiceEnvironment
+      description: 'An iterator like instance of AppServiceEnvironment
 
         '
       type:
-      - azure.mgmt.web.models.AppServiceEnvironmentPaged
+      - azure.mgmt.web.models.AppServiceEnvironmentPaged[~azure.mgmt.web.models.AppServiceEnvironment]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_by_resource_group
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -966,7 +932,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 436
+    startLine: 422
   summary: 'Get the used, available, and total worker capacity an App Service
 
     Environment.
@@ -1018,11 +984,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.StampCapacity
+      description: 'An iterator like instance of StampCapacity
 
         '
       type:
-      - azure.mgmt.web.models.StampCapacityPaged
+      - azure.mgmt.web.models.StampCapacityPaged[~azure.mgmt.web.models.StampCapacity]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_capacities
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1040,7 +1006,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 580
+    startLine: 561
   summary: 'Get diagnostic information for an App Service Environment.
 
 
@@ -1088,17 +1054,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.HostingEnvironmentDiagnostics or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.HostingEnvironmentDiagnostics or
-
-        @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.HostingEnvironmentDiagnostics]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_diagnostics
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1116,7 +1077,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 719
+    startLine: 693
   summary: 'Get global metric definitions of an App Service Environment.
 
 
@@ -1164,17 +1125,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.MetricDefinition or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'MetricDefinition or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.MetricDefinition or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.MetricDefinition
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_metric_definitions
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1192,7 +1148,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 787
+    startLine: 757
   summary: 'Get global metrics of an App Service Environment.
 
 
@@ -1264,11 +1220,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetric
+      description: 'An iterator like instance of ResourceMetric
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricPaged
+      - azure.mgmt.web.models.ResourceMetricPaged[~azure.mgmt.web.models.ResourceMetric]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_metrics
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1286,7 +1242,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1279
+    startLine: 1237
   summary: 'Get metric definitions for a multi-role pool of an App Service
 
     Environment.
@@ -1338,11 +1294,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetricDefinition
+      description: 'An iterator like instance of ResourceMetricDefinition
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricDefinitionPaged
+      - azure.mgmt.web.models.ResourceMetricDefinitionPaged[~azure.mgmt.web.models.ResourceMetricDefinition]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_metric_definitions
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1360,7 +1316,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1355
+    startLine: 1312
   summary: 'Get metrics for a multi-role pool of an App Service Environment.
 
 
@@ -1454,11 +1410,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetric
+      description: 'An iterator like instance of ResourceMetric
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricPaged
+      - azure.mgmt.web.models.ResourceMetricPaged[~azure.mgmt.web.models.ResourceMetric]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_metrics
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1476,7 +1432,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1116
+    startLine: 1076
   summary: 'Get metric definitions for a specific instance of a multi-role pool of
 
     an App Service Environment.
@@ -1534,11 +1490,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetricDefinition
+      description: 'An iterator like instance of ResourceMetricDefinition
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricDefinitionPaged
+      - azure.mgmt.web.models.ResourceMetricDefinitionPaged[~azure.mgmt.web.models.ResourceMetricDefinition]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_pool_instance_metric_definitions
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1556,7 +1512,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1195
+    startLine: 1154
   summary: 'Get metrics for a specific instance of a multi-role pool of an App
 
     Service Environment.
@@ -1623,11 +1579,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetric
+      description: 'An iterator like instance of ResourceMetric
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricPaged
+      - azure.mgmt.web.models.ResourceMetricPaged[~azure.mgmt.web.models.ResourceMetric]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_pool_instance_metrics
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1645,7 +1601,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1454
+    startLine: 1410
   summary: 'Get available SKUs for scaling a multi-role pool.
 
 
@@ -1693,11 +1649,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.SkuInfo
+      description: 'An iterator like instance of SkuInfo
 
         '
       type:
-      - azure.mgmt.web.models.SkuInfoPaged
+      - azure.mgmt.web.models.SkuInfoPaged[~azure.mgmt.web.models.SkuInfo]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_pool_skus
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1715,7 +1671,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 874
+    startLine: 843
   summary: 'Get all multi-role pools.
 
 
@@ -1763,11 +1719,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.WorkerPoolResource
+      description: 'An iterator like instance of WorkerPoolResource
 
         '
       type:
-      - azure.mgmt.web.models.WorkerPoolResourcePaged
+      - azure.mgmt.web.models.WorkerPoolResourcePaged[~azure.mgmt.web.models.WorkerPoolResource]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_pools
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1785,7 +1741,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1527
+    startLine: 1483
   summary: 'Get usage metrics for a multi-role pool of an App Service Environment.
 
 
@@ -1833,11 +1789,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Usage
+      description: 'An iterator like instance of Usage
 
         '
       type:
-      - azure.mgmt.web.models.UsagePaged
+      - azure.mgmt.web.models.UsagePaged[~azure.mgmt.web.models.Usage]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_multi_role_usages
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1855,7 +1811,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1600
+    startLine: 1556
   summary: 'List all currently running operations on the App Service Environment.
 
 
@@ -1903,17 +1859,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.Operation
-
-        or @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.Operation
-
-        or @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.Operation]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_operations
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -1931,7 +1882,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2023
+    startLine: 2004
   summary: 'Get global usage metrics of an App Service Environment.
 
 
@@ -1994,11 +1945,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.CsmUsageQuota
+      description: 'An iterator like instance of CsmUsageQuota
 
         '
       type:
-      - azure.mgmt.web.models.CsmUsageQuotaPaged
+      - azure.mgmt.web.models.CsmUsageQuotaPaged[~azure.mgmt.web.models.CsmUsageQuota]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_usages
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2016,7 +1967,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 512
+    startLine: 497
   summary: 'Get IP addresses assigned to an App Service Environment.
 
 
@@ -2064,17 +2015,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.AddressResponse or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'AddressResponse or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.AddressResponse or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.AddressResponse
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_vips
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2092,7 +2038,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1872
+    startLine: 1838
   summary: 'Get all apps in an App Service Environment.
 
 
@@ -2149,11 +2095,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Site
+      description: 'An iterator like instance of Site
 
         '
       type:
-      - azure.mgmt.web.models.SitePaged
+      - azure.mgmt.web.models.SitePaged[~azure.mgmt.web.models.Site]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_web_apps
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2171,7 +2117,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2530
+    startLine: 2498
   summary: 'Get metric definitions for a worker pool of an App Service Environment.
 
 
@@ -2225,11 +2171,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetricDefinition
+      description: 'An iterator like instance of ResourceMetricDefinition
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricDefinitionPaged
+      - azure.mgmt.web.models.ResourceMetricDefinitionPaged[~azure.mgmt.web.models.ResourceMetricDefinition]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_web_worker_metric_definitions
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2247,7 +2193,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2607
+    startLine: 2574
   summary: 'Get metrics for a worker pool of a AppServiceEnvironment (App Service
 
     Environment).
@@ -2329,11 +2275,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetric
+      description: 'An iterator like instance of ResourceMetric
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricPaged
+      - azure.mgmt.web.models.ResourceMetricPaged[~azure.mgmt.web.models.ResourceMetric]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_web_worker_metrics
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2351,7 +2297,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2775
+    startLine: 2741
   summary: 'Get usage metrics for a worker pool of an App Service Environment.
 
 
@@ -2405,11 +2351,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Usage
+      description: 'An iterator like instance of Usage
 
         '
       type:
-      - azure.mgmt.web.models.UsagePaged
+      - azure.mgmt.web.models.UsagePaged[~azure.mgmt.web.models.Usage]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_web_worker_usages
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2427,7 +2373,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2353
+    startLine: 2323
   summary: 'Get metric definitions for a specific instance of a worker pool of an
 
     App Service Environment.
@@ -2491,11 +2437,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetricDefinition
+      description: 'An iterator like instance of ResourceMetricDefinition
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricDefinitionPaged
+      - azure.mgmt.web.models.ResourceMetricDefinitionPaged[~azure.mgmt.web.models.ResourceMetricDefinition]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_worker_pool_instance_metric_definitions
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2513,7 +2459,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2435
+    startLine: 2404
   summary: 'Get metrics for a specific instance of a worker pool of an App Service
 
     Environment.
@@ -2601,11 +2547,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetric
+      description: 'An iterator like instance of ResourceMetric
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricPaged
+      - azure.mgmt.web.models.ResourceMetricPaged[~azure.mgmt.web.models.ResourceMetric]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_worker_pool_instance_metrics
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2623,7 +2569,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2699
+    startLine: 2665
   summary: 'Get available SKUs for scaling a worker pool.
 
 
@@ -2677,11 +2623,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.SkuInfo
+      description: 'An iterator like instance of SkuInfo
 
         '
       type:
-      - azure.mgmt.web.models.SkuInfoPaged
+      - azure.mgmt.web.models.SkuInfoPaged[~azure.mgmt.web.models.SkuInfo]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_worker_pool_skus
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2699,7 +2645,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 2105
+    startLine: 2085
   summary: 'Get all worker pools of an App Service Environment.
 
 
@@ -2747,11 +2693,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.WorkerPoolResource
+      description: 'An iterator like instance of WorkerPoolResource
 
         '
       type:
-      - azure.mgmt.web.models.WorkerPoolResourcePaged
+      - azure.mgmt.web.models.WorkerPoolResourcePaged[~azure.mgmt.web.models.WorkerPoolResource]
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.list_worker_pools
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2769,7 +2715,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1666
+    startLine: 1620
   summary: 'Reboot all machines in an App Service Environment.
 
 
@@ -2816,17 +2762,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.reboot
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2844,7 +2785,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1725
+    startLine: 1676
   summary: 'Resume an App Service Environment.
 
 
@@ -2884,18 +2825,16 @@ items:
       id: raw
       type:
       - bool
-    - description: '*Operation configuration
-
-        overrides*.
-
-        '
-      id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Site
+      description: 'An instance of AzureOperationPoller that returns
+
+        WebAppCollection or ClientRawResponse if raw=true
 
         '
       type:
-      - azure.mgmt.web.models.SitePaged
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.WebAppCollection]
+
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.resume
 - class: azure.mgmt.web.operations.AppServiceEnvironmentsOperations
@@ -2913,7 +2852,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_environments_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1950
+    startLine: 1915
   summary: 'Suspend an App Service Environment.
 
 
@@ -2953,18 +2892,16 @@ items:
       id: raw
       type:
       - bool
-    - description: '*Operation configuration
-
-        overrides*.
-
-        '
-      id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Site
+      description: 'An instance of AzureOperationPoller that returns
+
+        WebAppCollection or ClientRawResponse if raw=true
 
         '
       type:
-      - azure.mgmt.web.models.SitePaged
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.WebAppCollection]
+
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServiceEnvironmentsOperations.suspend
 references:

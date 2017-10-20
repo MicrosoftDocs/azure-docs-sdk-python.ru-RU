@@ -116,7 +116,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 251
+    startLine: 246
   summary: 'Creates or updates an App Service Plan.
 
 
@@ -164,19 +164,15 @@ items:
       type:
       - bool
     return:
-      description: '@msrestazure.azure_operation.AzureOperationPoller
+      description: 'An instance of AzureOperationPoller that returns
 
-        instance that returns @azure.mgmt.web.models.AppServicePlan or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+        AppServicePlan or ClientRawResponse if raw=true
 
         '
       type:
-      - 'msrestazure.azure_operation.AzureOperationPoller
+      - 'msrestazure.azure_operation.AzureOperationPoller[~azure.mgmt.web.models.AppServicePlan]
 
-        or @msrest.pipeline.ClientRawResponse'
+        or ~msrest.pipeline.ClientRawResponse'
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.create_or_update
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -194,7 +190,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1661
+    startLine: 1610
   summary: 'Create or update a Virtual Network route in an App Service plan.
 
 
@@ -260,17 +256,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.VnetRoute or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'VnetRoute or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.VnetRoute or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.VnetRoute
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.create_or_update_vnet_route
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -288,7 +279,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 351
+    startLine: 341
   summary: 'Delete an App Service plan.
 
 
@@ -335,17 +326,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.delete
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -363,7 +349,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 551
+    startLine: 531
   summary: 'Delete a Hybrid Connection in use in an App Service plan.
 
 
@@ -423,17 +409,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.delete_hybrid_connection
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -451,7 +432,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1739
+    startLine: 1686
   summary: 'Delete a Virtual Network route in an App Service plan.
 
 
@@ -511,17 +492,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.delete_vnet_route
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -539,7 +515,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 184
+    startLine: 182
   summary: 'Get an App Service plan.
 
 
@@ -586,17 +562,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.AppServicePlan or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'AppServicePlan or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.AppServicePlan
-
-        or @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.AppServicePlan
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.get
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -614,7 +585,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 477
+    startLine: 461
   summary: 'Retrieve a Hybrid Connection in use in an App Service plan.
 
 
@@ -674,17 +645,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.HybridConnection or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'HybridConnection or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.HybridConnection or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.HybridConnection
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.get_hybrid_connection
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -702,7 +668,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 768
+    startLine: 741
   summary: 'Get the maximum number of Hybrid Connections allowed in an App Service
 
     plan.
@@ -754,17 +720,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.HybridConnectionLimits or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'HybridConnectionLimits or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.HybridConnectionLimits or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.HybridConnectionLimits
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.get_hybrid_connection_plan_limit
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -782,7 +743,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1589
+    startLine: 1540
   summary: 'Get a Virtual Network route in an App Service plan.
 
 
@@ -842,17 +803,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.VnetRoute
-
-        or @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.VnetRoute
-
-        or @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.VnetRoute]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.get_route_for_vnet
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -870,7 +826,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1296
+    startLine: 1256
   summary: 'Get a Virtual Network associated with an App Service plan.
 
 
@@ -924,17 +880,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.VnetInfo or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'VnetInfo or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.VnetInfo or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.VnetInfo
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.get_vnet_from_server_farm
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -952,7 +903,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1365
+    startLine: 1323
   summary: 'Get a Virtual Network gateway.
 
 
@@ -1014,17 +965,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.VnetGateway or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'VnetGateway or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.VnetGateway or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.VnetGateway
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.get_vnet_gateway
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1088,11 +1034,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.AppServicePlan
+      description: 'An iterator like instance of AppServicePlan
 
         '
       type:
-      - azure.mgmt.web.models.AppServicePlanPaged
+      - azure.mgmt.web.models.AppServicePlanPaged[~azure.mgmt.web.models.AppServicePlan]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1110,7 +1056,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 113
+    startLine: 112
   summary: 'Get all App Service plans in a resource group.
 
 
@@ -1152,11 +1098,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.AppServicePlan
+      description: 'An iterator like instance of AppServicePlan
 
         '
       type:
-      - azure.mgmt.web.models.AppServicePlanPaged
+      - azure.mgmt.web.models.AppServicePlanPaged[~azure.mgmt.web.models.AppServicePlan]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_by_resource_group
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1174,7 +1120,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 410
+    startLine: 397
   summary: 'List all capabilities of an App Service plan.
 
 
@@ -1222,17 +1168,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.Capability or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.Capability
-
-        or @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.Capability]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_capabilities
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1250,7 +1191,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 616
+    startLine: 593
   summary: 'Get the send key name and value of a Hybrid Connection.
 
 
@@ -1310,17 +1251,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.HybridConnectionKey or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'HybridConnectionKey or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.HybridConnectionKey or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.HybridConnectionKey
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_hybrid_connection_keys
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1338,7 +1274,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 838
+    startLine: 807
   summary: 'Retrieve all Hybrid Connections in use in an App Service plan.
 
 
@@ -1386,11 +1322,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.HybridConnection
+      description: 'An iterator like instance of HybridConnection
 
         '
       type:
-      - azure.mgmt.web.models.HybridConnectionPaged
+      - azure.mgmt.web.models.HybridConnectionPaged[~azure.mgmt.web.models.HybridConnection]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_hybrid_connections
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1408,7 +1344,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 912
+    startLine: 880
   summary: 'Get metrics that can be queried for an App Service plan, and their
 
     definitions.
@@ -1460,11 +1396,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetricDefinition
+      description: 'An iterator like instance of ResourceMetricDefinition
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricDefinitionPaged
+      - azure.mgmt.web.models.ResourceMetricDefinitionPaged[~azure.mgmt.web.models.ResourceMetricDefinition]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_metric_defintions
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1482,7 +1418,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 988
+    startLine: 955
   summary: 'Get metrics for an App Serice plan.
 
 
@@ -1554,11 +1490,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.ResourceMetric
+      description: 'An iterator like instance of ResourceMetric
 
         '
       type:
-      - azure.mgmt.web.models.ResourceMetricPaged
+      - azure.mgmt.web.models.ResourceMetricPaged[~azure.mgmt.web.models.ResourceMetric]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_metrics
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1576,7 +1512,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1518
+    startLine: 1471
   summary: 'Get all routes that are associated with a Virtual Network in an App
 
     Service plan.
@@ -1634,17 +1570,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.VnetRoute
-
-        or @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.VnetRoute
-
-        or @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.VnetRoute]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_routes_for_vnet
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1662,7 +1593,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1230
+    startLine: 1192
   summary: 'Get all Virtual Networks associated with an App Service plan.
 
 
@@ -1710,17 +1641,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'list of @azure.mgmt.web.models.VnetInfo or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'list or ClientRawResponse if raw=true
 
         '
       type:
-      - 'list of @azure.mgmt.web.models.VnetInfo or
-
-        @msrest.pipeline.ClientRawResponse'
+      - list[~azure.mgmt.web.models.VnetInfo]
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_vnets
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1738,7 +1664,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1141
+    startLine: 1104
   summary: 'Get all apps associated with an App Service plan.
 
 
@@ -1815,11 +1741,11 @@ items:
         '
       id: operation_config
     return:
-      description: 'An iterator like instance of @azure.mgmt.web.models.Site
+      description: 'An iterator like instance of Site
 
         '
       type:
-      - azure.mgmt.web.models.SitePaged
+      - azure.mgmt.web.models.SitePaged[~azure.mgmt.web.models.Site]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_web_apps
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1837,7 +1763,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 690
+    startLine: 663
   summary: 'Get all apps that use a Hybrid Connection in an App Service Plan.
 
 
@@ -1901,7 +1827,7 @@ items:
 
         '
       type:
-      - azure.mgmt.web.models.StrPaged
+      - azure.mgmt.web.models.StrPaged[str]
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.list_web_apps_by_hybrid_connection
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -1919,7 +1845,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1882
+    startLine: 1824
   summary: 'Reboot a worker machine in an App Service plan.
 
 
@@ -1975,17 +1901,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.reboot_worker
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -2003,7 +1924,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1075
+    startLine: 1041
   summary: 'Restart all apps in an App Service plan.
 
 
@@ -2064,17 +1985,12 @@ items:
         '
       id: operation_config
     return:
-      description: 'None or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'None or ClientRawResponse if raw=true
 
         '
       type:
-      - 'None or
-
-        @msrest.pipeline.ClientRawResponse'
+      - None
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.restart_web_apps
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -2092,7 +2008,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1438
+    startLine: 1394
   summary: 'Update a Virtual Network gateway.
 
 
@@ -2160,17 +2076,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.VnetGateway or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'VnetGateway or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.VnetGateway or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.VnetGateway
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.update_vnet_gateway
 - class: azure.mgmt.web.operations.AppServicePlansOperations
@@ -2188,7 +2099,7 @@ items:
       branch: master
       path: azure-mgmt-web\azure\mgmt\web\operations\app_service_plans_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 1804
+    startLine: 1748
   summary: 'Create or update a Virtual Network route in an App Service plan.
 
 
@@ -2254,17 +2165,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.web.models.VnetRoute or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'VnetRoute or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.web.models.VnetRoute or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.web.models.VnetRoute
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.web.operations.AppServicePlansOperations.update_vnet_route
 references:

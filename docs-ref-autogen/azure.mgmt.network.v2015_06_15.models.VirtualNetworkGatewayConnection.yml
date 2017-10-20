@@ -54,7 +54,7 @@ items:
         '
       id: tags
       type:
-      - dict
+      - dict[str, str]
     - description: 'The authorizationKey.
 
         '
@@ -107,11 +107,8 @@ items:
         '
       id: connection_status
       type:
-      - 'str or
-
-        @azure.mgmt.network.v2015_06_15.models.VirtualNetworkGatewayConnectionStatus
-
-        '
+      - str
+      - azure.mgmt.network.v2015_06_15.models.VirtualNetworkGatewayConnectionStatus
     - description: 'The egress bytes transferred in this
 
         connection.

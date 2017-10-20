@@ -142,17 +142,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.sql.models.TransparentDataEncryption or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'TransparentDataEncryption or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.sql.models.TransparentDataEncryption or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.sql.models.TransparentDataEncryption
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.TransparentDataEncryptionsOperations.create_or_update
 - class: azure.mgmt.sql.operations.TransparentDataEncryptionsOperations
@@ -170,7 +165,7 @@ items:
       branch: master
       path: azure-mgmt-sql\azure\mgmt\sql\operations\transparent_data_encryptions_operations.py
       repo: https://github.com/Azure/azure-sdk-for-python.git
-    startLine: 125
+    startLine: 121
   summary: 'Gets a database''s transparent data encryption configuration.
 
     '
@@ -225,17 +220,12 @@ items:
         '
       id: operation_config
     return:
-      description: '@azure.mgmt.sql.models.TransparentDataEncryption or
-
-        @msrest.pipeline.ClientRawResponse if
-
-        raw=true
+      description: 'TransparentDataEncryption or ClientRawResponse if raw=true
 
         '
       type:
-      - 'azure.mgmt.sql.models.TransparentDataEncryption or
-
-        @msrest.pipeline.ClientRawResponse'
+      - azure.mgmt.sql.models.TransparentDataEncryption
+      - msrest.pipeline.ClientRawResponse
   type: method
   uid: azure.mgmt.sql.operations.TransparentDataEncryptionsOperations.get
 references:
