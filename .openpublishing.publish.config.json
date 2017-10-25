@@ -8,7 +8,7 @@
       "build_output_subfolder": "azure-python-sdk",
       "locale": "ru-RU",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -25,6 +25,8 @@
   "branches_to_filter": [
     "live-sxs"
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-python.ru-ru",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
