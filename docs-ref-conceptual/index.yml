@@ -70,7 +70,7 @@ sections:
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/MachineLearning.svg'
             title: Обработка и анализ данных с помощью Azure Notebook
-            href: 'https://notebooks.azure.com/liwong/libraries/iris1234'
+            href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
   - title: Примеры
     items:
       - type: list
