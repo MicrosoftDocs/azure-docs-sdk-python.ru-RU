@@ -1,0 +1,81 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure для разработчиков Python
+metadata:
+  document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
+  title: 'Azure для разработчиков Python: руководства и справочник по API'
+  description: 'Приступите к разработке приложений в Azure, используя следующие ресурсы, в которых содержатся отличные руководства и эффективные средства для разработчиков Python.'
+  keywords: 'Azure, Python, SDK, API'
+  author: lisawong19
+  ms.author: liwong
+  manager: douge
+  ms.date: 07/20/2017
+  ms.topic: article
+  ms.prod: azure
+  ms.technology: azure
+  ms.devlang: python
+  ms.service: multiple
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Приступите к разработке приложений в Azure, используя следующие ресурсы, в которых содержатся отличные руководства и эффективные средства для разработчиков Python.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+            html: <p>Развертывание веб-приложения в Azure</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Начало работы
+          - href: 'https://azure.microsoft.com/resources/samples/?platform=pythont&view=azure-python'
+            html: <p>Примеры кода Azure на основе Python</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: Примеры кода
+          - href: 'https://docs.microsoft.com/python/azure/python-azure-tools'
+            html: <p>Инструменты для разработчиков</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
+            title: Пакет SDK и средства
+          - href: 'https://docs.microsoft.com/en-us/python/api/overview/azure/?view=azure-python'
+            html: <p>Библиотеки Python</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
+            title: Справочник по API
+  - title: 5-минутные руководства по началу работы
+    items:
+      - type: paragraph
+        text: Сведения о создании приложений Python с помощью служб Azure.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/app-service-web.svg'
+            title: Развертывание веб-приложения в Azure
+            href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
+            title: Подключение приложения к базе данных Azure PostgreSQL
+            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
+            title: Создание веб-приложения с помощью Cosmos DB
+            href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/MachineLearning.svg'
+            title: Обработка и анализ данных с помощью Azure Notebook
+            href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
+  - title: Примеры
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://azure.microsoft.com/resources/samples/container-service-python-manage/">Развертывание контейнера Docker и подключение к нему в кластере Azure</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-python-manage/">Начало работы с пакетом управления для службы хранилища Azure с использованием Python</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/">Примеры кода для управления виртуальными машинами Azure</a>'

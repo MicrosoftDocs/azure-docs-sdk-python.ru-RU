@@ -1,0 +1,35 @@
+- name: Azure для разработчиков Python
+  href: index.yml
+  items:
+    - name: Обзор
+      href: python-sdk-azure-overview.md
+    - name: Средства
+      href: python-azure-tools.md
+    - name: Начало работы с модулями Python
+      href: python-sdk-azure-get-started.md
+    - name: Аутентификация
+      href: python-sdk-azure-authenticate.md
+    - name: Быстрое начало работы
+      items:
+        - name: Веб-приложения
+          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+        - name: База данных PostgreSQL
+          href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+        - name: "Cosmos\_DB"
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
+        - name: Azure Notebook
+          href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
+    - name: Учебники
+      items:
+        - name: Flask + PostgreSQL
+          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-docker-python-postgresql-app'
+    - name: Примеры
+      items:
+        - name: Виртуальные машины
+          href: python-sdk-azure-virtual-machine-samples.md
+        - name: 'веб-приложений:'
+          href: python-sdk-azure-web-apps-samples.md
+        - name: База данных SQL
+          href: python-sdk-azure-sql-database-samples.md
+        - name: Все примеры кода Python
+          href: 'https://azure.microsoft.com/resources/samples/?platform=python'
