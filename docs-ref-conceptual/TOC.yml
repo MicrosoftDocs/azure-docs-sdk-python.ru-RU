@@ -13,8 +13,8 @@
       items:
         - name: Веб-приложения
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
-        - name: База данных PostgreSQL
-          href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+        - name: API распознавания лиц
+          href: 'https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial'
         - name: "Cosmos\_DB"
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
         - name: Azure Notebook
