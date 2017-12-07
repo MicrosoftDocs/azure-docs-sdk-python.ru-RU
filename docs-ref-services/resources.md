@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d8a27bc2b5480b07728a0b3f892f5c3c70c913d9
-ms.sourcegitcommit: 427b44319ae99bf19e167f427e7681b2103dd8e4
+ms.openlocfilehash: d924a8aea18d9b59ec8c78d85dce8fe0ce7c8d6c
+ms.sourcegitcommit: d521a7350216461eb2fa68152c4975f55152f831
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="azure-resources-libraries-for-python"></a>Библиотеки ресурсов Azure для Python
 
@@ -37,7 +37,7 @@ from azure.mgmt.resource import ResourceManagementClient
 LOCATION = 'eastus'
 GROUP_NAME ='sample_resource_group'
 
-resource_client = ResourceManagmentClient(credentials, subscription_id)
+resource_client = ResourceManagementClient(credentials, subscription_id)
 resource_client.resource_groups.create_or_update(GROUP_NAME, {'location': LOCATION})
 ```
 

@@ -11,12 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: 1ee0c110673f908832c1c9e8fd6dac4c90c16e8e
-ms.sourcegitcommit: ce2921d9a6f21d58fdf77cbc843c9b4af0ea796d
+ms.openlocfilehash: 5ce4ef27667d45697200eef67be92c62812b3809
+ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="installation"></a>Установка
 

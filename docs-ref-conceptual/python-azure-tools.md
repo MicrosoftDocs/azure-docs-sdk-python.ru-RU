@@ -3,18 +3,17 @@ title: "Средства для разработчиков Python в Azure | Д�
 description: "Средства интеграции IDE и интерфейсы командной строки для разработчиков Python, работающих со службами Azure."
 author: lisawong19
 manager: douge
-ms.assetid: 
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 06/21/2017
 ms.author: liwong
-ms.openlocfilehash: e09c69284e4001bc01c27a0404a7f5de39c87522
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 35faf0a6b74e4122c22ae0a6304d990dd13df057
+ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="azure-tools-for-python-developers"></a>Средства для разработчиков Python в Azure
 
