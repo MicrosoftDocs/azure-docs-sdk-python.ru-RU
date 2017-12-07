@@ -6,7 +6,7 @@
     - name: Средства
       href: python-azure-tools.md
     - name: Начало работы с модулями Python
-      href: python-sdk-azure-get-started.md
+      href: python-sdk-azure-get-started.yml
     - name: Аутентификация
       href: python-sdk-azure-authenticate.md
     - name: Быстрое начало работы
