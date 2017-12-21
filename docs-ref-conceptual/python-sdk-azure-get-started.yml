@@ -10,11 +10,11 @@ metadata:
   nextTutorialTitle: "Справочник по пакету SDK для Python"
   displayType: two-column
   interactive: azurecli
-  ms.openlocfilehash: 38b8fdd9f83dfd096c8efcac8d73fe254dd35326
-  ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+  ms.openlocfilehash: 103dd9fa8307f8f71eab6d219e8a2dad28ba94f0
+  ms.sourcegitcommit: 932b476b0f0c4c6613a4bdc1b0b96e6ce4ba8fcb
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/05/2017
+  ms.lasthandoff: 12/14/2017
 items:
 - durationInMinutes: 
   content: "В этом руководстве объясняется, как использовать различные библиотеки Azure для Python.  \n"
