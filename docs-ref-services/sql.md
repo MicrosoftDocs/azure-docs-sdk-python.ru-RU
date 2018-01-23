@@ -1,64 +1,77 @@
 ---
 title: "Библиотеки базы данных SQL Azure для Python"
-description: 
-keywords: Azure, Python, SDK, API, SQL, database, pyodbc
+description: "Подключайтесь к базе данных SQL Azure с помощью драйвера ODBC и модуля pyodbc или управляйте экземплярами SQL Azure помощью API управления."
 author: lisawong19
 ms.author: liwong
-manager: douge
-ms.date: 07/11/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
+manager: routlaw
+ms.date: 01/09/2018
+ms.topic: reference
 ms.devlang: python
 ms.service: sql-database
-ms.openlocfilehash: b580c5011412bc77fd8fd55b709a305be07e2316
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: baa0e53a77d18dc93241135b5b0fecff5786114c
+ms.sourcegitcommit: ab96bcebe9d5bfa5f32ec5a61b79bd7483fadcad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="azure-sql-database-libraries-for-python"></a>Библиотеки базы данных SQL Azure для Python
 
 ## <a name="overview"></a>Обзор
 
-Работа с данными, хранящимися в [базе данных SQL Azure](/azure/sql-database/sql-database-technical-overview), в коде Python с помощью драйвера Microsoft ODBC и модуля pyodbc. 
+Работайте с данными, хранящимися в [базе данных SQL Azure](/azure/sql-database/sql-database-technical-overview), в коде Python с помощью модуля pyodbc и [драйвера базы данных ODBC](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers). Просмотрите наше [краткое руководство](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python) по подключению к базе данных SQL Azure и использованию инструкций Transact-SQL для запрашивания данных, а также [пример](https://github.com/mkleehammer/pyodbc/wiki/Getting-started) начала работы с pyodbc.
 
-## <a name="client-odbc-driver-and-pyodbc"></a>Драйвер клиента ODBC и модуль pyodbc
+## <a name="install-odbc-driver-and-pyodbc"></a>Установка драйвера клиента ODBC и модуля pyodbc
 
 ```bash
 pip install pyodbc
 ```
-Дополнительные сведения об установке Python и библиотек обмена данными в базе данных см. [здесь](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries).
+[Дополнительные сведения](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) об установке библиотек Python и библиотек обмена данными в базе данных.
 
-### <a name="example"></a>Пример
+## <a name="connect-and-execute-a-sql-query"></a>Подключение и выполнение SQL-запроса
 
-Подключение к базе данных SQL и выбор всех записей в таблице.
+### <a name="connect-to-a-sql-database"></a>Подключение к базе данных SQL
 
 ```python
-import pyodbc 
+import pyodbc
 
-SERVER = 'YOUR_SERVER_NAME.database.windows.net'
-DATABASE = 'YOUR_DATABASE_NAME'
-USERNAME = 'YOUR_DB_USERNAME'
-PASSWORD = 'YOUR_DB_PASSWORD'
+server = 'your_server.database.windows.net'
+database = 'your_database'
+username = 'your_username'
+password = 'your_password'
+driver= '{ODBC Driver 13 for SQL Server}'
 
-DRIVER= '{ODBC Driver 13 for SQL Server}'
-cnxn = pyodbc.connect('DRIVER=' + DRIVER + ';PORT=1433;SERVER=' + SERVER +
-    ';PORT=1443;DATABASE=' + DATABASE + ';UID=' + USERNAME + ';PWD=' + PASSWORD)
+cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
-selectsql = "SELECT * FROM SALES"  # SALES is an example table name
-cursor.execute(selectsql)
 ```
 
-## <a name="management-api"></a>API управления
+### <a name="execute-a-sql-query"></a>Выполнение SQL-запроса
+
+```python
+cursor.execute("SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName FROM [SalesLT].[ProductCategory] pc JOIN [SalesLT].[Product] p ON pc.productcategoryid = p.productcategoryid")
+row = cursor.fetchone()
+while row:
+    print (str(row[0]) + " " + str(row[1]))
+    row = cursor.fetchone()
+```
+
+> [!div class="nextstepaction"]
+> [Пример pyodbc](https://github.com/mkleehammer/pyodbc/wiki/Getting-started)
+
+## <a name="connecting-to-orms"></a>Подключение к моделям ORM
+
+pyodbc работает и с другими моделями ORM, такими как [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) и [Django](https://github.com/lionheart/django-pyodbc/). 
+
+## <a name="management-apipythonapioverviewazuresqlmanagementlibrary"></a>[API управления](/python/api/overview/azure/sql/managementlibrary)
 
 Создавайте ресурсы базы данных SQL Azure и управляйте ими в своей подписке с помощью API управления. 
 
 ```bash
+pip install azure-common
 pip install azure-mgmt-sql
+pip install azure-mgmt-resource
 ```
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 
 Создайте ресурс базы данных SQL и ограничьте доступ к диапазону IP-адресов с помощью правила брандмауэра.
 
@@ -66,6 +79,13 @@ pip install azure-mgmt-sql
 RESOURCE_GROUP = 'YOUR_RESOURCE_GROUP_NAME'
 LOCATION = 'eastus'  # example Azure availability zone, should match resource group
 SQL_DB = 'YOUR_SQLDB_NAME'
+
+# create resource client
+resource_client = get_client_from_cli_profile(ResourceManagementClient)
+# create resource group
+resource_client.resource_groups.create_or_update(RESOURCE_GROUP, {'location': LOCATION})
+
+sql_client = get_client_from_cli_profile(SqlManagementClient)
 
 # Create a SQL server
 server = sql_client.servers.create_or_update(
@@ -91,12 +111,3 @@ firewall_rule = sql_client.firewall_rules.create_or_update(
 > [!div class="nextstepaction"]
 > [Обзор API-интерфейсов управления](/python/api/overview/azure/sql/managementlibrary)
 
-## <a name="samples"></a>Примеры
-
-* [Создание и администрирование баз данных SQL][1]    
-* [Использование Python для подключения и создания запросов данных][2]   
-
-[1]: https://github.com/Azure-Samples/sql-database-python-manage
-[2]: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python
-
-Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=python&term=SQL) примеров кода для базы данных SQL Azure. 
