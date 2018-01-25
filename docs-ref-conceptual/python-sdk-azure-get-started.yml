@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
+### YamlMime:Tutorial
 title: "Начало работы с разработкой в облаке с помощью библиотек Azure для Python"
 metadata:
   title: "Начало работы с библиотеками Azure для Python"
@@ -10,15 +9,15 @@ metadata:
   nextTutorialTitle: "Справочник по пакету SDK для Python"
   displayType: two-column
   interactive: azurecli
-  ms.openlocfilehash: 103dd9fa8307f8f71eab6d219e8a2dad28ba94f0
-  ms.sourcegitcommit: 932b476b0f0c4c6613a4bdc1b0b96e6ce4ba8fcb
+  ms.openlocfilehash: 23e29f3a4fde678e6b8973f3f7baca0f2afb1cde
+  ms.sourcegitcommit: 5ab15a7214082d16f339a13e4ae7735b3a57a9aa
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/14/2017
+  ms.lasthandoff: 01/18/2018
 items:
-- durationInMinutes: 
+- durationInMinutes: 1
   content: "В этом руководстве объясняется, как использовать различные библиотеки Azure для Python.  \n"
-- title: "Предварительные требования"
+- title: "предварительным требованиям"
   durationInMinutes: 5
   content: "- Учетная запись Azure. Если у вас ее нет, [получите бесплатную пробную версию](https://azure.microsoft.com/free/).\n- [Python](https://www.python.org/downloads/)\n- [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) или [Azure CLI 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).\n"
 - title: "Настройка проверки подлинности"
