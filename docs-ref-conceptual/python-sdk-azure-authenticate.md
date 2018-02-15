@@ -10,24 +10,24 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5c4cf1dee7d9864e809f2797ad49ce78886a6f66
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
+ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="authenticate-with-the-azure-management-libraries-for-python"></a><span data-ttu-id="346b0-104">Проверка подлинности с помощью библиотек управления Azure для Python</span><span class="sxs-lookup"><span data-stu-id="346b0-104">Authenticate with the Azure Management Libraries for Python</span></span>
+# <a name="authenticate-with-the-azure-management-libraries-for-python"></a><span data-ttu-id="24b05-104">Проверка подлинности с помощью библиотек управления Azure для Python</span><span class="sxs-lookup"><span data-stu-id="24b05-104">Authenticate with the Azure Management Libraries for Python</span></span>
 
-<span data-ttu-id="346b0-105">Существует несколько способов проверки подлинности приложения с помощью библиотек управления Azure для Python при создании ресурсов и управления ими.</span><span class="sxs-lookup"><span data-stu-id="346b0-105">Several options are available to authenticate your application with Azure when using the Python management libraries to create and manage resources.</span></span>
+<span data-ttu-id="24b05-105">Существует несколько способов проверки подлинности приложения с помощью библиотек управления Azure для Python при создании ресурсов и управления ими.</span><span class="sxs-lookup"><span data-stu-id="24b05-105">Several options are available to authenticate your application with Azure when using the Python management libraries to create and manage resources.</span></span>
 
-## <a name="mgmt-auth-token"></a><span data-ttu-id="346b0-106">Проверка подлинности с использованием учетных данных токена</span><span class="sxs-lookup"><span data-stu-id="346b0-106">Authenticate with token credentials</span></span>
+## <a name="mgmt-auth-token"></a><span data-ttu-id="24b05-106">Проверка подлинности с использованием учетных данных токена</span><span class="sxs-lookup"><span data-stu-id="24b05-106">Authenticate with token credentials</span></span>
 
-<span data-ttu-id="346b0-107">Учетные данные можно безопасно хранить в файле конфигурации, реестре или Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="346b0-107">Store the credentials securely in a configuration file, the registry, or Azure KeyVault.</span></span>
+<span data-ttu-id="24b05-107">Учетные данные можно безопасно хранить в файле конфигурации, реестре или Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="24b05-107">Store the credentials securely in a configuration file, the registry, or Azure KeyVault.</span></span>
 
-<span data-ttu-id="346b0-108">В следующем примере для проверки подлинности используется [субъект-служба](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json).</span><span class="sxs-lookup"><span data-stu-id="346b0-108">The following example uses a [Service Principal](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json) for authentication.</span></span>
+<span data-ttu-id="24b05-108">В следующем примере для проверки подлинности используется [субъект-служба](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json).</span><span class="sxs-lookup"><span data-stu-id="24b05-108">The following example uses a [Service Principal](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json) for authentication.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="346b0-109">Вы можете создать субъект-службу с помощью Azure CLI 2.0.</span><span class="sxs-lookup"><span data-stu-id="346b0-109">You can create a Service Principal via the Azure CLI 2.0</span></span>
+> <span data-ttu-id="24b05-109">Вы можете создать субъект-службу с помощью Azure CLI 2.0.</span><span class="sxs-lookup"><span data-stu-id="24b05-109">You can create a Service Principal via the Azure CLI 2.0</span></span>
 > ```bash
 > az ad sp create-for-rbac --name "MY-PRINCIPAL-NAME" --password "STRONG-SECRET-PASSWORD"
 > ```
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/05/2017
     )
 ```
 
-> <span data-ttu-id="346b0-110">[Примечание.] Чтобы подключиться к одному из независимых облаков Azure, используйте параметр `cloud_environment`.</span><span class="sxs-lookup"><span data-stu-id="346b0-110">[NOTE!] To connect to one of the Azure sovereign clouds, use the `cloud_environment` parameter.</span></span>
+> <span data-ttu-id="24b05-110">[Примечание.] Чтобы подключиться к одному из независимых облаков Azure, используйте параметр `cloud_environment`.</span><span class="sxs-lookup"><span data-stu-id="24b05-110">[NOTE!] To connect to one of the Azure sovereign clouds, use the `cloud_environment` parameter.</span></span>
 
 ```python
     from azure.common.credentials import ServicePrincipalCredentials
@@ -74,7 +74,7 @@ ms.lasthandoff: 12/05/2017
     )
 ```
 
-<span data-ttu-id="346b0-111">Если требуется более строгий контроль, рекомендуем использовать [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) и программу-оболочку ADAL для SDK.</span><span class="sxs-lookup"><span data-stu-id="346b0-111">If you need more control, it is recommended to use [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) and the SDK ADAL wrapper.</span></span> <span data-ttu-id="346b0-112">Список всех доступных сценариев и примеры см. на веб-сайте ADAL.</span><span class="sxs-lookup"><span data-stu-id="346b0-112">Please refer to the ADAL website for all the available scenarios list and samples.</span></span> <span data-ttu-id="346b0-113">Пример проверки подлинности на основе субъекта-службы:</span><span class="sxs-lookup"><span data-stu-id="346b0-113">For instance for service principal authentication:</span></span>
+<span data-ttu-id="24b05-111">Если требуется более строгий контроль, рекомендуем использовать [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) и программу-оболочку ADAL для SDK.</span><span class="sxs-lookup"><span data-stu-id="24b05-111">If you need more control, it is recommended to use [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) and the SDK ADAL wrapper.</span></span> <span data-ttu-id="24b05-112">Список всех доступных сценариев и примеры см. на веб-сайте ADAL.</span><span class="sxs-lookup"><span data-stu-id="24b05-112">Please refer to the ADAL website for all the available scenarios list and samples.</span></span> <span data-ttu-id="24b05-113">Пример проверки подлинности на основе субъекта-службы:</span><span class="sxs-lookup"><span data-stu-id="24b05-113">For instance for service principal authentication:</span></span>
 
 ```python
     import adal
@@ -102,9 +102,9 @@ ms.lasthandoff: 12/05/2017
     )
 ```
 
-<span data-ttu-id="346b0-114">Все допустимые вызовы ADAL можно использовать с классом `AdalAuthentication`.</span><span class="sxs-lookup"><span data-stu-id="346b0-114">All ADAL valid calls can be used with the `AdalAuthentication` class.</span></span>
+<span data-ttu-id="24b05-114">Все допустимые вызовы ADAL можно использовать с классом `AdalAuthentication`.</span><span class="sxs-lookup"><span data-stu-id="24b05-114">All ADAL valid calls can be used with the `AdalAuthentication` class.</span></span>
 
-<span data-ttu-id="346b0-115">Затем создайте клиентский объект, чтобы приступить к работе с API.</span><span class="sxs-lookup"><span data-stu-id="346b0-115">Next, create a client object to start working with the API:</span></span>
+<span data-ttu-id="24b05-115">Затем создайте клиентский объект, чтобы приступить к работе с API.</span><span class="sxs-lookup"><span data-stu-id="24b05-115">Next, create a client object to start working with the API:</span></span>
 
 ```python
 from azure.mgmt.compute import ComputeManagementClient
@@ -115,28 +115,28 @@ subscription_id = '33333333-3333-3333-3333-333333333333'
 client = ComputeManagementClient(credentials, subscription_id)
 ```
 
-> <span data-ttu-id="346b0-116">[Примечание.] Если используется независимое облако Azure, при создании клиента управления необходимо также указать соответствующий базовый URL-адрес (используя константы в `msrestazure.azure_cloud`).</span><span class="sxs-lookup"><span data-stu-id="346b0-116">[NOTE!] When using an Azure sovereign cloud you must also specify the appropriate base URL (via the constants in `msrestazure.azure_cloud`) when creating the management client.</span></span> <span data-ttu-id="346b0-117">Пример для облака Azure для Китая:</span><span class="sxs-lookup"><span data-stu-id="346b0-117">For example for Azure China Cloud:</span></span>
+> <span data-ttu-id="24b05-116">[Примечание.] Если используется независимое облако Azure, при создании клиента управления необходимо также указать соответствующий базовый URL-адрес (используя константы в `msrestazure.azure_cloud`).</span><span class="sxs-lookup"><span data-stu-id="24b05-116">[NOTE!] When using an Azure sovereign cloud you must also specify the appropriate base URL (via the constants in `msrestazure.azure_cloud`) when creating the management client.</span></span> <span data-ttu-id="24b05-117">Пример для облака Azure для Китая:</span><span class="sxs-lookup"><span data-stu-id="24b05-117">For example for Azure China Cloud:</span></span>
 > ```python
 > client = ComputeManagementClient(credentials, subscription_id,
->     base_url=AZURE_CHINA_CLOUD.endpoints.active_directory_resource_id)
+>     base_url=AZURE_CHINA_CLOUD.endpoints.resource_manager)
 > ```
 
 
-## <a name="mgmt-auth-file"></a><span data-ttu-id="346b0-118">Проверка подлинности на основе файлов</span><span class="sxs-lookup"><span data-stu-id="346b0-118">File based authentication</span></span>
+## <a name="mgmt-auth-file"></a><span data-ttu-id="24b05-118">Проверка подлинности на основе файлов</span><span class="sxs-lookup"><span data-stu-id="24b05-118">File based authentication</span></span>
 
-<span data-ttu-id="346b0-119">Самый простой способ реализовать проверку подлинности — создать JSON-файл, который содержит учетные данные для субъекта-службы Azure.</span><span class="sxs-lookup"><span data-stu-id="346b0-119">The simplest way to authenticate is to create a JSON file that contains credentials for an Azure Service Principal.</span></span> <span data-ttu-id="346b0-120">Вы можете одновременно создать субъект-службу и этот файл с помощью следующей команды интерфейса командной строки:</span><span class="sxs-lookup"><span data-stu-id="346b0-120">You can use the following CLI command to create a new Service Principal and this file at the same time:</span></span>
+<span data-ttu-id="24b05-119">Самый простой способ реализовать проверку подлинности — создать JSON-файл, который содержит учетные данные для субъекта-службы Azure.</span><span class="sxs-lookup"><span data-stu-id="24b05-119">The simplest way to authenticate is to create a JSON file that contains credentials for an Azure Service Principal.</span></span> <span data-ttu-id="24b05-120">Вы можете одновременно создать субъект-службу и этот файл с помощью следующей команды интерфейса командной строки:</span><span class="sxs-lookup"><span data-stu-id="24b05-120">You can use the following CLI command to create a new Service Principal and this file at the same time:</span></span>
 
 ```bash
 az ad sp create-for-rbac --sdk-auth > mycredentials.json
 ```
 
-<span data-ttu-id="346b0-121">Сохраните этот файл в безопасном расположении в вашей системе, доступном для кода.</span><span class="sxs-lookup"><span data-stu-id="346b0-121">Save this file in a secure location on your system where your code can read it.</span></span> <span data-ttu-id="346b0-122">Задайте переменную среды и укажите полный путь к файлу в оболочке:</span><span class="sxs-lookup"><span data-stu-id="346b0-122">Set an environment variable with the full path to the file in your shell:</span></span>
+<span data-ttu-id="24b05-121">Сохраните этот файл в безопасном расположении в вашей системе, доступном для кода.</span><span class="sxs-lookup"><span data-stu-id="24b05-121">Save this file in a secure location on your system where your code can read it.</span></span> <span data-ttu-id="24b05-122">Задайте переменную среды и укажите полный путь к файлу в оболочке:</span><span class="sxs-lookup"><span data-stu-id="24b05-122">Set an environment variable with the full path to the file in your shell:</span></span>
 
 ```bash
 export AZURE_AUTH_LOCATION=~/.azure/azure_credentials.json
 ```
 
-<span data-ttu-id="346b0-123">Если вы хотите создать файл самостоятельно, придерживайтесь следующего формата:</span><span class="sxs-lookup"><span data-stu-id="346b0-123">If you want to create the file yourself, please follow this format:</span></span>
+<span data-ttu-id="24b05-123">Если вы хотите создать файл самостоятельно, придерживайтесь следующего формата:</span><span class="sxs-lookup"><span data-stu-id="24b05-123">If you want to create the file yourself, please follow this format:</span></span>
 
 ```json
 {
@@ -153,7 +153,7 @@ export AZURE_AUTH_LOCATION=~/.azure/azure_credentials.json
 }
 ```
 
-<span data-ttu-id="346b0-124">Затем можно создать любой клиент с помощью фабрики клиента.</span><span class="sxs-lookup"><span data-stu-id="346b0-124">You can then create any client using the client factory:</span></span>
+<span data-ttu-id="24b05-124">Затем можно создать любой клиент с помощью фабрики клиента.</span><span class="sxs-lookup"><span data-stu-id="24b05-124">You can then create any client using the client factory:</span></span>
 ```python
 from azure.common.client_factory import get_client_from_auth_file
 from azure.mgmt.compute import ComputeManagementClient
@@ -161,8 +161,8 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_auth_file(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-msi"></a><span data-ttu-id="346b0-125">Аутентификация на основе удостоверения управляемой службы (MSI)</span><span class="sxs-lookup"><span data-stu-id="346b0-125">Authenticate with Managed Service Identity(MSI)</span></span> 
-<span data-ttu-id="346b0-126">MSI позволяет ресурсу в Azure использовать пакет SDK или CLI без необходимости создать соответствующие учетные данные.</span><span class="sxs-lookup"><span data-stu-id="346b0-126">MSI is a simple way for a resource in Azure to use SDK/CLI without the need to create specific credentials.</span></span>
+## <a name="mgmt-auth-msi"></a><span data-ttu-id="24b05-125">Аутентификация на основе удостоверения управляемой службы (MSI)</span><span class="sxs-lookup"><span data-stu-id="24b05-125">Authenticate with Managed Service Identity(MSI)</span></span> 
+<span data-ttu-id="24b05-126">MSI позволяет ресурсу в Azure использовать пакет SDK или CLI без необходимости создать соответствующие учетные данные.</span><span class="sxs-lookup"><span data-stu-id="24b05-126">MSI is a simple way for a resource in Azure to use SDK/CLI without the need to create specific credentials.</span></span>
 
 ```python
 from msrestazure.azure_active_directory import MSIAuthentication
@@ -187,16 +187,16 @@ from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
 ```
 
-## <a name="mgmt-auth-cli"></a><span data-ttu-id="346b0-127">Проверка подлинности на основе интерфейса командной строки</span><span class="sxs-lookup"><span data-stu-id="346b0-127">CLI-based authentication</span></span>
+## <a name="mgmt-auth-cli"></a><span data-ttu-id="24b05-127">Проверка подлинности на основе интерфейса командной строки</span><span class="sxs-lookup"><span data-stu-id="24b05-127">CLI-based authentication</span></span>
 
-<span data-ttu-id="346b0-128">Пакет SDK позволяет создать клиент, используя активную подписку CLI.</span><span class="sxs-lookup"><span data-stu-id="346b0-128">The SDK is able to create a client using your CLI active subscription.</span></span>
+<span data-ttu-id="24b05-128">Пакет SDK позволяет создать клиент, используя активную подписку CLI.</span><span class="sxs-lookup"><span data-stu-id="24b05-128">The SDK is able to create a client using your CLI active subscription.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="346b0-129">Эти инструкции следует применять в качестве краткого руководства по разработке.</span><span class="sxs-lookup"><span data-stu-id="346b0-129">This should be used as quick start developer experience.</span></span> <span data-ttu-id="346b0-130">В рабочей среде используйте [ADAL](#authenticate-with-token-credentials) или свою систему учетных данных.</span><span class="sxs-lookup"><span data-stu-id="346b0-130">For production purposes, use [ADAL](#authenticate-with-token-credentials) or your own credentials system.</span></span>
-> <span data-ttu-id="346b0-131">Любые изменения конфигурации CLI повлияют на выполнение пакета SDK.</span><span class="sxs-lookup"><span data-stu-id="346b0-131">Any change to your CLI configuration will impact the SDK execution.</span></span>
+> <span data-ttu-id="24b05-129">Эти инструкции следует применять в качестве краткого руководства по разработке.</span><span class="sxs-lookup"><span data-stu-id="24b05-129">This should be used as quick start developer experience.</span></span> <span data-ttu-id="24b05-130">В рабочей среде используйте [ADAL](#authenticate-with-token-credentials) или свою систему учетных данных.</span><span class="sxs-lookup"><span data-stu-id="24b05-130">For production purposes, use [ADAL](#authenticate-with-token-credentials) or your own credentials system.</span></span>
+> <span data-ttu-id="24b05-131">Любые изменения конфигурации CLI повлияют на выполнение пакета SDK.</span><span class="sxs-lookup"><span data-stu-id="24b05-131">Any change to your CLI configuration will impact the SDK execution.</span></span>
 
-<span data-ttu-id="346b0-132">Чтобы указать активные учетные данные, используйте команду [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="346b0-132">To define active credentials, use [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span></span>
-<span data-ttu-id="346b0-133">По умолчанию используется существующий идентификатор подписки, но вы также можете указать его с помощью команды [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="346b0-133">Default subscription ID is either the only one you have, or you can define it using [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli)</span></span>
+<span data-ttu-id="24b05-132">Чтобы указать активные учетные данные, используйте команду [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="24b05-132">To define active credentials, use [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).</span></span>
+<span data-ttu-id="24b05-133">По умолчанию используется существующий идентификатор подписки, но вы также можете указать его с помощью команды [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli).</span><span class="sxs-lookup"><span data-stu-id="24b05-133">Default subscription ID is either the only one you have, or you can define it using [az account](https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli)</span></span>
 
 ```python
 from azure.common.client_factory import get_client_from_cli_profile
@@ -205,11 +205,11 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_cli_profile(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-legacy"></a><span data-ttu-id="346b0-134">Проверка подлинности с использованием учетных данных токена (для прежних версий)</span><span class="sxs-lookup"><span data-stu-id="346b0-134">Authenticate with token credentials (legacy)</span></span>
+## <a name="mgmt-auth-legacy"></a><span data-ttu-id="24b05-134">Проверка подлинности с использованием учетных данных токена (для прежних версий)</span><span class="sxs-lookup"><span data-stu-id="24b05-134">Authenticate with token credentials (legacy)</span></span>
 
-<span data-ttu-id="346b0-135">В предыдущей версии пакета SDK библиотека ADAL не была доступна, и мы указывали класс `UserPassCredentials`.</span><span class="sxs-lookup"><span data-stu-id="346b0-135">In previous version of the SDK, ADAL was not yet available and we provided a `UserPassCredentials` class.</span></span> <span data-ttu-id="346b0-136">Такая проверка подлинности считается устаревшей, и мы не рекомендуем ее применять.</span><span class="sxs-lookup"><span data-stu-id="346b0-136">This is considered deprecated and should not be used anymore.</span></span>
+<span data-ttu-id="24b05-135">В предыдущей версии пакета SDK библиотека ADAL не была доступна, и мы указывали класс `UserPassCredentials`.</span><span class="sxs-lookup"><span data-stu-id="24b05-135">In previous version of the SDK, ADAL was not yet available and we provided a `UserPassCredentials` class.</span></span> <span data-ttu-id="24b05-136">Такая проверка подлинности считается устаревшей, и мы не рекомендуем ее применять.</span><span class="sxs-lookup"><span data-stu-id="24b05-136">This is considered deprecated and should not be used anymore.</span></span>
 
-<span data-ttu-id="346b0-137">В примере ниже показан сценарий с использованием имени пользователя и пароля.</span><span class="sxs-lookup"><span data-stu-id="346b0-137">This sample shows user/password scenario.</span></span> <span data-ttu-id="346b0-138">Такой сценарий не поддерживает двухфакторную проверку подлинности.</span><span class="sxs-lookup"><span data-stu-id="346b0-138">This does not support 2FA.</span></span>
+<span data-ttu-id="24b05-137">В примере ниже показан сценарий с использованием имени пользователя и пароля.</span><span class="sxs-lookup"><span data-stu-id="24b05-137">This sample shows user/password scenario.</span></span> <span data-ttu-id="24b05-138">Такой сценарий не поддерживает двухфакторную проверку подлинности.</span><span class="sxs-lookup"><span data-stu-id="24b05-138">This does not support 2FA.</span></span>
 
 ```python
     from azure.common.credentials import UserPassCredentials
