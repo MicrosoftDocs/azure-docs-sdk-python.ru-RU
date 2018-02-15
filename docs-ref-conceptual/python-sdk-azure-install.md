@@ -12,10 +12,10 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.openlocfilehash: 5ce4ef27667d45697200eef67be92c62812b3809
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.sourcegitcommit: 66e112df9be660354e23955b0adf3efd784ba739
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="installation"></a>Установка
 
