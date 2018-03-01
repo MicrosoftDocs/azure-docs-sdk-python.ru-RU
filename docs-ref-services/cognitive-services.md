@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: c77d54daed3c5ebc2eed73fe531a53522c2372a0
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 0e66e6434a96ca1ab3856e04ac02b17eb7531a55
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="azure-cognitive-services-libraries-for-python"></a><span data-ttu-id="1bcfb-104">Библиотеки Azure Cognitive Services для Python</span><span class="sxs-lookup"><span data-stu-id="1bcfb-104">Azure Cognitive Services libraries for python</span></span>
+# <a name="azure-cognitive-services-libraries-for-python"></a><span data-ttu-id="e6291-104">Библиотеки Azure Cognitive Services для Python</span><span class="sxs-lookup"><span data-stu-id="e6291-104">Azure Cognitive Services libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="1bcfb-105">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="1bcfb-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="e6291-105">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="e6291-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="1bcfb-106">управления</span><span class="sxs-lookup"><span data-stu-id="1bcfb-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="e6291-106">управления</span><span class="sxs-lookup"><span data-stu-id="e6291-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-cognitiveservices
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="1bcfb-107">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="1bcfb-107">Explore the Management APIs</span></span>](/python/api/overview/azure/cognitiveservices/managementlibrary)
+> [<span data-ttu-id="e6291-107">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="e6291-107">Explore the Management APIs</span></span>](/python/api/overview/azure/cognitiveservices/management)

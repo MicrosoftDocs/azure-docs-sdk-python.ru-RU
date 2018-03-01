@@ -11,24 +11,24 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: a50a203a0733f25f2a88d6f4a43c6bddc388d3e7
-ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
+ms.openlocfilehash: 299b50ce8366d0c49ade28dfece98d6696a4f9ef
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="event-grid-libraries-for-python"></a><span data-ttu-id="6e021-103">Библиотеки службы "Сетка событий Azure" для Python</span><span class="sxs-lookup"><span data-stu-id="6e021-103">Event Grid libraries for Python</span></span>
+# <a name="event-grid-libraries-for-python"></a><span data-ttu-id="344ea-103">Библиотеки службы "Сетка событий Azure" для Python</span><span class="sxs-lookup"><span data-stu-id="344ea-103">Event Grid libraries for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="6e021-104">Обзор</span><span class="sxs-lookup"><span data-stu-id="6e021-104">Overview</span></span>
-<span data-ttu-id="6e021-105">"Сетка событий Azure" — это полностью управляемая интеллектуальная служба маршрутизации событий, которая обеспечивает равномерное потребление событий с помощью модели "публикация — подписка".</span><span class="sxs-lookup"><span data-stu-id="6e021-105">Azure Event Grid is a fully-managed intelligent event routing service that allows for uniform event consumption using a publish-subscribe model.</span></span>
+## <a name="overview"></a><span data-ttu-id="344ea-104">Обзор</span><span class="sxs-lookup"><span data-stu-id="344ea-104">Overview</span></span>
+<span data-ttu-id="344ea-105">"Сетка событий Azure" — это полностью управляемая интеллектуальная служба маршрутизации событий, которая обеспечивает равномерное потребление событий с помощью модели "публикация — подписка".</span><span class="sxs-lookup"><span data-stu-id="344ea-105">Azure Event Grid is a fully-managed intelligent event routing service that allows for uniform event consumption using a publish-subscribe model.</span></span>
 
-## <a name="management-api"></a><span data-ttu-id="6e021-106">API управления</span><span class="sxs-lookup"><span data-stu-id="6e021-106">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="344ea-106">API управления</span><span class="sxs-lookup"><span data-stu-id="344ea-106">Management API</span></span>
 ```bash
 pip install azure-mgmt-eventgrid
 ```
 
-### <a name="example"></a><span data-ttu-id="6e021-107">Пример</span><span class="sxs-lookup"><span data-stu-id="6e021-107">Example</span></span>
-<span data-ttu-id="6e021-108">В следующем примере создается пользовательский раздел и подписка на раздел, а затем активируется событие для просмотра результатов.</span><span class="sxs-lookup"><span data-stu-id="6e021-108">The following creates a custom topic, subscribes to the topic, and triggers the event to view the result.</span></span> <span data-ttu-id="6e021-109">RequestBin является сторонним средством с открытым кодом, позволяющим создать конечную точку и просматривать запросы, отправленные на нее.</span><span class="sxs-lookup"><span data-stu-id="6e021-109">RequestBin is an open source, third-party tool that enables you to create an endpoint, and view requests that are sent to it.</span></span> <span data-ttu-id="6e021-110">Последовательно выберите пункты [RequestBin](https://requestb.in/)и щелкните **Создать RequestBin**.</span><span class="sxs-lookup"><span data-stu-id="6e021-110">Go to [RequestBin](https://requestb.in/), and click **Create a RequestBin**.</span></span> <span data-ttu-id="6e021-111">Скопируйте URL-адрес ячейки, так как он понадобится при подписке на тему.</span><span class="sxs-lookup"><span data-stu-id="6e021-111">Copy the bin URL, because you need it when subscribing to the topic.</span></span>
+### <a name="example"></a><span data-ttu-id="344ea-107">Пример</span><span class="sxs-lookup"><span data-stu-id="344ea-107">Example</span></span>
+<span data-ttu-id="344ea-108">В следующем примере создается пользовательский раздел и подписка на раздел, а затем активируется событие для просмотра результатов.</span><span class="sxs-lookup"><span data-stu-id="344ea-108">The following creates a custom topic, subscribes to the topic, and triggers the event to view the result.</span></span> <span data-ttu-id="344ea-109">RequestBin является сторонним средством с открытым кодом, позволяющим создать конечную точку и просматривать запросы, отправленные на нее.</span><span class="sxs-lookup"><span data-stu-id="344ea-109">RequestBin is an open source, third-party tool that enables you to create an endpoint, and view requests that are sent to it.</span></span> <span data-ttu-id="344ea-110">Последовательно выберите пункты [RequestBin](https://requestb.in/)и щелкните **Создать RequestBin**.</span><span class="sxs-lookup"><span data-stu-id="344ea-110">Go to [RequestBin](https://requestb.in/), and click **Create a RequestBin**.</span></span> <span data-ttu-id="344ea-111">Скопируйте URL-адрес ячейки, так как он понадобится при подписке на тему.</span><span class="sxs-lookup"><span data-stu-id="344ea-111">Copy the bin URL, because you need it when subscribing to the topic.</span></span>
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient
@@ -77,13 +77,13 @@ r = requests.post(url, data=s, headers=headers)
 print(r.status_code)
 print(r.content)
 ```
-<span data-ttu-id="6e021-112">Перейдите по URL-адресу RequestBin, созданному ранее, чтобы увидеть отправленное событие.</span><span class="sxs-lookup"><span data-stu-id="6e021-112">Browse to the RequestBin URL created earlier to see the event just sent.</span></span>
+<span data-ttu-id="344ea-112">Перейдите по URL-адресу RequestBin, созданному ранее, чтобы увидеть отправленное событие.</span><span class="sxs-lookup"><span data-stu-id="344ea-112">Browse to the RequestBin URL created earlier to see the event just sent.</span></span>
 
-<span data-ttu-id="6e021-113">Очистка ресурсов</span><span class="sxs-lookup"><span data-stu-id="6e021-113">Clean up resources</span></span>
+<span data-ttu-id="344ea-113">Очистка ресурсов</span><span class="sxs-lookup"><span data-stu-id="344ea-113">Clean up resources</span></span>
 ```azurecli-interactive
 az group delete --name gridResourceGroup
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="6e021-114">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="6e021-114">Explore the Management APIs</span></span>](/python/api/overview/azure/eventgrid/managementlibrary)
+> [<span data-ttu-id="344ea-114">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="344ea-114">Explore the Management APIs</span></span>](/python/api/overview/azure/eventgrid/management)
 
