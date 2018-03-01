@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 7d6b4c9ae7a71e46577cadbb480ff60b66741c0a
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: c1ea5624d7a88b1fd37d8aed64fdd1a8973fed26
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-traffic-manager-libraries-for-python"></a>Библиотеки диспетчера трафика Azure для Python
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 08/18/2017
 pip install azure-mgmt-trafficmanager
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/trafficmanager/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/trafficmanager/management)

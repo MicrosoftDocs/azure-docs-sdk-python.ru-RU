@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: cfa9e6012a0981d0fbdb8087d7233be5243897bc
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 0f3f0b747be7a66e763daa2ebf4bf73881536f56
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-event-hubs-libraries-for-python"></a>Библиотеки концентраторов событий Azure для Python
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 08/18/2017
 pip install azure-mgmt-eventhub
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/eventhub/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/eventhub/management)

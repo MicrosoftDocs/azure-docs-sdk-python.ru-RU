@@ -9,11 +9,11 @@ ms.date: 06/26/2017
 ms.topic: article
 ms.devlang: python
 ms.service: redis
-ms.openlocfilehash: 3ba8d972e91fad229c1489800edeca08760254e6
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: c2f8ebcbcbd7b71c1fa96e46a8148a3c0b88877f
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-redis-cache-libraries-for-python"></a>Библиотеки кэша Redis для Azure для Python
 
@@ -60,5 +60,5 @@ redis_cache = redis_client.redis.create_or_update(
 ```
 
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/redis/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/redis/management)
 

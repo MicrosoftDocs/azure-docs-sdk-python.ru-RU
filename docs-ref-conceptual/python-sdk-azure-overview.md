@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: e0c7b4acd1aa57d141f4407c0ba483a1529d2b35
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-libraries-for-python"></a>Библиотеки Azure для Python
 
@@ -45,7 +45,7 @@ server = sql_client.servers.create_or_update(
 )
 ```
 
-Полный список библиотек и рекомендации по их импорту в проекты см. в [инструкциях по установке](/azure/python-how-to-install). А сведения по настройке проверки подлинности и выполнению примера кода в подписке Azure см. в [статье по началу работы](python-sdk-azure-get-started.yml).
+Полный список библиотек и рекомендации по их импорту в проекты см. в [инструкциях по установке](python-sdk-azure-install.md). А сведения по настройке проверки подлинности и выполнению примера кода в подписке Azure см. в [статье по началу работы](python-sdk-azure-get-started.yml).
 
 ## <a name="connect-to-azure-services"></a>Подключение к службам Azure
 

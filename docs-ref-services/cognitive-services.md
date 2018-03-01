@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: c77d54daed3c5ebc2eed73fe531a53522c2372a0
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 0e66e6434a96ca1ab3856e04ac02b17eb7531a55
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cognitive-services-libraries-for-python"></a>Библиотеки Azure Cognitive Services для Python
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 08/18/2017
 pip install azure-mgmt-cognitiveservices
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/cognitiveservices/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/cognitiveservices/management)

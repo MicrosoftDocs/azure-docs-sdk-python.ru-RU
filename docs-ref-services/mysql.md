@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: mysql
-ms.openlocfilehash: 2ea2ed06d4532f9c9366257e049856dcef73385e
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: f03134bfddfabc426cbcaf4d98ef86d14038861f
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-mysql-libraries-for-python"></a>Библиотеки Azure MySQL для Python 
 
@@ -105,4 +105,4 @@ firewall_rule = rule_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/mysql/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/mysql/management)

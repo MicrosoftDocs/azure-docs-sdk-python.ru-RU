@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: appservice
-ms.openlocfilehash: 05f6ad173f4ec051654b5eb2a986b2c2a93cc33a
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 8e8dd78cbc2d5887308361a47a9571ce242aee6e
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-web-apps-libraries-for-python"></a>Библиотеки веб-приложений Azure для Python
 
@@ -67,7 +67,7 @@ source_control_async_operation = web_client.web_apps.create_or_update_source_con
 )
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/webapps/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/webapps/management)
 
 ## <a name="samples"></a>Примеры 
 

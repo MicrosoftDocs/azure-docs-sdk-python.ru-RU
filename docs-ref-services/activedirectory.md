@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: active-directory
-ms.openlocfilehash: 41234fd44fa98c1ff57287193b0437b7caca46c8
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 78df70001dd0d55ac2c9c9da04fac6a51c5919e6
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-active-directory-libraries-for-python"></a>Библиотеки Azure Active Directory для Python
 
@@ -81,6 +81,6 @@ graphrbac_client.users.delete(user.object_id)
 ```
 
 > [!div class="nextstepaction"]
-> [Обзор клиентских API-интерфейсов](/python/api/overview/azure/activedirectory/clientlibrary?)
+> [Обзор клиентских API-интерфейсов](/python/api/overview/azure/activedirectory/client)
 
 Ознакомьтесь с другими [примерами кода Python для Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=python), которые можно использовать в приложениях.

@@ -8,11 +8,11 @@ ms.date: 01/09/2018
 ms.topic: reference
 ms.devlang: python
 ms.service: sql-database
-ms.openlocfilehash: baa0e53a77d18dc93241135b5b0fecff5786114c
-ms.sourcegitcommit: ab96bcebe9d5bfa5f32ec5a61b79bd7483fadcad
+ms.openlocfilehash: 6c442a7a1e639938c993e8c1e6f74bc5e0a730b7
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-sql-database-libraries-for-python"></a>Библиотеки базы данных SQL Azure для Python
 
@@ -61,7 +61,7 @@ while row:
 
 pyodbc работает и с другими моделями ORM, такими как [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) и [Django](https://github.com/lionheart/django-pyodbc/). 
 
-## <a name="management-apipythonapioverviewazuresqlmanagementlibrary"></a>[API управления](/python/api/overview/azure/sql/managementlibrary)
+## <a name="management-apipythonapioverviewazuresqlmanagement"></a>[API управления](/python/api/overview/azure/sql/management)
 
 Создавайте ресурсы базы данных SQL Azure и управляйте ими в своей подписке с помощью API управления. 
 
@@ -109,5 +109,5 @@ firewall_rule = sql_client.firewall_rules.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/sql/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/sql/management)
 

@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 71e9e7e928b803b21c3c28119920ad25934082c9
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 14978d119babd02f10c627206a4850dfc2e54f6c
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-media-services-libraries-for-python"></a>Библиотеки служб мультимедиа Azure для Python
 
@@ -28,4 +28,4 @@ ms.lasthandoff: 08/18/2017
 pip install azure-mgmt-media
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/mediaservices/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/mediaservices/management)

@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: f954499888cbc3dfe4793a3e769b85ceb5de71d2
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-batch-libraries-for-python"></a>Библиотеки пакетной службы Azure для Python
 
@@ -64,7 +64,7 @@ client.pool.add(new_pool)
 pip install azure-mgmt-batch
 ```
 > [!div class="nextstepaction"]
-> [Обзор клиентских API-интерфейсов](/python/api/overview/azure/batch/clientlibrary)
+> [Обзор клиентских API-интерфейсов](/python/api/overview/azure/batch/client)
 
 ### <a name="example"></a>Пример
 Создайте учетную запись пакетной службы Azure и настройте новое приложение и учетную запись хранения Azure для него.
@@ -105,4 +105,4 @@ creating.wait()
 ```
 
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/overview/azure/batch/managementlibrary)
+> [Обзор API-интерфейсов управления](/python/api/overview/azure/batch/management)
