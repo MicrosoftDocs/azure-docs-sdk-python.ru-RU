@@ -4,7 +4,7 @@
     - name: Обзор
       href: python-sdk-azure-overview.md
     - name: Установка
-      href: /azure/python-how-to-install
+      href: python-sdk-azure-install.md
     - name: Средства
       href: python-azure-tools.md
     - name: Начало работы с модулями Python
@@ -35,3 +35,5 @@
           href: python-sdk-azure-sql-database-samples.md
         - name: Все примеры кода Python
           href: 'https://azure.microsoft.com/resources/samples/?platform=python'
+    - name: Многооблачные решения
+      href: python-sdk-azure-multi-cloud.md
