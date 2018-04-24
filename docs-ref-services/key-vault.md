@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure Key Vault для Python"
-description: "Справочная документация по клиентским библиотекам Azure Key Vault для Python"
+title: Библиотеки Azure Key Vault для Python
+description: Справочная документация по клиентским библиотекам Azure Key Vault для Python
 author: lisawong19
 keywords: Azure, Python, SDK, API, Keys, Key Vault, Authentication, Secret, key, security
 manager: douge
@@ -9,11 +9,11 @@ ms.date: 07/18/2017
 ms.topic: article
 ms.devlang: python
 ms.service: keyvault
-ms.openlocfilehash: 6f0f1012839dad21fb8140dbbdf0f883d2877317
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 1ac9cc92a4c830a8c156117d3e0d188b8032f29a
+ms.sourcegitcommit: 42d868d89eb28a6fdceffccfa03e3209a755b812
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="azure-key-vault-libraries-for-python"></a>Библиотеки Azure Key Vault для Python
 
@@ -28,11 +28,13 @@ ms.lasthandoff: 02/23/2018
 ## <a name="install-the-libraries"></a>Установка библиотек
 
 ### <a name="client-library"></a>Клиентская библиотека
+
 ```bash
 pip install azure-keyvault
 ```
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
 Получите [веб-ключ JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) из Key Vault.
 
 ```python
@@ -41,25 +43,52 @@ from azure.common.credentials import ServicePrincipalCredentials
 
 credentials = None
 
-def auth_callack(server, resource, scope):
-    credentials = credentials or ServicePrincipalCredentials(
+def auth_callback(server, resource, scope):
+    credentials = ServicePrincipalCredentials(
         client_id = '', #client id
         secret = '',
         tenant = '',
-        resource = resource
+        resource = "https://vault.azure.net"
     )
     token = credentials.token
     return token['token_type'], token['access_token']
 
-client = KeyVaultClient(KeyVaultAuthentication(auth_callack))
+client = KeyVaultClient(KeyVaultAuthentication(auth_callback))
 
 key_bundle = client.get_key(vault_url, key_name, key_version)
 json_key = key_bundle.key
 ```
+
+Аналогичным образом можно использовать следующий фрагмент кода, чтобы извлечь секрет из хранилища:
+
+```
+from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
+from azure.common.credentials import ServicePrincipalCredentials
+
+credentials = None
+
+def auth_callback(server, resource, scope):
+    credentials = ServicePrincipalCredentials(
+        client_id = '',
+        secret = '',
+        tenant = '',
+        resource = "https://vault.azure.net"
+    )
+    token = credentials.token
+    return token['token_type'], token['access_token']
+
+client = KeyVaultClient(KeyVaultAuthentication(auth_callback))
+
+secret_bundle = client.get_secret("https://VAULT_ID.vault.azure.net/", "SECRET_ID", "SECRET_VERSION")
+
+print(secret_bundle.value)
+```
+
 [!div class="nextstepaction"]
 [Обзор клиентских API-интерфейсов](/python/api/overview/azure/keyvault/client)
 
 ### <a name="management-api"></a>API управления
+
 ```bash
 pip install azure-mgmt-keyvault
 ```
