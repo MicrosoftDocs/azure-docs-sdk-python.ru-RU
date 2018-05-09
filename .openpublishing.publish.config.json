@@ -6,7 +6,7 @@
       "docset_name": "python-sdk",
       "build_source_folder": ".",
       "build_output_subfolder": "azure-python-sdk",
-      "locale": "ru-RU",
+      "locale": "ru-ru",
       "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -44,11 +44,20 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ru-RU",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ru-ru",
       "branch": "master",
       "branch_mapping": {}
-    }
-  ],
+    },
+{
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/azure-docs-sdk-python",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    }	  
+   ],
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
