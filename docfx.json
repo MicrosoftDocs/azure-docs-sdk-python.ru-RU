@@ -91,6 +91,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "bilingual_type": "hover over",
       "breadcrumb_path": "/python/azure/bread/toc.json",
       "apiPlatform": "python",
       "brand": "azure"
