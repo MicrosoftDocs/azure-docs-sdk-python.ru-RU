@@ -14,12 +14,12 @@ metadata:
   ms.prod: azure
   ms.technology: azure
   ms.devlang: python
-  ms.service: multiple
-  ms.openlocfilehash: 48dcd21b209a97a158e530c01924d94f8ee37e4c
-  ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+  ms.openlocfilehash: 3f5da616fdbdb3cd5112fe93a40f9a5830aac7ff
+  ms.sourcegitcommit: d65549030a0edb50d75482f79aac0962d1dacb57
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/08/2018
+  ms.lasthandoff: 06/05/2018
+  ms.locfileid: "34759038"
 sections:
 - items:
   - type: markdown
@@ -46,7 +46,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_download-install.svg
       title: Пакет SDK и средства
-    - href: https://docs.microsoft.com/python/api/overview/azure/?view=azure-python
+    - href: https://docs.microsoft.com/python/api?view=azure-python
       html: <p>Библиотеки Python</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_api-reference.svg
