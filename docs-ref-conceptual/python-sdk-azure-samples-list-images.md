@@ -1,9 +1,9 @@
 ---
-title: "Вывод списка образов"
-description: "Просмотр всех доступных образов для создания виртуальных машин."
+title: Вывод списка образов
+description: Просмотр всех доступных образов для создания виртуальных машин.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909037"
 ---
 # <a name="list-images"></a>Вывод списка образов
 

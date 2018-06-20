@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки управления Azure для примеров баз данных SQL для Python"
-description: "Получите пример кода для создания и обновления баз данных SQL Azure с помощью библиотек управления Azure для Python."
+title: Библиотеки управления Azure для примеров баз данных SQL для Python
+description: Получите пример кода для создания и обновления баз данных SQL Azure с помощью библиотек управления Azure для Python.
 keywords: Azure, python, SDK, API, SQL database
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: a0ec8fb3d2ef5eb4c5c58a3370b6efa221e33029
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909017"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-sql-database"></a>Библиотеки управления Azure для примеров баз данных SQL для Python
 

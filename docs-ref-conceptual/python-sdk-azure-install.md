@@ -1,6 +1,6 @@
 ---
-title: "Установка"
-description: "Установка пакета Azure SDK для Python"
+title: Установка
+description: Установка пакета Azure SDK для Python
 keywords: Azure, Python, SDK, API
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 757bf84535fd9d8299c4b51ec92a5ab1926cb671
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/27/2018
+ms.locfileid: "29565823"
 ---
 # <a name="installation"></a>Установка
 

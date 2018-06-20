@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure Commerce для Python"
-description: "Справочник по библиотекам Azure Commerce для Python"
+title: Библиотеки Azure Commerce для Python
+description: Справочник по библиотекам Azure Commerce для Python
 keywords: Azure, python, SDK, API, Commerce
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551607"
 ---
 # <a name="azure-commerce-libraries-for-python"></a>Библиотеки Azure Commerce для Python
 

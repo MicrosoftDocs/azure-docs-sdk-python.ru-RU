@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure DNS для Python"
-description: "Справочник по библиотекам Azure DNS для Python"
+title: Библиотеки Azure DNS для Python
+description: Справочник по библиотекам Azure DNS для Python
 keywords: Azure, python, SDK, API, DNS
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551567"
 ---
 # <a name="azure-dns-libraries-for-python"></a>Библиотеки Azure DNS для Python
 

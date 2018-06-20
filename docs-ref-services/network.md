@@ -1,6 +1,6 @@
 ---
-title: "Сетевые библиотеки Azure для Python"
-description: "Справочник по сетевым библиотекам Azure для Python"
+title: Сетевые библиотеки Azure для Python
+description: Справочник по сетевым библиотекам Azure для Python
 keywords: Azure, python, SDK, API, Network
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479077"
 ---
 # <a name="azure-network-libraries-for-python"></a>Сетевые библиотеки Azure для Python
 

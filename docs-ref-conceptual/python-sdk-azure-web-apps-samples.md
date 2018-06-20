@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки управления Azure для примеров веб-приложений Python"
-description: "Получите пример кода для создания и обновления веб-приложений Azure, размещенных в службе приложений, используя библиотеки управления Azure для Python."
+title: Библиотеки управления Azure для примеров веб-приложений Python
+description: Получите пример кода для создания и обновления веб-приложений Azure, размещенных в службе приложений, используя библиотеки управления Azure для Python.
 keywords: Azure, Java, SDK, API, web apps, app service
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 64ca5c673366f641ffd66fccb88750c32a4fad38
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909027"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-web-apps"></a>Библиотеки управления Azure для примеров веб-приложений Python
 

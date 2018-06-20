@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Центров уведомлений Azure для Python"
-description: "Справочник по библиотекам Центров уведомлений Azure для Python"
+title: Библиотеки Центров уведомлений Azure для Python
+description: Справочник по библиотекам Центров уведомлений Azure для Python
 keywords: Azure, python, SDK, API, Notification Hubs
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551587"
 ---
 # <a name="azure-notification-hubs-libraries-for-python"></a>Библиотеки Центров уведомлений Azure для Python
 

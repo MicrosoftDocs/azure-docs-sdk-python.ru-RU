@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure CDN для Python"
-description: "Справочник по библиотекам Azure CDN для Python"
+title: Библиотеки Azure CDN для Python
+description: Справочник по библиотекам Azure CDN для Python
 keywords: Azure, python, SDK, API, CDN
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478887"
 ---
 # <a name="azure-cdn-libraries-for-python"></a>Библиотеки Azure CDN для Python
 

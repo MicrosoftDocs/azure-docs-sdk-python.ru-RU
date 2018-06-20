@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Azure DevTest Labs для Python"
-description: "Справочник по библиотекам Azure DevTest Labs для Python"
+title: Библиотеки Azure DevTest Labs для Python
+description: Справочник по библиотекам Azure DevTest Labs для Python
 keywords: Azure, python, SDK, API, DevTest Labs
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551577"
 ---
 # <a name="azure-devtest-labs-libraries-for-python"></a>Библиотеки Azure DevTest Labs для Python
 

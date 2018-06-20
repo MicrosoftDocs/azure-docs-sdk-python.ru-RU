@@ -13,6 +13,7 @@ ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33901357"
 ---
 # <a name="azure-sql-database-libraries-for-python"></a>Библиотеки базы данных SQL Azure для Python
 

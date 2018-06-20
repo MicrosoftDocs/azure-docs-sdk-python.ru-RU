@@ -1,6 +1,6 @@
 ---
-title: "Средства для разработчиков Python в Azure | Документация Майкрософт"
-description: "Средства интеграции IDE и интерфейсы командной строки для разработчиков Python, работающих со службами Azure."
+title: Средства для разработчиков Python в Azure | Документация Майкрософт
+description: Средства интеграции IDE и интерфейсы командной строки для разработчиков Python, работающих со службами Azure.
 author: lisawong19
 manager: douge
 ms.devlang: python
@@ -14,6 +14,7 @@ ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26184598"
 ---
 # <a name="azure-tools-for-python-developers"></a>Средства для разработчиков Python в Azure
 

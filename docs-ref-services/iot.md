@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки Центра Интернета вещей для Python"
-description: "Справочник по библиотекам Центра Интернета вещей для Python"
+title: Библиотеки Центра Интернета вещей для Python
+description: Справочник по библиотекам Центра Интернета вещей для Python
 keywords: Azure, python, SDK, API, IoT Hub
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478777"
 ---
 # <a name="azure-iot-hub-libraries-for-python"></a>Библиотеки Центра Интернета вещей для Python
 

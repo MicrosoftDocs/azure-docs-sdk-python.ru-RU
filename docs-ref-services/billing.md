@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки выставления счетов Azure для Python"
-description: "Справочник по библиотекам выставления счетов для Python"
+title: Библиотеки выставления счетов Azure для Python
+description: Справочник по библиотекам выставления счетов для Python
 keywords: Azure, python, SDK, API, Billing
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478877"
 ---
 # <a name="azure-billing-libraries-for-python"></a>Библиотеки выставления счетов Azure для Python
 
