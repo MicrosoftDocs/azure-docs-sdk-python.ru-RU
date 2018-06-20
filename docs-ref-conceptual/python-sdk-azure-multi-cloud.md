@@ -13,6 +13,7 @@ ms.sourcegitcommit: 7066ace94076483bae7d54172605f431e47bd5ee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/05/2018
+ms.locfileid: "30820128"
 ---
 # <a name="multi-cloud---use-azure-on-all-regions"></a><span data-ttu-id="c1280-103">Многооблачные решения. Использование Azure во всех регионах</span><span class="sxs-lookup"><span data-stu-id="c1280-103">Multi-cloud - use Azure on all regions</span></span>
 

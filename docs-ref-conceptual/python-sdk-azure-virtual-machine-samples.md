@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки управления Azure для примеров виртуальных машин Python"
-description: "Получите пример кода для создания и обновления виртуальных машин Azure с помощью библиотек управления Azure для Python."
+title: Библиотеки управления Azure для примеров виртуальных машин Python
+description: Получите пример кода для создания и обновления виртуальных машин Azure с помощью библиотек управления Azure для Python.
 keywords: Azure, Python, SDK, API, virtual machines
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 0222632b0d65395e00f64f07806b03ddab4f8222
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909267"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-virtual-machines"></a><span data-ttu-id="596c3-104">Библиотеки управления Azure для примеров кода Python для виртуальных машин</span><span class="sxs-lookup"><span data-stu-id="596c3-104">Azure management libraries for Python samples for virtual machines</span></span>
 

@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки потребления Azure для Python"
-description: "Справочник по библиотекам потребления Azure для Python"
+title: Библиотеки потребления Azure для Python
+description: Справочник по библиотекам потребления Azure для Python
 keywords: Azure, python, SDK, API, Consumption
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478997"
 ---
 # <a name="azure-consumption-libraries-for-python"></a><span data-ttu-id="55485-104">Библиотеки потребления Azure для Python</span><span class="sxs-lookup"><span data-stu-id="55485-104">Azure Consumption libraries for python</span></span>
 

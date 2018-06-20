@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки служебной шины для Python"
-description: "Справочная документация по клиентским библиотекам и библиотекам управления служебной шины для Python"
+title: Библиотеки служебной шины для Python
+description: Справочная документация по клиентским библиотекам и библиотекам управления служебной шины для Python
 keywords: Azure, Python, SDK, API, messaging, pubsub, pub-sub, message broker
 author: lisawong19
 ms.author: liwong
@@ -14,6 +14,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551597"
 ---
 # <a name="service-bus-libraries-for-python"></a><span data-ttu-id="2714e-104">Библиотеки служебной шины для Python</span><span class="sxs-lookup"><span data-stu-id="2714e-104">Service Bus libraries for Python</span></span>
 

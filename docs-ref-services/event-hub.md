@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки концентраторов событий Azure для Python"
-description: "Справочник по библиотекам концентраторов событий Azure для Python"
+title: Библиотеки концентраторов событий Azure для Python
+description: Справочник по библиотекам концентраторов событий Azure для Python
 keywords: Azure, python, SDK, API, Event Hubs
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478797"
 ---
 # <a name="azure-event-hubs-libraries-for-python"></a><span data-ttu-id="ddf97-104">Библиотеки концентраторов событий Azure для Python</span><span class="sxs-lookup"><span data-stu-id="ddf97-104">Azure Event Hubs libraries for python</span></span>
 

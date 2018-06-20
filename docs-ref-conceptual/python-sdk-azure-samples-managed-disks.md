@@ -15,6 +15,7 @@ ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33839409"
 ---
 # <a name="managed-disks"></a><span data-ttu-id="7732a-103">Управляемые диски</span><span class="sxs-lookup"><span data-stu-id="7732a-103">Managed Disks</span></span>
 

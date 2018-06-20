@@ -16,6 +16,7 @@ ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33901429"
 ---
 # <a name="event-grid-libraries-for-python"></a><span data-ttu-id="0f984-103">Библиотеки службы "Сетка событий Azure" для Python</span><span class="sxs-lookup"><span data-stu-id="0f984-103">Event Grid libraries for Python</span></span>
 

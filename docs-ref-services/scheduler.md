@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки планировщика Azure для Python"
-description: "Справочник по библиотекам планировщика Azure для Python"
+title: Библиотеки планировщика Azure для Python
+description: Справочник по библиотекам планировщика Azure для Python
 keywords: Azure, python, SDK, API, Scheduler
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551617"
 ---
 # <a name="azure-scheduler-libraries-for-python"></a><span data-ttu-id="873e2-104">Библиотеки планировщика Azure для Python</span><span class="sxs-lookup"><span data-stu-id="873e2-104">Azure Scheduler libraries for python</span></span>
 

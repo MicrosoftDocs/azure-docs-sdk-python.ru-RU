@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки диспетчера серверов Azure для Python"
-description: "Справочник по библиотекам диспетчера серверов Azure для Python"
+title: Библиотеки диспетчера серверов Azure для Python
+description: Справочник по библиотекам диспетчера серверов Azure для Python
 keywords: Azure, python, SDK, API, Server Manager
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479237"
 ---
 # <a name="azure-server-manager-libraries-for-python"></a><span data-ttu-id="f44bc-104">Библиотеки диспетчера серверов Azure для Python</span><span class="sxs-lookup"><span data-stu-id="f44bc-104">Azure Server Manager libraries for python</span></span>
 

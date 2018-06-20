@@ -1,6 +1,6 @@
 ---
-title: "Библиотеки мониторинга Azure для Python"
-description: "Справочник по библиотекам мониторинга Azure для Python"
+title: Библиотеки мониторинга Azure для Python
+description: Справочник по библиотекам мониторинга Azure для Python
 keywords: Azure, python, SDK, API, Monitoring
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479067"
 ---
 # <a name="azure-monitoring-libraries-for-python"></a><span data-ttu-id="299e7-104">Библиотеки мониторинга Azure для Python</span><span class="sxs-lookup"><span data-stu-id="299e7-104">Azure Monitoring libraries for python</span></span>
 

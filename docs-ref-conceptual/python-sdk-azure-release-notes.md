@@ -1,6 +1,6 @@
 ---
-title: "Заметки о выпуске"
-description: "Узнайте о новых возможностях и критически важных изменениях в библиотеках управления Azure для Python."
+title: Заметки о выпуске
+description: Узнайте о новых возможностях и критически важных изменениях в библиотеках управления Azure для Python.
 keywords: Azure, Python, SDK, API
 author: lisawong19
 ms.author: liwong
@@ -11,12 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: dec98a7ae8187f7bd37ade365661b90e91875cce
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909207"
 ---
 # <a name="release-notes"></a><span data-ttu-id="f1f08-104">Заметки о выпуске</span><span class="sxs-lookup"><span data-stu-id="f1f08-104">Release Notes</span></span>
 

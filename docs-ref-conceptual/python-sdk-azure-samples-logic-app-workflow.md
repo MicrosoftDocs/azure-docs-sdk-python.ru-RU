@@ -1,9 +1,9 @@
 ---
-title: "Создание рабочего процесса приложения логики"
-description: "Создание рабочего процесса приложения логики"
+title: Создание рабочего процесса приложения логики
+description: Создание рабочего процесса приложения логики
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909067"
 ---
 # <a name="create-a-logic-app-workflow"></a><span data-ttu-id="7c47b-103">Создание рабочего процесса приложения логики</span><span class="sxs-lookup"><span data-stu-id="7c47b-103">Create a Logic App Workflow</span></span>
 
