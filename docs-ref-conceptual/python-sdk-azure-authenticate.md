@@ -1,6 +1,6 @@
 ---
-title: "Проверка подлинности с помощью библиотек управления Azure для Python"
-description: "Проверка подлинности с помощью субъекта-службы в библиотеках управления Azure для Python"
+title: Проверка подлинности с помощью библиотек управления Azure для Python
+description: Проверка подлинности с помощью субъекта-службы в библиотеках управления Azure для Python
 keywords: Azure, Python, SDK, API, authentication, active directory, service principal
 author: lisawong19
 ms.author: liwong
@@ -10,11 +10,12 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 78b248071e4718c1ab5ad743e697eafcfb510ec5
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720055"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Проверка подлинности с помощью библиотек управления Azure для Python
 
@@ -216,6 +217,6 @@ client = get_client_from_cli_profile(ComputeManagementClient)
 
     credentials = UserPassCredentials(
         'user@domain.com',
-        'my_smart_password',
+        'my_smart_password'
     )
 ```

@@ -9,11 +9,12 @@ ms.date: 07/18/2017
 ms.topic: article
 ms.devlang: python
 ms.service: keyvault
-ms.openlocfilehash: 1ac9cc92a4c830a8c156117d3e0d188b8032f29a
-ms.sourcegitcommit: 42d868d89eb28a6fdceffccfa03e3209a755b812
+ms.openlocfilehash: 3e7d9970f5799708c6822493106aec5466de52d9
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35719645"
 ---
 # <a name="azure-key-vault-libraries-for-python"></a>Библиотеки Azure Key Vault для Python
 
@@ -84,8 +85,8 @@ secret_bundle = client.get_secret("https://VAULT_ID.vault.azure.net/", "SECRET_I
 print(secret_bundle.value)
 ```
 
-[!div class="nextstepaction"]
-[Обзор клиентских API-интерфейсов](/python/api/overview/azure/keyvault/client)
+> [!div class="nextstepaction"]
+> [Обзор клиентских API-интерфейсов](/python/api/overview/azure/keyvault/client)
 
 ### <a name="management-api"></a>API управления
 
