@@ -14,12 +14,12 @@ metadata:
   ms.prod: azure
   ms.technology: azure
   ms.devlang: python
-  ms.openlocfilehash: 3f5da616fdbdb3cd5112fe93a40f9a5830aac7ff
-  ms.sourcegitcommit: d65549030a0edb50d75482f79aac0962d1dacb57
+  ms.openlocfilehash: 61eacb519d5484cedc1e9c6df57ca6538dd718e4
+  ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/05/2018
-  ms.locfileid: "34759038"
+  ms.lasthandoff: 06/18/2018
+  ms.locfileid: "35720015"
 sections:
 - items:
   - type: markdown
@@ -70,7 +70,7 @@ sections:
       href: https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial
     - image:
         src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-      title: Создание приложения API SQL для Comos DB
+      title: Создание приложения API SQL для Cosmos DB
       href: https://docs.microsoft.com/en-us/azure/cosmos-db/create-sql-api-python
     - image:
         src: https://docs.microsoft.com/azure/media/index/MachineLearning.svg
