@@ -9,34 +9,34 @@ ms.date: 07/18/2017
 ms.topic: article
 ms.devlang: python
 ms.service: keyvault
-ms.openlocfilehash: 3e7d9970f5799708c6822493106aec5466de52d9
-ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
+ms.openlocfilehash: 555f55dcf7355a1a82dc3ca5826e0d0bd3fad414
+ms.sourcegitcommit: 8476146ae9bcd1533db47adbe2524b27b93aaba0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "35719645"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925945"
 ---
-# <a name="azure-key-vault-libraries-for-python"></a><span data-ttu-id="0cdf4-104">Библиотеки Azure Key Vault для Python</span><span class="sxs-lookup"><span data-stu-id="0cdf4-104">Azure Key Vault libraries for Python</span></span>
+# <a name="azure-key-vault-libraries-for-python"></a><span data-ttu-id="53684-104">Библиотеки Azure Key Vault для Python</span><span class="sxs-lookup"><span data-stu-id="53684-104">Azure Key Vault libraries for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="0cdf4-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="0cdf4-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="53684-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="53684-105">Overview</span></span>
 
-<span data-ttu-id="0cdf4-106">Создавайте, обновляйте и удаляйте ключи и секреты в Azure Key Vault с помощью клиентских библиотек.</span><span class="sxs-lookup"><span data-stu-id="0cdf4-106">Create, update, and delete keys and secrets in Azure Key Vault with the client libraries.</span></span>
+<span data-ttu-id="53684-106">Создавайте, обновляйте и удаляйте ключи и секреты в Azure Key Vault с помощью клиентских библиотек.</span><span class="sxs-lookup"><span data-stu-id="53684-106">Create, update, and delete keys and secrets in Azure Key Vault with the client libraries.</span></span>
 
-<span data-ttu-id="0cdf4-107">Используйте библиотеки управления Azure Key Vault, чтобы создавать хранилища ключей, авторизовать приложения и управлять разрешениями.</span><span class="sxs-lookup"><span data-stu-id="0cdf4-107">Use the Azure Key Vault management libraries to create key vaults, authorize applications, and manage permissions.</span></span> 
+<span data-ttu-id="53684-107">Используйте библиотеки управления Azure Key Vault, чтобы создавать хранилища ключей, авторизовать приложения и управлять разрешениями.</span><span class="sxs-lookup"><span data-stu-id="53684-107">Use the Azure Key Vault management libraries to create key vaults, authorize applications, and manage permissions.</span></span> 
 
-<span data-ttu-id="0cdf4-108">Подробнее об [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span><span class="sxs-lookup"><span data-stu-id="0cdf4-108">Learn more about [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span></span>
+<span data-ttu-id="53684-108">Подробнее об [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span><span class="sxs-lookup"><span data-stu-id="53684-108">Learn more about [Azure Key Vault](/azure/key-vault/key-vault-whatis).</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="0cdf4-109">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="0cdf4-109">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="53684-109">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="53684-109">Install the libraries</span></span>
 
-### <a name="client-library"></a><span data-ttu-id="0cdf4-110">Клиентская библиотека</span><span class="sxs-lookup"><span data-stu-id="0cdf4-110">Client library</span></span>
+### <a name="client-library"></a><span data-ttu-id="53684-110">Клиентская библиотека</span><span class="sxs-lookup"><span data-stu-id="53684-110">Client library</span></span>
 
 ```bash
 pip install azure-keyvault
 ```
 
-## <a name="examples"></a><span data-ttu-id="0cdf4-111">Примеры</span><span class="sxs-lookup"><span data-stu-id="0cdf4-111">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="53684-111">Примеры</span><span class="sxs-lookup"><span data-stu-id="53684-111">Examples</span></span>
 
-<span data-ttu-id="0cdf4-112">Получите [веб-ключ JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) из Key Vault.</span><span class="sxs-lookup"><span data-stu-id="0cdf4-112">Retrieve a [JSON web key](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) from a Key Vault.</span></span>
+<span data-ttu-id="53684-112">Получите [веб-ключ JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) из Key Vault.</span><span class="sxs-lookup"><span data-stu-id="53684-112">Retrieve a [JSON web key](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) from a Key Vault.</span></span>
 
 ```python
 from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
@@ -60,7 +60,7 @@ key_bundle = client.get_key(vault_url, key_name, key_version)
 json_key = key_bundle.key
 ```
 
-<span data-ttu-id="0cdf4-113">Аналогичным образом можно использовать следующий фрагмент кода, чтобы извлечь секрет из хранилища:</span><span class="sxs-lookup"><span data-stu-id="0cdf4-113">Similarly, you can use the following snippet to retrieve a secret from the vault:</span></span>
+<span data-ttu-id="53684-113">Аналогичным образом можно использовать следующий фрагмент кода, чтобы извлечь секрет из хранилища:</span><span class="sxs-lookup"><span data-stu-id="53684-113">Similarly, you can use the following snippet to retrieve a secret from the vault:</span></span>
 
 ```
 from azure.keyvault import KeyVaultClient, KeyVaultAuthentication
@@ -86,16 +86,16 @@ print(secret_bundle.value)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="0cdf4-114">Обзор клиентских API-интерфейсов</span><span class="sxs-lookup"><span data-stu-id="0cdf4-114">Explore the Client APIs</span></span>](/python/api/overview/azure/keyvault/client)
+> [<span data-ttu-id="53684-114">Обзор клиентских API-интерфейсов</span><span class="sxs-lookup"><span data-stu-id="53684-114">Explore the Client APIs</span></span>](/python/api/overview/azure/keyvault/client)
 
-### <a name="management-api"></a><span data-ttu-id="0cdf4-115">API управления</span><span class="sxs-lookup"><span data-stu-id="0cdf4-115">Management API</span></span>
+### <a name="management-api"></a><span data-ttu-id="53684-115">API управления</span><span class="sxs-lookup"><span data-stu-id="53684-115">Management API</span></span>
 
 ```bash
 pip install azure-mgmt-keyvault
 ```
 
-### <a name="example"></a><span data-ttu-id="0cdf4-116">Пример</span><span class="sxs-lookup"><span data-stu-id="0cdf4-116">Example</span></span>
-<span data-ttu-id="0cdf4-117">В следующем примере показано, как создать Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="0cdf4-117">The following example shows how to create an Azure Key Vault.</span></span> 
+### <a name="example"></a><span data-ttu-id="53684-116">Пример</span><span class="sxs-lookup"><span data-stu-id="53684-116">Example</span></span>
+<span data-ttu-id="53684-117">В следующем примере показано, как создать Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="53684-117">The following example shows how to create an Azure Key Vault.</span></span> 
 
 ```python
 from azure.mgmt.keyvault import KeyVaultManagementClient
@@ -130,16 +130,16 @@ vault = kv_client.vaults.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="0cdf4-118">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="0cdf4-118">Explore the Management APIs</span></span>](/python/api/azure.mgmt.keyvault)
+> [<span data-ttu-id="53684-118">Обзор клиентских API-интерфейсов</span><span class="sxs-lookup"><span data-stu-id="53684-118">Explore the Client APIs</span></span>](/python/api/overview/azure/keyvault/client)
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="0cdf4-119">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="0cdf4-119">Explore the Management APIs</span></span>](/python/api/overview/azure/keyvault/management)
+> [<span data-ttu-id="53684-119">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="53684-119">Explore the Management APIs</span></span>](/python/api/overview/azure/keyvault/management)
 
-## <a name="samples"></a><span data-ttu-id="0cdf4-120">Примеры</span><span class="sxs-lookup"><span data-stu-id="0cdf4-120">Samples</span></span>
-* <span data-ttu-id="0cdf4-121">[Управление хранилищами ключей][1]</span><span class="sxs-lookup"><span data-stu-id="0cdf4-121">[Manage Key Vaults][1]</span></span> 
-* <span data-ttu-id="0cdf4-122">[Восстановление Key Vault][2]</span><span class="sxs-lookup"><span data-stu-id="0cdf4-122">[Key Vault recovery][2]</span></span>
+## <a name="samples"></a><span data-ttu-id="53684-120">Примеры</span><span class="sxs-lookup"><span data-stu-id="53684-120">Samples</span></span>
+* <span data-ttu-id="53684-121">[Управление хранилищами ключей][1]</span><span class="sxs-lookup"><span data-stu-id="53684-121">[Manage Key Vaults][1]</span></span> 
+* <span data-ttu-id="53684-122">[Восстановление Key Vault][2]</span><span class="sxs-lookup"><span data-stu-id="53684-122">[Key Vault recovery][2]</span></span>
 
 [1]: https://azure.microsoft.com/resources/samples/key-vault-python-manage/
 [2]: https://azure.microsoft.com/resources/samples/key-vault-recovery-python/
 
-<span data-ttu-id="0cdf4-123">Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) примеров для Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="0cdf4-123">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) of Azure Key Vault samples.</span></span> 
+<span data-ttu-id="53684-123">Просмотрите [полный список](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) примеров для Azure Key Vault.</span><span class="sxs-lookup"><span data-stu-id="53684-123">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=key+vault) of Azure Key Vault samples.</span></span> 
