@@ -9,12 +9,12 @@ ms.date: 07/18/2017
 ms.topic: article
 ms.devlang: python
 ms.service: keyvault
-ms.openlocfilehash: 3e7d9970f5799708c6822493106aec5466de52d9
-ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
+ms.openlocfilehash: 555f55dcf7355a1a82dc3ca5826e0d0bd3fad414
+ms.sourcegitcommit: 8476146ae9bcd1533db47adbe2524b27b93aaba0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "35719645"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925945"
 ---
 # <a name="azure-key-vault-libraries-for-python"></a>Библиотеки Azure Key Vault для Python
 
@@ -130,7 +130,7 @@ vault = kv_client.vaults.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [Обзор API-интерфейсов управления](/python/api/azure.mgmt.keyvault)
+> [Обзор клиентских API-интерфейсов](/python/api/overview/azure/keyvault/client)
 
 > [!div class="nextstepaction"]
 > [Обзор API-интерфейсов управления](/python/api/overview/azure/keyvault/management)
