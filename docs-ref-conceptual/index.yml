@@ -1,60 +1,66 @@
 ### YamlMime:YamlDocument
+ms.openlocfilehash: 65fe229da00402bd107514993ee0f9141681f40b
+ms.sourcegitcommit: 16eecfc4ed0e2a8344ce5887327cdf2619ba89e4
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/21/2018
+ms.locfileid: "39189564"
 documentType: LandingData
 title: Azure для разработчиков Python
 metadata:
-  document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
   title: 'Azure для разработчиков Python: руководства и справочник по API'
-  description: Приступите к разработке приложений в Azure, используя следующие ресурсы, в которых содержатся отличные руководства и эффективные средства для разработчиков Python.
+  description: Приступите к разработке приложений в Azure, используя эти руководства, средства и модули для разработчиков Python.
   keywords: Azure, Python, SDK, API
-  author: lisawong19
-  ms.author: liwong
-  manager: douge
-  ms.date: 07/20/2017
+  author: rloutlaw
+  ms.author: routlaw
+  manager: angerobe
+  ms.date: 07/09/2018
   ms.topic: landing-page
   ms.prod: azure
   ms.technology: azure
   ms.devlang: python
-  ms.openlocfilehash: 61eacb519d5484cedc1e9c6df57ca6538dd718e4
-  ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
-  ms.translationtype: HT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/18/2018
-  ms.locfileid: "35720015"
 sections:
-- items:
-  - type: markdown
-    text: >
-      Приступите к разработке приложений в Azure, используя следующие ресурсы, в которых содержатся отличные руководства и эффективные средства для разработчиков Python.
-- items:
+- title: Быстрое начало работы
+  items:
+  - type: paragraph
+    text: Краткие руководства по Python для служб Azure.
   - type: list
     style: cards
     className: cardsM
-    columns: 2
+    columns: 3
     items:
-    - href: https://docs.microsoft.com/azure/app-service/containers/tutorial-custom-docker-image
-      html: <p>Развертывание веб-приложения в Azure</p>
+    - href: https://docs.microsoft.com/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p>Создание и развертывание приложений Python в Azure</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: Начало работы
-    - href: https://azure.microsoft.com/resources/samples/?platform=pythont&view=azure-python
+        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
+      title: Размещение приложений-контейнеров
+    - href: https://docs.microsoft.com/en-us/azure/cognitive-services/face/quickstarts/python?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p>Определение лиц с помощью пакета SDK для Python</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/API_Face.svg
+      title: API Cognitive Services
+    - href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-python?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p>Создание данных документа с помощью API SQL и отправка запросов к этим данным</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
+      title: База данных Cosmos
+    - href: https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb
+      html: <p>Распознавание шаблонов с помощью записных книжек Jupyter</p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_python.svg
+      title: Машинное обучение
+    - href: https://azure.microsoft.com/resources/samples/?platform=python
       html: <p>Примеры кода Azure на основе Python</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
       title: Примеры кода
-    - href: https://docs.microsoft.com/python/azure/python-azure-tools
-      html: <p>Инструменты для разработчиков</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_download-install.svg
-      title: Пакет SDK и средства
     - href: https://docs.microsoft.com/python/api?view=azure-python
-      html: <p>Библиотеки Python</p>
+      html: <p>Модули Python</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/common/i_api-reference.svg
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Справочник по API
-- title: 5-минутные руководства по началу работы
+- title: Размещение приложений
   items:
-  - type: paragraph
-    text: Сведения о создании приложений Python с помощью служб Azure.
   - type: list
     style: cards
     className: cardsM
@@ -62,25 +68,104 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
-      title: Развертывание веб-приложения в Azure
-      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python
+      title: Служба приложений
+      html: <p>Создание, развертывание и масштабирование приложений Python в Linux или Windows</p>
+      href: https://docs.microsoft.com/azure/app-service/containers/tutorial-custom-docker-image?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
-        src: https://docs.microsoft.com/azure/media/index/API_Face.svg
-      title: Начало работы с API распознавания лиц
-      href: https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-      title: Создание приложения API SQL для Cosmos DB
-      href: https://docs.microsoft.com/en-us/azure/cosmos-db/create-sql-api-python
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/MachineLearning.svg
-      title: Обработка и анализ данных с помощью Azure Notebook
-      href: https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb
-- title: Примеры
+        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
+      title: Служба Kubernetes
+      html: <p>Развертывание контейнерных приложений и управление ими</p>
+      href: https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?toc=%2Fpython%2Fazure%2FTOC.json
+- title: Решения для работы с данными
   items:
   - type: list
-    style: unordered
+    style: cards
+    className: cardsM
+    columns: 3
     items:
-    - html: <a href="https://azure.microsoft.com/resources/samples/container-service-python-manage/">Развертывание контейнера Docker и подключение к нему в кластере Azure</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-python-manage/">Начало работы с пакетом управления для службы хранилища Azure с использованием Python</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/">Примеры кода для управления виртуальными машинами Azure</a>
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/Storage.svg
+      title: Хранилище
+      html: <p>Надежное хранение файлов в высокодоступном масштабируемом облачном хранилище</p>
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-python?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
+      title: База данных Cosmos
+      html: <p>Использование популярных API-интерфейсов с распределенной многомодельной базой данных</p>
+      href: https://docs.microsoft.com/azure/cosmos-db/sql-api-python-application?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/RedisCache.svg
+      title: кэш Redis;
+      html: <p>Чтение и запись данных из Python в кэш Redis для Azure</p>
+      href: https://docs.microsoft.com/en-us/azure/redis-cache/cache-python-get-started?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/PostgreSQL.svg
+      title: База данных Azure для PostgreSQL
+      html: <p>Создание веб-приложения Flask с помощью PostgreSQL и его развертывание в Azure</p>
+      href: https://docs.microsoft.com/azure/app-service/containers/tutorial-docker-python-postgresql-app?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/MySQL.SVG
+      title: База данных Azure для MySQL
+      html: <p>Создание облачного экземпляра MySQL и подключение к нему с помощью Python</p>
+      href: https://docs.microsoft.com/azure/mysql/connect-python?toc=%2Fpython%2Fazure%2FTOC.json
+- title: Искусственный интеллект и машинное обучение
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/MachineLearning.svg
+      title: Машинное обучение
+      html: <p>Создание приложений, которые интеллектуально определяют и обрабатывают информацию и выполняют соответствующие действия</p>
+      href: https://docs.microsoft.com/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-1?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/batch-ai.svg
+      title: Искусственный интеллект пакетной службы
+      html: <p>Выполнение учебного задания CNTK в кластере GPU с одним узлом</p>
+      href: https://docs.microsoft.com/azure/batch-ai/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_python.svg
+      title: Azure Notebook
+      html: <p>Бесплатное создание и совместное использование записных книжек Jupyter в облаке</p>
+      href: https://notebooks.azure.com/
+- title: Безопасность и интеграция
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
+      title: Key Vault
+      html: <p>Защита ключей и секретов, используемых облачными приложениями и службами</p>
+      href: https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/ServiceBus.svg
+      title: Служебная шина Azure
+      html: <p>Надежная служба обмена сообщениями для распределенных приложений и микрослужб</p>
+      href: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues?toc=%2Fpython%2Fazure%2FTOC.json
+- title: Средства и расширения
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: https://code.visualstudio.com/docs/azure/extensions
+      html: <p>Расширения Azure для Visual Studio Code</p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+      title: Visual Studio Code.
+    - href: https://docs.microsoft.com/en-us/visualstudio/python/overview-of-python-tools-for-visual-studio?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p>IntelliSense, средства разработки, профилирования и отладки для Python</p>
+      image:
+        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
+      title: Python в Visual Studio
+    - href: https://docs.microsoft.com/cli/azure?toc=%2Fpython%2Fazure%2FTOC.json
+      html: <p><a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">Управление ресурсами Azure из командной строки</a></p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/azure_dev-7.svg
+      title: Azure CLI 2.0
