@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 294373469b1792821253ae46ab51fa0c06a74ffa
-ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
+ms.openlocfilehash: 0a92b191f245585fd27261e99bea6158ff127a80
+ms.sourcegitcommit: 8a9e4295359a4f47b21908541e2460c333e94a0a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29551567"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624960"
 ---
 # <a name="azure-dns-libraries-for-python"></a>Библиотеки Azure DNS для Python
 
@@ -67,6 +67,7 @@ zone = dns_client.zones.create_or_update(
     'MyResourceGroup',
     'pydns.com',
     {
+            'zone_type': 'Public', # or Private
         'location': 'global'
     }
 )

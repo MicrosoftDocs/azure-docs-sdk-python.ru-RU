@@ -8,12 +8,12 @@ ms.date: 02/22/2018
 ms.topic: article
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6d2ba0580f8b6dda857b48ed5235a8c969a051f5
-ms.sourcegitcommit: 7066ace94076483bae7d54172605f431e47bd5ee
+ms.openlocfilehash: a4d006e6244bf6fb1151e32583e8bc3a642d4663
+ms.sourcegitcommit: 8a9e4295359a4f47b21908541e2460c333e94a0a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
-ms.locfileid: "30820128"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624980"
 ---
 # <a name="multi-cloud---use-azure-on-all-regions"></a>Многооблачные решения. Использование Azure во всех регионах
 
@@ -122,7 +122,7 @@ client_id = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 password = 'password'
 
 # Government
-authentication_endpoint = 'https://login-us.microsoftonline.com/'
+authentication_endpoint = 'https://login.microsoftonline.us/'
 azure_endpoint = 'https://management.usgovcloudapi.net/'
     
 context = adal.AuthenticationContext(authentication_endpoint+tenant)
