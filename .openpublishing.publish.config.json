@@ -25,6 +25,7 @@
       ],
        "customized_tasks": {
         "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
           "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
           "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
         ]
@@ -39,7 +40,11 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "SplitTOC": [
+    "docs-ref-autogen/toc.yml"
+  ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-python.ru-ru",
+  
   "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
@@ -63,7 +68,7 @@
       "branch": "master",
       "branch_mapping": {}
     }
-   ],
+  ],
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
