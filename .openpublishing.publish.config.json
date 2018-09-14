@@ -6,7 +6,7 @@
       "docset_name": "python-sdk",
       "build_source_folder": ".",
       "build_output_subfolder": "azure-python-sdk",
-      "locale": "zh-cn",
+      "locale": "ru-ru",
       "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -43,13 +43,13 @@
   "SplitTOC": [
     "docs-ref-autogen/toc.yml"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-python.zh-cn",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-python.ru-ru",
   
   "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ru-ru",
       "branch": "master",
       "branch_mapping": {}
     },
