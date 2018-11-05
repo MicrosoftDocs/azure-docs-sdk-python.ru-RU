@@ -166,6 +166,7 @@
     "dest": "azure-python-sdk",
     "xref": [
       "xrefmap.yml"
-    ]
+    ],
+    "markdownEngineName": "markdig"
   }
 }
