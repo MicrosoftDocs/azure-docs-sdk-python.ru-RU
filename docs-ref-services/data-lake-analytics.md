@@ -11,29 +11,29 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d779aca1f3a9e14f275385f93054a8e2f9c0c689
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: f1bba0556baf7c373a3584c2dae922e04fa76fc8
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478767"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52279267"
 ---
-# <a name="azure-data-lake-analytics-libraries-for-python"></a><span data-ttu-id="c4408-104">Библиотеки Azure Data Lake Analytics для Python</span><span class="sxs-lookup"><span data-stu-id="c4408-104">Azure Data Lake Analytics libraries for python</span></span>
+# <a name="azure-data-lake-analytics-libraries-for-python"></a><span data-ttu-id="0c173-104">Библиотеки Azure Data Lake Analytics для Python</span><span class="sxs-lookup"><span data-stu-id="0c173-104">Azure Data Lake Analytics libraries for python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c4408-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="c4408-105">Overview</span></span>
-<span data-ttu-id="c4408-106">Запускайте задания анализа больших данных для масштабирования больших массивов данных с помощью [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span><span class="sxs-lookup"><span data-stu-id="c4408-106">Run big data analysis jobs that scale to massive data sets with [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span></span>
+## <a name="overview"></a><span data-ttu-id="0c173-105">Обзор</span><span class="sxs-lookup"><span data-stu-id="0c173-105">Overview</span></span>
+<span data-ttu-id="0c173-106">Запускайте задания анализа больших данных для масштабирования больших массивов данных с помощью [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span><span class="sxs-lookup"><span data-stu-id="0c173-106">Run big data analysis jobs that scale to massive data sets with [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="c4408-107">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="c4408-107">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="0c173-107">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="0c173-107">Install the libraries</span></span>
 
-## <a name="management-api"></a><span data-ttu-id="c4408-108">API управления</span><span class="sxs-lookup"><span data-stu-id="c4408-108">Management API</span></span>
-<span data-ttu-id="c4408-109">Используйте API управления для администрирования учетных записей, заданий, политик и каталогов Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="c4408-109">Use the management API to manage Data Lake Analytics accounts, jobs, policies, and catalogs.</span></span>
+## <a name="management-api"></a><span data-ttu-id="0c173-108">API управления</span><span class="sxs-lookup"><span data-stu-id="0c173-108">Management API</span></span>
+<span data-ttu-id="0c173-109">Используйте API управления для администрирования учетных записей, заданий, политик и каталогов Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="0c173-109">Use the management API to manage Data Lake Analytics accounts, jobs, policies, and catalogs.</span></span>
 
 ```bash
 pip install azure-mgmt-datalake-analytics
 ```
 
-### <a name="example"></a><span data-ttu-id="c4408-110">Пример</span><span class="sxs-lookup"><span data-stu-id="c4408-110">Example</span></span>
-<span data-ttu-id="c4408-111">Это пример того, как создать учетную запись Data Lake Analytics и отправить задание.</span><span class="sxs-lookup"><span data-stu-id="c4408-111">This is an example of how to create a Data Lake Analytics account and submit a job.</span></span> 
+### <a name="example"></a><span data-ttu-id="0c173-110">Пример</span><span class="sxs-lookup"><span data-stu-id="0c173-110">Example</span></span>
+<span data-ttu-id="0c173-111">Это пример того, как создать учетную запись Data Lake Analytics и отправить задание.</span><span class="sxs-lookup"><span data-stu-id="0c173-111">This is an example of how to create a Data Lake Analytics account and submit a job.</span></span> 
 
 ```python
 ## Required for Azure Resource Manager
@@ -118,7 +118,7 @@ jobResult = adlaJobClient.job.create(
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="c4408-112">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="c4408-112">Explore the Management APIs</span></span>](/python/api/overview/azure/datalakeanalytics/management)
+> [<span data-ttu-id="0c173-112">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="0c173-112">Explore the Management APIs</span></span>](/python/api/overview/azure/datalakeanalytics/management)
 
-## <a name="samples"></a><span data-ttu-id="c4408-113">Примеры</span><span class="sxs-lookup"><span data-stu-id="c4408-113">Samples</span></span>
-[<span data-ttu-id="c4408-114">Управление Azure Data Lake Analytics</span><span class="sxs-lookup"><span data-stu-id="c4408-114">Manage Azure Data Lake Anyalytics</span></span>](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-manage-use-python-sdk)
+## <a name="samples"></a><span data-ttu-id="0c173-113">Примеры</span><span class="sxs-lookup"><span data-stu-id="0c173-113">Samples</span></span>
+[<span data-ttu-id="0c173-114">Управление Azure Data Lake Analytics</span><span class="sxs-lookup"><span data-stu-id="0c173-114">Manage Azure Data Lake Anyalytics</span></span>](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-manage-use-python-sdk)
