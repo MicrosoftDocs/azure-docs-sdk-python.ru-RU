@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6a073f9943b1f5af962546931e9d13372720e193
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 2d4172fa206b89437cca88fb2c5d0a7965be4e9b
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479067"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277176"
 ---
 # <a name="azure-monitoring-libraries-for-python"></a>Библиотеки мониторинга Azure для Python
 
