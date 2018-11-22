@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: c1ea5624d7a88b1fd37d8aed64fdd1a8973fed26
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: bbb3af6c13828164e26aba83d37431ab968fd141
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478947"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52272950"
 ---
 # <a name="azure-traffic-manager-libraries-for-python"></a>Библиотеки диспетчера трафика Azure для Python
 

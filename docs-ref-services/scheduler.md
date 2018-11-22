@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 3d2691ae1ba84c41f25de2b099aacefaa92152ed
-ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
+ms.openlocfilehash: 98e32799a4240f9946caf1ab7b05e35605d89dc9
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29551617"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277064"
 ---
 # <a name="azure-scheduler-libraries-for-python"></a>Библиотеки планировщика Azure для Python
 

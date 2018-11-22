@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 69ce7bb5f10a2ab6c2a952b2023b71a9584397f4
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 7fe36157ae54b78f6daadf67f9833de64adb90ed
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478997"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277226"
 ---
 # <a name="azure-consumption-libraries-for-python"></a>Библиотеки потребления Azure для Python
 

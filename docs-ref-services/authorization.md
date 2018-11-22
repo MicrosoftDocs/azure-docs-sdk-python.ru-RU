@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: a3db490357ec35c0780d7dd16114b9041458373d
-ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
+ms.openlocfilehash: 8709bbd3cff448c7beb394621b163a4b3e3c3cd8
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "35720045"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276768"
 ---
 # <a name="azure-authorization-libraries-for-python"></a>Библиотеки авторизации Azure для Python
 

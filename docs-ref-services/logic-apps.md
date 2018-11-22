@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: b17d796c37809745993ab54f45ee51895ca21cb0
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 253a7e72f91761b1092c3d18682e75a4eb42af01
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478787"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276818"
 ---
 # <a name="azure-logic-apps-libraries-for-python"></a>Библиотеки Azure Logic Apps для Python
 

@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 1f1dbaa77ee02a1da9386642e001f0a1a63a6599
-ms.sourcegitcommit: 61cc12fd4bb1a3ad5f9b79d1c616f005bc21c5d9
+ms.openlocfilehash: 736b2dd747842caa50418afc8219dafae655db39
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30849775"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277461"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Модули Azure Cognitive Services для Python
 
@@ -54,7 +54,7 @@ pip install azure-cognitiveservices-vision-computervision
 
 См. дополнительные сведения о [Content Moderator](/azure/cognitive-services/content-moderator/overview).
 
-### <a name="custom-vision-service"></a>Custom Vision Service
+### <a name="custom-vision-service"></a>Пользовательская служба визуального распознавания
 
 Отправка изображений для обучения и настройка модели компьютерного зрения для определенного варианта использования. После обучения модели можно использовать API для добавления тегов в изображения с помощью модели, а также оценивать результаты для оптимизации вашего классификатора.
 

@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 14978d119babd02f10c627206a4850dfc2e54f6c
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 685fd80d6dc8c7c848203bee249740b88f7dcc9c
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479197"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277401"
 ---
 # <a name="azure-media-services-libraries-for-python"></a>Библиотеки служб мультимедиа Azure для Python
 

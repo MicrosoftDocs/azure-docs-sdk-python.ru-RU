@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 0a1a5efa299f66ff8c31e8224e29dd7bcdc41783
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 0864c83eba43f97a606ae817f1a0ec2dd1ea787a
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478777"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52279247"
 ---
 # <a name="azure-iot-hub-libraries-for-python"></a>Библиотеки Центра Интернета вещей для Python
 

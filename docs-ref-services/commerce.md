@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 77008eb76c3a925d9c7e63fe9360ea5b25da49de
-ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
+ms.openlocfilehash: 27b826c1f11aca0d8c49c4e8eab4277b857eea37
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/24/2018
-ms.locfileid: "29551607"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277236"
 ---
 # <a name="azure-commerce-libraries-for-python"></a>Библиотеки Azure Commerce для Python
 

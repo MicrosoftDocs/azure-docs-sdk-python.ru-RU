@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 92d6dd6ce55964bc48bb9bc654e8dec25f6b8344
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 06e6c8786ebbd88b7d3996b640af96a23cd5689b
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478887"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52275538"
 ---
 # <a name="azure-cdn-libraries-for-python"></a>Библиотеки Azure CDN для Python
 

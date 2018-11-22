@@ -10,12 +10,12 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 78b248071e4718c1ab5ad743e697eafcfb510ec5
-ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
+ms.openlocfilehash: 5011d36f9258fb7c06a8b1d6a689e3b5058360bb
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "35720055"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52273050"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Проверка подлинности с помощью библиотек управления Azure для Python
 
@@ -181,11 +181,10 @@ from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
     # Create a Resource Management client
     resource_client = ResourceManagementClient(credentials, subscription_id)
 
-    
+
     # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
     for resource_group in resource_client.resource_groups.list():
         print(resource_group.name)
-
 ```
 
 ## <a name="mgmt-auth-cli"></a>Проверка подлинности на основе интерфейса командной строки
