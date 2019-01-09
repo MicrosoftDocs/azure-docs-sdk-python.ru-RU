@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b43b8597287347d3ae9d334f151b7e1514810321
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 71ea365465708f152d6fde7abab17c174d3e265b
+ms.sourcegitcommit: 7c81b382920ec76fd99a93a1ed0bc483765c1ae6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277136"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53710905"
 documentType: LandingData
 title: Azure для разработчиков Python
 metadata:
@@ -14,7 +14,7 @@ metadata:
   author: rloutlaw
   ms.author: routlaw
   manager: angerobe
-  ms.date: 07/09/2018
+  ms.date: 12/11/2018
   ms.topic: landing-page
   ms.prod: azure
   ms.technology: azure
@@ -56,17 +56,22 @@ sections:
         src: https://docs.microsoft.com/azure/media/index/app-service-web.svg
       title: Веб-приложения
       html: <p>Сборка, развертывание и масштабирование веб-приложений на языке Python в Linux</p>
-      href: https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
+      href: https://docs.microsoft.com/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
       title: Служба Azure Kubernetes
       html: <p>Развертывание контейнерных приложений и управление ими</p>
       href: https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
-        src: https://docs.microsoft.com/en-us/azure/virtual-machines/media/index/virtual-machines.svg
+        src: https://docs.microsoft.com/azure/virtual-machines/media/index/virtual-machines.svg
       title: Виртуальные машины
       html: <p>Использование дистрибутива Linux или Windows Server для выполнения кода в нужном масштабе</p>
       href: https://docs.microsoft.com//azure/virtual-machines/linux/quick-create-cli?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
+      title: Функции Azure
+      html: <p>Создание бессерверной функции Python</p>
+      href: https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python?toc=%2Fpython%2Fazure%2FTOC.json
 - title: Решения для работы с данными
   items:
   - type: list
@@ -109,6 +114,11 @@ sections:
       title: Hadoop и Spark
       html: <p>Использование управляемого кластера Hadoop и Spark в Azure HDInsight для больших рабочих нагрузок</p>
       href: https://docs.microsoft.com/azure/hdinsight/hadoop/apache-hadoop-linux-create-cluster-get-started-portal?toc=%2Fpython%2Fazure%2FTOC.json
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/EventHubs.svg
+      title: Центры событий;
+      html: <p>Простой, безопасный и масштабируемый прием данных в реальном времени для получения аналитических сведений</p>
+      href: https://docs.microsoft.com/azure/event-hubs/event-hubs-python?toc=%2Fpython%2Fazure%2FTOC.json
 - title: Искусственный интеллект и машинное обучение
   items:
   - type: list
@@ -122,12 +132,12 @@ sections:
       html: <p>Создание приложений, которые интеллектуально собирают и обрабатывают информацию, а затем выполняют на ее основе соответствующие действия</p>
       href: https://docs.microsoft.com/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-1?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
-        src: https://docs.microsoft.com/en-us/python/azure/media/AzureNotebooks.png
+        src: https://docs.microsoft.com/python/azure/media/AzureNotebooks.png
       title: Azure Notebook
       html: <p>Выполнение экспериментов по обработке и анализу данных на языке Python с использованием полностью управляемой записной книжки Jupyter</p>
       href: https://notebooks.azure.com/
     - image:
-        src: https://docs.microsoft.com/en-us/azure/virtual-machines/media/index/virtual-machines.svg
+        src: https://docs.microsoft.com/azure/virtual-machines/media/index/virtual-machines.svg
       title: Виртуальная машина для обработки и анализа данных
       html: <p>Использование удобной среды для обработки и анализа данных, которая включает популярные средства по работе с данными</p>
       href: https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro?toc=%2Fpython%2Fazure%2FTOC.json
@@ -142,7 +152,7 @@ sections:
         src: https://docs.microsoft.com/azure/media/index/KeyVault.svg
       title: Key Vault
       html: <p>Защита криптографических ключей и других секретных данных, которые используются облачными приложениями и службами</p>
-      href: https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault?toc=%2Fpython%2Fazure%2FTOC.json
+      href: https://docs.microsoft.com/python/api/overview/azure/key-vault?toc=%2Fpython%2Fazure%2FTOC.json
     - image:
         src: https://docs.microsoft.com/azure/media/index/ServiceBus.svg
       title: Служебная шина Azure
@@ -160,7 +170,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
       title: Visual Studio Code.
-    - href: https://docs.microsoft.com/en-us/visualstudio/python/overview-of-python-tools-for-visual-studio?toc=%2Fpython%2Fazure%2FTOC.json
+    - href: https://docs.microsoft.com/visualstudio/python/overview-of-python-tools-for-visual-studio?toc=%2Fpython%2Fazure%2FTOC.json
       html: <p>IntelliSense, средства разработки, профилирования и отладки для Python</p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
@@ -170,8 +180,8 @@ sections:
       image:
         src: https://docs.microsoft.com/azure/media/index/azure_dev-7.svg
       title: Инфраструктура CLI Azure
-    - href: https://docs.microsoft.com/en-us/windows/wsl/install-win10?toc=%2Fpython%2Fazure%2FTOC.json
+    - href: https://docs.microsoft.com/windows/wsl/install-win10?toc=%2Fpython%2Fazure%2FTOC.json
       html: <p>Непосредственное выполнение приложений Linux в Windows 10 с использованием набора поддерживаемых дистрибутивов</p>
       image:
-        src: https://docs.microsoft.com/en-us/media/logos/logo_linux-color.svg
+        src: https://docs.microsoft.com/media/logos/logo_linux-color.svg
       title: Подсистема Windows для Linux
