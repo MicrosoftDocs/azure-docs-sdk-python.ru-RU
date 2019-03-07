@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 2d4172fa206b89437cca88fb2c5d0a7965be4e9b
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 36746da246db2467b336a2eb14bfe2f6300b6ea4
+ms.sourcegitcommit: 993aacad1d19d87533023f154c015d840723d716
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277176"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528062"
 ---
 # <a name="azure-monitoring-libraries-for-python"></a>Библиотеки мониторинга Azure для Python
 
@@ -83,7 +83,7 @@ metrics_data = client.metrics.list(
     resource_id,
     timespan="{}/{}".format(yesterday, today),
     interval='PT1H',
-    metric='Percentage CPU',
+    metricnames='Percentage CPU',
     aggregation='Total'
 )
 
