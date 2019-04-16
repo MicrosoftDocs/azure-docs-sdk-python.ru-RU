@@ -1,20 +1,20 @@
 ---
-title: Предварительная версия пакета SDK Azure HDInsight для Python
+title: Пакет SDK Azure HDInsight для Python
 description: Справочник по пакету SDK Azure HDInsight для Python. Пакет SDK HDInsight для Python предоставляет классы и методы для управления кластерами HDInsight.
 ms.service: hdinsight
 author: tylerfox
 ms.author: tyfox
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 8d081739a3984e1cd3f7bbf31fcb44d63cfb6947
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
+ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747714"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504551"
 ---
-# <a name="hdinsight-python-management-sdk-preview"></a>Предварительная версия пакета SDK для управления HDInsight с использованием Python
+# <a name="hdinsight-sdk-for-python"></a>Пакет SDK HDInsight для Python
 
 ## <a name="overview"></a>Обзор
 
@@ -235,6 +235,10 @@ client.clusters.create(
         properties=params
     ))
 ```
+
+#### <a name="samples"></a>Примеры
+
+Также для создания несколько общих типов кластеров HDInsight [доступны примеры кода Python](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).
 
 ### <a name="get-cluster-details"></a>Получение сведений о кластере
 
