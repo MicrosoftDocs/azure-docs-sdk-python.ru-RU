@@ -2,20 +2,20 @@
 title: Проверка подлинности с помощью библиотек управления Azure для Python
 description: Проверка подлинности с помощью субъекта-службы в библиотеках управления Azure для Python
 keywords: Azure, Python, SDK, API, authentication, active directory, service principal
-author: lisawong19
-ms.author: liwong
-manager: douge
-ms.date: 07/24/2017
+author: sptramer
+ms.author: sttramer
+manager: carmonm
+ms.date: 04/11/2019
 ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5011d36f9258fb7c06a8b1d6a689e3b5058360bb
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 51f26b120cefffd2d7f4af9c2b6b2cb532bc6006
+ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52273050"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59586812"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Проверка подлинности с помощью библиотек управления Azure для Python
 
@@ -28,79 +28,82 @@ ms.locfileid: "52273050"
 В следующем примере для проверки подлинности используется [субъект-служба](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json).
 
 > [!NOTE]
-> Вы можете создать субъект-службу с помощью Azure CLI 2.0.
+> Чтобы создать субъект-службу с помощью Azure CLI, используйте следующую команду:
+>
 > ```bash
 > az ad sp create-for-rbac --name "MY-PRINCIPAL-NAME" --password "STRONG-SECRET-PASSWORD"
 > ```
+>
+> См. подробнее о [создании и настройке субъекта-службы Azure с помощью Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli).
 
 ```python
-    from azure.common.credentials import ServicePrincipalCredentials
+from azure.common.credentials import ServicePrincipalCredentials
 
-    # Tenant ID for your Azure Subscription
-    TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
+# Tenant ID for your Azure subscription
+TENANT_ID = '<Your tenant ID>'
 
-    # Your Service Principal App ID
-    CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
+# Your service principal App ID
+CLIENT = '<Your service principal ID>'
 
-    # Your Service Principal Password
-    KEY = 'password'
+# Your service principal password
+KEY = '<Your service principal password>'
 
-    credentials = ServicePrincipalCredentials(
-        client_id = CLIENT,
-        secret = KEY,
-        tenant = TENANT_ID
-    )
+credentials = ServicePrincipalCredentials(
+    client_id = CLIENT,
+    secret = KEY,
+    tenant = TENANT_ID
+)
 ```
 
 > [Примечание.] Чтобы подключиться к одному из независимых облаков Azure, используйте параметр `cloud_environment`.
-
-```python
-    from azure.common.credentials import ServicePrincipalCredentials
-    from msrestazure.azure_cloud import AZURE_CHINA_CLOUD
-
-    # Tenant ID for your Azure Subscription
-    TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
-
-    # Your Service Principal App ID
-    CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
-
-    # Your Service Principal Password
-    KEY = 'password'
-
-    credentials = ServicePrincipalCredentials(
-        client_id = CLIENT,
-        secret = KEY,
-        tenant = TENANT_ID,
-        cloud_environment = AZURE_CHINA_CLOUD
-    )
-```
+>
+> ```python
+> from azure.common.credentials import ServicePrincipalCredentials
+> from msrestazure.azure_cloud import AZURE_CHINA_CLOUD
+> 
+> # Tenant ID for your Azure Subscription
+> TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
+> 
+> # Your Service Principal App ID
+> CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
+> 
+> # Your Service Principal Password
+> KEY = 'password'
+> 
+> credentials = ServicePrincipalCredentials(
+>     client_id = CLIENT,
+>     secret = KEY,
+>     tenant = TENANT_ID,
+>     cloud_environment = AZURE_CHINA_CLOUD
+> )
+> ```
 
 Если требуется более строгий контроль, рекомендуем использовать [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-python) и программу-оболочку ADAL для SDK. Список всех доступных сценариев и примеры см. на веб-сайте ADAL. Пример проверки подлинности на основе субъекта-службы:
 
 ```python
-    import adal
-    from msrestazure.azure_active_directory import AdalAuthentication
-    from msrestazure.azure_cloud import AZURE_PUBLIC_CLOUD
+import adal
+from msrestazure.azure_active_directory import AdalAuthentication
+from msrestazure.azure_cloud import AZURE_PUBLIC_CLOUD
 
-    # Tenant ID for your Azure Subscription
-    TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
+# Tenant ID for your Azure Subscription
+TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # Your Service Principal App ID
-    CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
+# Your Service Principal App ID
+CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Your Service Principal Password
-    KEY = 'password'
+# Your Service Principal Password
+KEY = 'password'
 
-    LOGIN_ENDPOINT = AZURE_PUBLIC_CLOUD.endpoints.active_directory
-    RESOURCE = AZURE_PUBLIC_CLOUD.endpoints.active_directory_resource_id
+LOGIN_ENDPOINT = AZURE_PUBLIC_CLOUD.endpoints.active_directory
+RESOURCE = AZURE_PUBLIC_CLOUD.endpoints.active_directory_resource_id
 
-    context = adal.AuthenticationContext(LOGIN_ENDPOINT + '/' + TENANT_ID)
-    credentials = AdalAuthentication(
-        context.acquire_token_with_client_credentials,
-        RESOURCE,
-        CLIENT,
-        KEY
-    )
+context = adal.AuthenticationContext(LOGIN_ENDPOINT + '/' + TENANT_ID)
+credentials = AdalAuthentication(
+    context.acquire_token_with_client_credentials,
+    RESOURCE,
+    CLIENT,
+    KEY
+)
 ```
 
 Все допустимые вызовы ADAL можно использовать с классом `AdalAuthentication`.
@@ -141,10 +144,10 @@ export AZURE_AUTH_LOCATION=~/.azure/azure_credentials.json
 
 ```json
 {
-    "clientId": "ad735158-65ca-11e7-ba4d-ecb1d756380e",
-    "clientSecret": "b70bb224-65ca-11e7-810c-ecb1d756380e",
-    "subscriptionId": "bfc42d3a-65ca-11e7-95cf-ecb1d756380e",
-    "tenantId": "c81da1d8-65ca-11e7-b1d1-ecb1d756380e",
+    "clientId": "<Service principal ID>",
+    "clientSecret": "<Service principal secret/password>",
+    "subscriptionId": "<Subscription associated with the service principal>",
+    "tenantId": "<The service principal's tenant>",
     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
     "resourceManagerEndpointUrl": "https://management.azure.com/",
     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
@@ -155,6 +158,7 @@ export AZURE_AUTH_LOCATION=~/.azure/azure_credentials.json
 ```
 
 Затем можно создать любой клиент с помощью фабрики клиента.
+
 ```python
 from azure.common.client_factory import get_client_from_auth_file
 from azure.mgmt.compute import ComputeManagementClient
@@ -162,37 +166,41 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_auth_file(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-msi"></a>Аутентификация на основе удостоверения управляемой службы (MSI) 
-MSI позволяет ресурсу в Azure использовать пакет SDK или CLI без необходимости создать соответствующие учетные данные.
+## <a name="mgmt-auth-msi"></a>Аутентификация с помощью управляемых удостоверений Azure
+Управляемые удостоверения Azure позволяют использовать пакеты SDK или CLI для ресурсов в Azure без необходимости создавать соответствующие учетные данные.
+
+> [!IMPORTANT]
+>
+> Для использования управляемых удостоверений нужно подключиться к Azure из ресурсов Azure, таких как функция Azure или виртуальная машина, работающая в Azure. См. подробнее об управляемых удостоверениях для ресурсов Azure в руководствах по [настройке](/azure/active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm) и [использованию управляемых удостоверений для ресурсов Azure](/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-sign-in).
 
 ```python
 from msrestazure.azure_active_directory import MSIAuthentication
 from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
-    # Create MSI Authentication
-    credentials = MSIAuthentication()
+# Create MSI Authentication
+credentials = MSIAuthentication()
 
 
-    # Create a Subscription Client
-    subscription_client = SubscriptionClient(credentials)
-    subscription = next(subscription_client.subscriptions.list())
-    subscription_id = subscription.subscription_id
+# Create a Subscription Client
+subscription_client = SubscriptionClient(credentials)
+subscription = next(subscription_client.subscriptions.list())
+subscription_id = subscription.subscription_id
 
-    # Create a Resource Management client
-    resource_client = ResourceManagementClient(credentials, subscription_id)
+# Create a Resource Management client
+resource_client = ResourceManagementClient(credentials, subscription_id)
 
 
-    # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
-    for resource_group in resource_client.resource_groups.list():
-        print(resource_group.name)
+# List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
+for resource_group in resource_client.resource_groups.list():
+    print(resource_group.name)
 ```
 
 ## <a name="mgmt-auth-cli"></a>Проверка подлинности на основе интерфейса командной строки
 
-Пакет SDK позволяет создать клиент, используя активную подписку CLI.
+Пакет SDK позволяет создать клиент, используя активную подписку Azure CLI.
 
 > [!IMPORTANT]
-> Эти инструкции следует применять в качестве краткого руководства по разработке. В рабочей среде используйте [ADAL](#authenticate-with-token-credentials) или свою систему учетных данных.
+> Эти инструкции следует применять в качестве краткого руководства по разработке. В рабочей среде используйте [ADAL](#mgmt-auth-legacy) или свою систему учетных данных.
 > Любые изменения конфигурации CLI повлияют на выполнение пакета SDK.
 
 Чтобы указать активные учетные данные, используйте команду [az login](https://docs.microsoft.com/cli/azure/authenticate-azure-cli).
@@ -212,10 +220,10 @@ client = get_client_from_cli_profile(ComputeManagementClient)
 В примере ниже показан сценарий с использованием имени пользователя и пароля. Такой сценарий не поддерживает двухфакторную проверку подлинности.
 
 ```python
-    from azure.common.credentials import UserPassCredentials
+from azure.common.credentials import UserPassCredentials
 
-    credentials = UserPassCredentials(
-        'user@domain.com',
-        'my_smart_password'
-    )
+credentials = UserPassCredentials(
+    'user@domain.com',
+    'my_smart_password'
+)
 ```
