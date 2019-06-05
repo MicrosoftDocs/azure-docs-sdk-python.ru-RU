@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 06e6c8786ebbd88b7d3996b640af96a23cd5689b
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 2dd7703e94a814d85716a7b96994666e32f95565
+ms.sourcegitcommit: 3db75daa592da90ea9aa8fd17fb99627a30eb4fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52275538"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66179869"
 ---
 # <a name="azure-cdn-libraries-for-python"></a>Библиотеки Azure CDN для Python
 
@@ -54,7 +54,7 @@ profile_poller = cdn_client.profiles.create('my-resource-group',
                                             })
 profile = profile_poller.result()
 
-endpoint_poller = client.endpoints.create('my-resource-group',
+endpoint_poller = cdn_client.endpoints.create('my-resource-group',
                                           'cdn-name',
                                           'unique-endpoint-name', 
                                           { 
