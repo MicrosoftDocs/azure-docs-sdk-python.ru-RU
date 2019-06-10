@@ -11,17 +11,17 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
-ms.openlocfilehash: e45b12af9e026e0f6390556813385d86784feaa4
-ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
+ms.openlocfilehash: 5b4d4cc2dfb32dceb66bdb5be3fe0f0075840d8f
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "35720065"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376752"
 ---
 # <a name="azure-storage-libraries-for-python"></a>Библиотеки службы хранилища Azure для Python
 
 ## <a name="overview"></a>Обзор
-- Чтение и запись объектов и файлов из [хранилища BLOB-объектов Azure](https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-blob-storage).
+- Чтение и запись объектов и файлов из [хранилища BLOB-объектов Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage).
 - Отправка и получение сообщений между подключенными к облаку приложениями с помощью [хранилища очередей Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage).
 - Чтение и запись больших объемов структурированных данных с помощью [хранилища таблиц Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage). 
 - Общий доступ к хранилищу для приложений с помощью [хранилища файлов Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-file-storage).
@@ -32,13 +32,13 @@ ms.locfileid: "35720065"
 
 ### <a name="client"></a>Клиент
 
-Клиентские библиотеки службы хранилища Azure содержат четыре пакета для хранилищ BLOB-объектов, файлов, очередей и таблиц. Чтобы установить пакет больших двоичных объектов, выполните следующую команду:
+Клиентские библиотеки службы хранилища Azure содержат четыре пакета: для хранилищ BLOB-объектов, файлов, очередей и таблиц. Чтобы установить пакет больших двоичных объектов, выполните следующую команду:
 
 ```bash
 pip install azure-storage-blob
 ```
 
-### <a name="management"></a>управления
+### <a name="management"></a>Управление
 
 ```bash
 pip install azure-mgmt-storage
@@ -69,8 +69,8 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 | | |
 |--|--|
-| [Начало работы с хранилищем BLOB-объектов Azure в Python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-python-how-to-use-blob-storage) | Создание, чтение, обновление и удаление файлов и объектов в хранилище Azure, а также ограничение доступа к ним. |
-| [Начало работы с хранилищем очередей Azure в Python](https://docs.microsoft.com/en-us/azure/storage/queues/storage-python-how-to-use-queue-storage) | Вставка, просмотр, получение и удаление сообщений в очередях хранилища Azure. | 
+| [Начало работы с хранилищем BLOB-объектов Azure в Python](https://docs.microsoft.com/azure/storage/blobs/storage-python-how-to-use-blob-storage) | Создание, чтение, обновление и удаление файлов и объектов в хранилище Azure, а также ограничение доступа к ним. |
+| [Начало работы с хранилищем очередей Azure в Python](https://docs.microsoft.com/azure/storage/queues/storage-python-how-to-use-queue-storage) | Вставка, просмотр, получение и удаление сообщений в очередях хранилища Azure. | 
 | [Управление учетными записями хранения Azure](https://azure.microsoft.com/resources/samples/storage-python-manage) | Создание, обновление и удаление учетных записей хранения. Извлечение и повторное создание ключей доступа к учетной записи хранения.
 
 Ознакомьтесь с другими [примерами кода Python](https://azure.microsoft.com/resources/samples/?platform=python), которые можно использовать в приложениях.
