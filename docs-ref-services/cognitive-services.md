@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 736b2dd747842caa50418afc8219dafae655db39
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
+ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277461"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67148174"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Модули Azure Cognitive Services для Python
 
@@ -24,7 +24,7 @@ ms.locfileid: "52277461"
 
 ## <a name="vision-modules"></a>Модули визуального распознавания
 
-### <a name="computer-vision"></a>API компьютерного зрения 
+### <a name="computer-vision"></a>API Компьютерного зрения 
 
 Предоставляет информацию о визуальном содержимом изображений:
 
@@ -49,12 +49,12 @@ pip install azure-cognitiveservices-vision-computervision
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
 ```
-pip install azure-cognitiveservices-vision-computervision
+pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
 См. дополнительные сведения о [Content Moderator](/azure/cognitive-services/content-moderator/overview).
 
-### <a name="custom-vision-service"></a>Пользовательская служба визуального распознавания
+### <a name="custom-vision-service"></a>Служба "Пользовательское визуальное распознавание"
 
 Отправка изображений для обучения и настройка модели компьютерного зрения для определенного варианта использования. После обучения модели можно использовать API для добавления тегов в изображения с помощью модели, а также оценивать результаты для оптимизации вашего классификатора.
 
@@ -66,7 +66,7 @@ pip install azure-cognitiveservices-vision-customvision
 
 См. дополнительные сведения о [Пользовательской службе визуального распознавания](/azure/cognitive-services/Custom-Vision-Service/home) и начните работу с помощью [руководства по Пользовательской службе визуального распознавания для Python](/azure/cognitive-services/Custom-Vision-Service/python-tutorial).
 
-### <a name="face-api"></a>API распознавания лиц
+### <a name="face-api"></a>API Распознавания лиц
 
 Распознавание, идентификация, анализ и группировка лиц, а также добавление к ним тегов на фотографиях. 
 
@@ -169,7 +169,7 @@ pip install azure-cognitiveservices-search-newssearch
 
 ## <a name="language-modules"></a>Модули языка
 
-### <a name="text-analytics"></a>Текстовая аналитика 
+### <a name="text-analytics"></a>Анализ текста 
 
 API анализа текста — это облачная служба, которая предоставляет возможности обработки естественного языка в необработанном тексте. API включает три основные функции:
 
