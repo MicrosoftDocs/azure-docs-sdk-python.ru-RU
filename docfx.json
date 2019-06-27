@@ -83,7 +83,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/python/azure/bread/toc.json",
       "apiPlatform": "python",
-      "brand": "azure"
+      "brand": "azure",
+      "disable_contribution_on_translation_quality": ["MT"]
     },
     "fileMetadata": {
       "monikers": {
