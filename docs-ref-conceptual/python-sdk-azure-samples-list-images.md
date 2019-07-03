@@ -9,17 +9,17 @@ ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
-ms.author: liwong
-ms.openlocfilehash: b0c640a090657128c7d7a97174f0eed036d0d9dd
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.author: routlaw
+ms.openlocfilehash: 5473c2f58af997695b8d1a6b1d2cfb6c504b50a5
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909037"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534437"
 ---
-# <a name="list-images"></a><span data-ttu-id="97423-103">Вывод списка образов</span><span class="sxs-lookup"><span data-stu-id="97423-103">List images</span></span>
+# <a name="list-images"></a><span data-ttu-id="5526e-103">Вывод списка образов</span><span class="sxs-lookup"><span data-stu-id="5526e-103">List images</span></span>
 
-<span data-ttu-id="97423-104">Используйте следующий код для вывода всех доступных образов для создания виртуальных машин, включая все номера SKU и конфигурации.</span><span class="sxs-lookup"><span data-stu-id="97423-104">Use the following code to print all of the available images to use for creating virtual machines, including all skus and versions.</span></span>
+<span data-ttu-id="5526e-104">Используйте следующий код для вывода всех доступных образов для создания виртуальных машин, включая все номера SKU и конфигурации.</span><span class="sxs-lookup"><span data-stu-id="5526e-104">Use the following code to print all of the available images to use for creating virtual machines, including all skus and versions.</span></span>
 
 ```python
 region = 'eastus'

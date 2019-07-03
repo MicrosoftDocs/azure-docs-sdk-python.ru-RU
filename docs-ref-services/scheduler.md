@@ -3,7 +3,7 @@ title: Библиотеки планировщика Azure для Python
 description: Справочник по библиотекам планировщика Azure для Python
 keywords: Azure, python, SDK, API, Scheduler
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
@@ -11,31 +11,31 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 98e32799a4240f9946caf1ab7b05e35605d89dc9
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 73c33ff808212fade192ca7c7c05a8e64d3fafda
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277064"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534215"
 ---
-# <a name="azure-scheduler-libraries-for-python"></a><span data-ttu-id="a9c19-104">Библиотеки планировщика Azure для Python</span><span class="sxs-lookup"><span data-stu-id="a9c19-104">Azure Scheduler libraries for python</span></span>
+# <a name="azure-scheduler-libraries-for-python"></a><span data-ttu-id="d933e-104">Библиотеки планировщика Azure для Python</span><span class="sxs-lookup"><span data-stu-id="d933e-104">Azure Scheduler libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="a9c19-105">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="a9c19-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="d933e-105">Установка библиотек</span><span class="sxs-lookup"><span data-stu-id="d933e-105">Install the libraries</span></span>
 
-## <a name="management"></a><span data-ttu-id="a9c19-106">управления</span><span class="sxs-lookup"><span data-stu-id="a9c19-106">Management</span></span>
+## <a name="management"></a><span data-ttu-id="d933e-106">Управление</span><span class="sxs-lookup"><span data-stu-id="d933e-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-scheduler
 ```
-## <a name="example"></a><span data-ttu-id="a9c19-107">Пример</span><span class="sxs-lookup"><span data-stu-id="a9c19-107">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d933e-107">Пример</span><span class="sxs-lookup"><span data-stu-id="d933e-107">Example</span></span>
 
-### <a name="create-the-management-client"></a><span data-ttu-id="a9c19-108">Создание клиента управления</span><span class="sxs-lookup"><span data-stu-id="a9c19-108">Create the management client</span></span>
+### <a name="create-the-management-client"></a><span data-ttu-id="d933e-108">Создание клиента управления</span><span class="sxs-lookup"><span data-stu-id="d933e-108">Create the management client</span></span>
 
-<span data-ttu-id="a9c19-109">Следующий код создает экземпляр клиента управления.</span><span class="sxs-lookup"><span data-stu-id="a9c19-109">The following code creates an instance of the management client.</span></span>
+<span data-ttu-id="d933e-109">Следующий код создает экземпляр клиента управления.</span><span class="sxs-lookup"><span data-stu-id="d933e-109">The following code creates an instance of the management client.</span></span>
 
-<span data-ttu-id="a9c19-110">Вам нужно указать ваш ``subscription_id``, который можно получить в [списке подписок](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="a9c19-110">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
+<span data-ttu-id="d933e-110">Вам нужно указать ваш ``subscription_id``, который можно получить в [списке подписок](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span><span class="sxs-lookup"><span data-stu-id="d933e-110">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
 
-<span data-ttu-id="a9c19-111">Дополнительные сведения об аутентификации Azure Active Directory с помощью пакета SDK Python и создании экземпляра ``Credentials`` см. в руководстве по [аутентификации управления ресурсами](/python/azure/python-sdk-azure-authenticate).</span><span class="sxs-lookup"><span data-stu-id="a9c19-111">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
+<span data-ttu-id="d933e-111">Дополнительные сведения об аутентификации Azure Active Directory с помощью пакета SDK Python и создании экземпляра ``Credentials`` см. в руководстве по [аутентификации управления ресурсами](/python/azure/python-sdk-azure-authenticate).</span><span class="sxs-lookup"><span data-stu-id="d933e-111">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
 
 ```python
 from azure.mgmt.scheduler import SchedulerManagementClient
@@ -56,10 +56,10 @@ scheduler_client = SchedulerManagementClient(
 )
 ```
 
-### <a name="create-a-job-collection"></a><span data-ttu-id="a9c19-112">Создание коллекции заданий</span><span class="sxs-lookup"><span data-stu-id="a9c19-112">Create a job collection</span></span>
+### <a name="create-a-job-collection"></a><span data-ttu-id="d933e-112">Создание коллекции заданий</span><span class="sxs-lookup"><span data-stu-id="d933e-112">Create a job collection</span></span>
 
-<span data-ttu-id="a9c19-113">Этот пример создает коллекцию заданий в существующей группе ресурсов.</span><span class="sxs-lookup"><span data-stu-id="a9c19-113">The following code creates a job collection under an existing resource group.</span></span>
-<span data-ttu-id="a9c19-114">См. дополнительные сведения о [создании групп ресурсов и управлении ими](/python/api/overview/azure/azure.mgmt.resource).</span><span class="sxs-lookup"><span data-stu-id="a9c19-114">To create or manage resource groups, see [Resource Management](/python/api/overview/azure/azure.mgmt.resource).</span></span>
+<span data-ttu-id="d933e-113">Этот пример создает коллекцию заданий в существующей группе ресурсов.</span><span class="sxs-lookup"><span data-stu-id="d933e-113">The following code creates a job collection under an existing resource group.</span></span>
+<span data-ttu-id="d933e-114">См. дополнительные сведения о [создании групп ресурсов и управлении ими](/python/api/overview/azure/azure.mgmt.resource).</span><span class="sxs-lookup"><span data-stu-id="d933e-114">To create or manage resource groups, see [Resource Management](/python/api/overview/azure/azure.mgmt.resource).</span></span>
 
 ```python
 from azure.mgmt.scheduler.models import JobCollectionDefinition, JobCollectionProperties, Sku
@@ -82,4 +82,4 @@ scheduler_client.job_collections.create_or_update(
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="a9c19-115">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="a9c19-115">Explore the Management APIs</span></span>](/python/api/overview/azure/scheduler/management)
+> [<span data-ttu-id="d933e-115">Обзор API-интерфейсов управления</span><span class="sxs-lookup"><span data-stu-id="d933e-115">Explore the Management APIs</span></span>](/python/api/overview/azure/scheduler/management)
