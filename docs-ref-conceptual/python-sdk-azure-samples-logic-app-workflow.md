@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
-ms.author: liwong
-ms.openlocfilehash: 732791b2ac5689f5421d2449410450aedb7591bc
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.author: routlaw
+ms.openlocfilehash: 31cf9755abe24cb1ef5c1c1c5aec8301abde2220
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909067"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534427"
 ---
 # <a name="create-a-logic-app-workflow"></a>Создание рабочего процесса приложения логики
 

@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
-ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
+ms.openlocfilehash: 5a23a52414e70facd6feae3af3956a5131f6b5c4
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67148174"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534343"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Модули Azure Cognitive Services для Python
 
@@ -36,7 +36,7 @@ ms.locfileid: "67148174"
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-vision-computervision
 ```
 
@@ -48,7 +48,7 @@ pip install azure-cognitiveservices-vision-computervision
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
@@ -60,7 +60,7 @@ pip install azure-cognitiveservices-vision-contentmoderator
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-vision-customvision
 ```
 
@@ -74,7 +74,7 @@ pip install azure-cognitiveservices-vision-customvision
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install cognitive-face
 ```
 
@@ -90,7 +90,7 @@ pip install cognitive-face
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-websearch
 ```
 
@@ -104,7 +104,7 @@ pip install azure-cognitiveservices-search-websearch
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-imagesearch
 ```
 
@@ -119,7 +119,7 @@ pip install azure-cognitiveservices-search-imagesearch
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-entitysearch
 ```
 
@@ -131,7 +131,7 @@ pip install azure-cognitiveservices-search-entitysearch
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-customsearch
 ```
 
@@ -145,7 +145,7 @@ pip install azure-cognitiveservices-search-customsearch
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-videosearch
 ```
 
@@ -160,11 +160,11 @@ pip install azure-cognitiveservices-search-videosearch
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-search-newssearch
 ```
 
-См. дополнительные сведения об [API Bing для поиска новостей](/azure/cognitive-services/bing-news-search/search-the-web) и начните работу с помощью [краткого руководства по API Bing для поиска новостей для Python](//azure/cognitive-services/bing-news-search/python).
+См. дополнительные сведения об [API Bing для поиска новостей](/azure/cognitive-services/bing-news-search/search-the-web) и начните работу с помощью [краткого руководства по API Bing для поиска новостей для Python](/azure/cognitive-services/bing-news-search/python).
 
 
 ## <a name="language-modules"></a>Модули языка
@@ -181,7 +181,7 @@ API анализа текста — это облачная служба, кот
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-language-textanalytics
 ```
 
@@ -196,7 +196,7 @@ pip install azure-cognitiveservices-language-textanalytics
 
 Получите модуль Python с помощью [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-```
+```python
 pip install azure-cognitiveservices-language-spellcheck
 ```
 

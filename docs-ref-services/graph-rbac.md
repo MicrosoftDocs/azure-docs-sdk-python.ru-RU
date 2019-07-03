@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 27238e00463ae30ec0e47e8c18497ffb9edac62c
-ms.sourcegitcommit: 253c8d4b3dbc2bb76d1a273a757ab96ba37617a1
+ms.openlocfilehash: e9b0aba7998565284ae18e0036da96d033b2b05f
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65731540"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534279"
 ---
 # <a name="azure-active-directory-graph-libraries-for-python"></a>Библиотеки Azure Active Directory Graph для Python
 
@@ -30,7 +30,7 @@ ms.locfileid: "65731540"
 
 ## <a name="overview"></a>Обзор 
 
-Для входа пользователей и управления доступом к приложениям и интерфейсам API можно использовать [Active Directory Graph](/azure/active-directory/develop/active-directory-graph-apis).   
+Для входа пользователей и управления доступом к приложениям и интерфейсам API можно использовать [Active Directory Graph](/azure/active-directory/develop/active-directory-graph-api).    
 
 ## <a name="client-library"></a>Клиентская библиотека   
 

@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
-ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
+ms.openlocfilehash: 3b0799dd77f7ff447ef997b2d142a6744c4a6858
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59586822"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534266"
 ---
 # <a name="hdinsight-sdk-for-python"></a>Пакет SDK HDInsight для Python
 
@@ -32,7 +32,7 @@ ms.locfileid: "59586822"
 
 `pip install azure-mgmt-hdinsight`
 
-## <a name="authentication"></a>Authentication
+## <a name="authentication"></a>Аутентификация
 
 Для использования пакета SDK нужно выполнить аутентификацию с помощью подписки Azure.  Ниже описано, как создать субъект-службу и использовать его для аутентификации. После этого вы получите экземпляр `HDInsightManagementClient`, в котором доступны различные методы (описанные далее) для операций управления.
 
@@ -259,7 +259,7 @@ print(my_cluster)
 
 Выходные данные должны выглядеть так:
 
-```
+```output
 {'additional_properties': {}, 'id': '/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/<Resource Group Name>/providers/Microsoft.HDInsight/clusters/<Cluster Name>', 'name': '<Cluster Name>', 'type': 'Microsoft.HDInsight/clusters', 'location': '<Location>', 'tags': {}, 'etag': 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX', 'properties': <azure.mgmt.hdinsight.models.cluster_get_properties_py3.ClusterGetProperties object at 0x0000013766D68048>}
 ```
 
