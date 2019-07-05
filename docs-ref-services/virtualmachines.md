@@ -3,7 +3,7 @@ title: Библиотеки виртуальных машин Azure для Pytho
 description: ''
 keywords: Azure, Python, SDK, API, Compute, Virtual Machines
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/09/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
-ms.openlocfilehash: 78750d5f98ab81401c48493aff98d4268c01850d
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: e09ffed98f3f6050e34ca2cb39e645e30f8bdb15
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376700"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534187"
 ---
 # <a name="azure-virtual-machine-libraries"></a>Библиотеки виртуальных машин Azure
 
@@ -77,8 +77,8 @@ def create_vm()
 ## <a name="samples"></a>Примеры
 
 * [Управление виртуальными машинами][1]
-* [Аутентификация на основе удостоверения управляемой службы][2]
-* [Создание виртуальной машины с помощью расширения управляемого удостоверения службы][3]
+* [Аутентификация с использованием Управляемого удостоверения службы][2]
+* [Создание виртуальной машины с помощью расширения Управляемого удостоверения службы][3]
 * [Управление подсистемой балансировки нагрузки][4]
 * [Создание и настройка управляемых дисков][5]
 * [Вывод списка образов][6] 

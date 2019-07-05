@@ -3,19 +3,19 @@ title: Библиотеки Azure MySQL и PostgreSQL для Python
 description: ''
 keywords: Azure, Python, SDK, API, SQL, database, MySQL, PostgreSQL
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/19/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.openlocfilehash: 402e87ae81e6df64b040293992244902313e5b1b
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: 81a29ea16dc9857257859181f0c2e5be8b4b7901
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747724"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534239"
 ---
 # <a name="azure-mysqlpostgresql-libraries-for-python"></a>Библиотеки Azure MySQL и PostgreSQL для Python
 
@@ -25,7 +25,7 @@ ms.locfileid: "54747724"
 
 ### <a name="client-odbc-driver-and-pyodbc"></a>Драйвер клиента ODBC и модуль pyodbc
 
-Рекомендуемой клиентской библиотекой для доступа к базе данных Azure для MySQL является [драйвер Microsoft ODBC](/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries). Подключитесь к базе данных при помощи драйвера ODBC и напрямую выполните инструкции SQL.
+Рекомендуемой клиентской библиотекой для доступа к базе данных Azure для MySQL является [драйвер Microsoft ODBC](/azure/sql-database/sql-database-connect-query-python#prerequisites). Подключитесь к базе данных при помощи драйвера ODBC и напрямую выполните инструкции SQL.
 
 #### <a name="example"></a>Пример
 
@@ -113,7 +113,7 @@ firewall_rule = rule_creation_poller.result()
 Дополнительные сведения о [базе данных Azure для PostgreSQL](https://docs.microsoft.com/azure/postgresql/).
 
 ### <a name="client-odbc-driver-and-pyodbc"></a>Драйвер клиента ODBC и модуль pyodbc
-Рекомендуемой клиентской библиотекой для доступа к базе данных Azure для PostgreSQL являются [драйвер Microsoft ODBC и модуль pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries).
+Рекомендуемой клиентской библиотекой для доступа к базе данных Azure для PostgreSQL являются [драйвер ODBC (Майкрософт) и модуль pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#prerequisites).
 
 #### <a name="example"></a>Пример 
 

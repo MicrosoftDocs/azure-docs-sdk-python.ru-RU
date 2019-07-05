@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: container-instances
-ms.openlocfilehash: 88df9443efb98bc5cec26c5eb4b01a4956141d40
-ms.sourcegitcommit: 1b45953f168cbf36869c24c1741d70153b88b9fc
+ms.openlocfilehash: 19e0e629253462f77d58740857b853d1c94d53cf
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59675939"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534325"
 ---
 # <a name="azure-container-instances-libraries-for-python"></a>Библиотеки службы "Экземпляры контейнеров Azure" для Python
 
@@ -38,7 +38,7 @@ pip install azure-mgmt-containerinstance
 
 [Azure-Samples/aci-docs-sample-python](https://github.com/Azure-Samples/aci-docs-sample-python)
 
-## <a name="authentication"></a>Authentication
+## <a name="authentication"></a>Аутентификация
 
 Одним из самых простых способов аутентификации клиентских пакетов SDK (например, клиентов Resource Manager и службы "Экземпляры контейнеров Azure") является [аутентификация на основе файла](/python/azure/python-sdk-azure-authenticate#mgmt-auth-file). Для использования этого способа нужно задать переменную среды `AZURE_AUTH_LOCATION`, чтобы указать путь к файлу учетных данных. Использование аутентификации на основе файла
 
@@ -54,7 +54,7 @@ pip install azure-mgmt-containerinstance
    export AZURE_AUTH_LOCATION=/home/yourusername/my.azureauth
    ```
 
-Создав файл учетных данных и задав значение для переменной среды `AZURE_AUTH_LOCATION`, используйте метод `get_client_from_auth_file` модуля [client_factory][client_factory] для инициализации объектов [ResourceManagementClient][ResourceManagementClient] и [ContainerInstanceManagementClient][ContainerInstanceManagementClient].
+Создав файл учетных данных и задав значение для переменной среды `AZURE_AUTH_LOCATION`, используйте метод `get_client_from_auth_file` модуля [client_factory][client_factory] для инициализации объектов module to initialize the [ResourceManagementClient][ResourceManagementClient] и [ContainerInstanceManagementClient][ContainerInstanceManagementClient].
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
 [!code-python[authenticate](~/aci-docs-sample-python/src/aci_docs_sample.py#L45-L58 "Authenticate ACI and Resource Manager clients")]
@@ -79,9 +79,9 @@ pip install azure-mgmt-containerinstance
 
 В этом примере создается группа контейнеров с одним контейнером на основе задач. В этом примере показаны некоторые возможности:
 
-* [Переопределение командной строки](/azure/container-instances/container-instances-restart-policy#command-line-override) — задается пользовательская командная строка, отличная от указанной в строке `CMD` в файле Docker контейнера. Так вы можете указать пользовательскую командную строку для выполнения при запуске контейнера, переопределив командную строку по умолчанию, встроенную в контейнер. Так как при запуске контейнера выполняется несколько команд, происходит следующее:
+* [Переопределение командной строки](/azure/container-instances/container-instances-start-command) — задается пользовательская командная строка, отличная от указанной в строке `CMD` в файле Docker контейнера. Так вы можете указать пользовательскую командную строку для выполнения при запуске контейнера, переопределив командную строку по умолчанию, встроенную в контейнер. Так как при запуске контейнера выполняется несколько команд, происходит следующее:
 
-   Чтобы выполнить **одну команду** с несколькими аргументами командной строки, например `echo FOO BAR`, укажите их в качестве списка строк для свойства `command` [контейнера][Container]. Например: 
+   Чтобы выполнить **одну команду** с несколькими аргументами командной строки, например `echo FOO BAR`, укажите их в качестве списка строк для свойства `command` [контейнера][Container]. Например:
 
    `command = ['echo', 'FOO', 'BAR']`
 
@@ -90,7 +90,7 @@ pip install azure-mgmt-containerinstance
    `command = ['/bin/sh', '-c', 'echo FOO BAR && tail -f /dev/null']`
 * [Переменные среды](/azure/container-instances/container-instances-environment-variables) — для контейнера в группе контейнеров указываются две переменные среды. Чтобы изменить поведение скрипта или приложения во время запуска, используйте переменные среды либо передайте динамические сведения приложению, выполняющемуся в контейнере.
 * [Политика перезапуска](/azure/container-instances/container-instances-restart-policy) — в конфигурации контейнера для политики перезапуска задано значение "Never". Это полезно для контейнеров на основе задач, выполняемых в рамках пакетного задания.
-* Опрос операции с использованием [AzureOperationPoller][AzureOperationPoller] — после вызова метода создания выполняется опрос операции, чтобы определить время ее завершения и получить журналы группы.
+* Опрос операции с использованием [AzureOperationPoller][AzureOperationPoller] — после вызова метода создания выполняется опрос операции, чтобы определить время ее завершения и получить журналы группы.
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
 [!code-python[create_container_group_task](~/aci-docs-sample-python/src/aci_docs_sample.py#L200-L276 "Run a task-based container")]
@@ -108,7 +108,7 @@ pip install azure-mgmt-containerinstance
 
 В этом примере возвращаются данные определенной группы контейнеров из группы ресурсов и выводятся некоторые свойства (включая контейнеры) группы контейнеров, а также их значения.
 
-[Операция Get][containergroupoperations_get] возвращает группу контейнеров с заполненным свойством [instance_view][instance_view], что позволяет выполнять итерацию по каждому контейнеру в группе. Свойство `instance_vew` группы контейнеров заполняет только операция `get`. При получении списка групп контейнеров в подписке или группе ресурсов это свойство не заполняется, так как операция может повлечь большие затраты, например, при получении списка сотен групп контейнеров, каждая из которых может содержать несколько контейнеров. Как упоминалось в разделе [Получение списка групп контейнеров](#list-container-groups), после операции `list` следует выполнить операцию `get` для конкретной группы контейнеров, чтобы получить сведения об ее экземпляре контейнера.
+[Операция Get][containergroupoperations_get] возвращает группу контейнеров с заполненным свойством returns a container group with its [instance_view][instance_view], что позволяет выполнять итерацию по каждому контейнеру в группе. Свойство `instance_vew` группы контейнеров заполняет только операция `get`. При получении списка групп контейнеров в подписке или группе ресурсов это свойство не заполняется, так как операция может повлечь большие затраты, например, при получении списка сотен групп контейнеров, каждая из которых может содержать несколько контейнеров. Как упоминалось в разделе [Получение списка групп контейнеров](#list-container-groups), после операции `list` следует выполнить операцию `get` для конкретной группы контейнеров, чтобы получить сведения об ее экземпляре контейнера.
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python -->
 [!code-python[get_container_group](~/aci-docs-sample-python/src/aci_docs_sample.py#L296-L325 "Get container group")]
@@ -145,7 +145,7 @@ pip install azure-mgmt-containerinstance
 [client_factory]: /python/api/azure.common.client_factory
 [Container]: /python/api/azure.mgmt.containerinstance.models.container
 [ContainerGroupInstanceView]: /python/api/azure.mgmt.containerinstance.models.containergrouppropertiesinstanceview
-[containergroupoperations_get]: /python/api/azure.mgmt.containerinstance.operations.containergroupsoperations#get
+[containergroupoperations_get]: /python/api/azure.mgmt.containerinstance.operations.containergroupsoperations#get-resource-group-name--container-group-name--custom-headers-none--raw-false----operation-config-
 [ContainerInstanceManagementClient]: /python/api/azure.mgmt.containerinstance.containerinstancemanagementclient
 [instance_view]: /python/api/azure.mgmt.containerinstance.models.containergroup#variables
 [ResourceManagementClient]: /python/api/azure.mgmt.resource.resources.resourcemanagementclient
