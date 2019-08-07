@@ -1,55 +1,15 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
-  "docsets_to_publish": [
-    {
-      "docset_name": "python-sdk",
-      "build_source_folder": ".",
-      "build_output_subfolder": "azure-python-sdk",
-      "locale": "ru-ru",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "UniversalReference": "Content",
-        "LandingData": "Content",
-        "APIConnector": "Content",
-        "Tutorial": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_template_paths": [
-         "_dependentPackages/uref/content"
-      ],
-       "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ]
-      },
-      "DiffFolder": [
-        "api"
-      ],
-      "version": 0
-    }
-  ],
+  "docsets_to_publish": [],
   "notification_subscribers": [],
   "branches_to_filter": [
     "live"
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-python.ru-ru",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "enable_incremental_build": false,
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-python.ru-ru",
-  "error_log_codes": ["DuplicateOutputFiles"],
-  "SplitTOC": [
-    "docs-ref-autogen/toc.yml"
-  ],
-  "git_repository_branch_open_to_public_contributors": "live",
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -57,7 +17,7 @@
       "branch": "master",
       "branch_mapping": {}
     },
-{
+    {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/azure-docs-sdk-python",
       "branch": "live",
@@ -72,6 +32,15 @@
       "branch": "master",
       "branch_mapping": {}
     }
+  ],
+  "need_generate_pdf_url_template": false,
+  "error_log_codes": [
+    "DuplicateOutputFiles"
+  ],
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "SplitTOC": [
+    "docs-ref-autogen/toc.yml"
   ],
   "dependent_packages": [
     {
@@ -98,13 +67,14 @@
       "ConceptualTOCUrl": "/python/azure/toc.json",
       "OutputFolder": "docs-ref-autogen/overview/azure",
       "ContainerPageMetadata": {
-        "langs": ["python"]
+        "langs": [
+          "python"
+        ]
       },
       "ContainerPageYamlMime": "YamlMime:UniversalReference"
     }
   ],
   "DiffFolder": [
     "docs-ref-autogen/overview/azure"
-  ],
-  "need_generate_pdf_url_template": false
+  ]
 }
