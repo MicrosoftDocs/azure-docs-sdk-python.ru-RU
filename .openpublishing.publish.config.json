@@ -1,26 +1,5 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
-  "docsets_to_publish": [
-    {
-      "docset_name": "python-sdk",
-      "build_source_folder": ".",
-      "build_output_subfolder": "azure-python-sdk",
-      "locale": "ru-RU",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "UniversalReference": "Content",
-        "LandingData": "Content",
-        "APIConnector": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    }
-  ],
+  "docsets_to_publish": [],
   "notification_subscribers": [],
   "branches_to_filter": [],
   "continue_with_document_error": true,
@@ -44,6 +23,8 @@
     }
   ],
   "need_generate_pdf_url_template": false,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
